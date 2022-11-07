@@ -1,11 +1,14 @@
+import { useGlobalContext } from "../context/useContext";
+
 function Header() {
-    return ( 
-        <>
-        <header>
-            <h3>This is Header and we are beautiful it</h3>
-        </header>
-        </>
-     );
+  console.log(useGlobalContext());
+  return (
+    <>
+      <header>
+        <h3>Start Amazon Project ✌😉</h3>
+      </header>
+    </>
+  );
 }
 
 export default Header;
