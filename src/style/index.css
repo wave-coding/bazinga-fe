@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'AmazonEmber';
+    src: url('../assets/fonts/Roboto-Regular.ttf');
+}
+
+body {
+    font-family: 'AmazonEmber';
+}
+
+
+@import url('./Header/header.css');

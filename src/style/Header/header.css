@@ -1,0 +1,11 @@
+:root {
+    --bg-color: #131921;
+    --light-color: #fff;
+    --size-1: 1rem;
+}
+
+header {
+    background-color: var(--bg-color);
+    color: var(--light-color);
+    padding: var(--size-1);
+}

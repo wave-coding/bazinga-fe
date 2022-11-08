@@ -5,7 +5,7 @@ function Header() {
   return (
     <>
       <header>
-        <h3>Start Amazon Project ✌😉</h3>
+        <h3>Amazon ✌😉</h3>
       </header>
     </>
   );
