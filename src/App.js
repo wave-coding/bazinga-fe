@@ -1,6 +1,6 @@
-import Header from "./components/Header";
-
 import { AppProvider } from "./context/useContext";
+
+import Header from "./components/template/Header";
 
 function App() {
     return (
