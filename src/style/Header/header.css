@@ -11,6 +11,11 @@ header {
     height: 50px;
 }
 
+header main {
+    display: flex;
+    align-items: center;
+}
+
 header main .main-logo img {
     width: 100px;
     padding: 0.3rem;
@@ -21,4 +26,27 @@ header main .main-logo img:hover {
     border: 1px solid #fff;
     border-radius: 5px;
     cursor: pointer;
+}
+
+header main .header-address {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0 1rem;
+    padding: 0.3rem;
+}
+
+header main .header-address:hover {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header main .header-address p {
+    margin: 0 0.5rem;
+}
+
+header main .header-address article {
+    display: flex;
+    flex-direction: column;
 }
