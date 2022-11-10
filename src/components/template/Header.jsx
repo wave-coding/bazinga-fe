@@ -2,7 +2,7 @@ import { useGlobalContext } from "../../context/useContext";
 import AmazonLogo from "../../assets/media/logo/Amazon-logo.png";
 import { MdOutlinePlace, MdSearch } from "react-icons/md";
 import ReactCountryFlag from "react-country-flag";
-import { BsCart2 } from "react-icons/bs";
+import { BsCart2, BsFillCaretDownFill } from "react-icons/bs";
 
 function Header() {
   console.log(useGlobalContext());
@@ -50,14 +50,21 @@ function Header() {
           </div>
           <div className='header-country'>
             <p>English</p>
-            <ReactCountryFlag
-              countryCode='US'
-              svg
-            />
+            <div className='header-signin-bottom-article'>
+              <ReactCountryFlag
+                className='country-flag-m'
+                countryCode='US'
+                svg
+              />
+              <BsFillCaretDownFill size={10}></BsFillCaretDownFill>
+            </div>
           </div>
           <div className='header-signin'>
             <p>Hello, sign in</p>
-            <h5>Account & Lists</h5>
+            <div className='header-signin-bottom-article'>
+              <h5>Account & Lists</h5>
+              <BsFillCaretDownFill size={10}></BsFillCaretDownFill>
+            </div>
           </div>
           <div className='header-r-o'>
             <p>Returns</p>
