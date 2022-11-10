@@ -1,6 +1,8 @@
 import { useGlobalContext } from "../../context/useContext";
 import AmazonLogo from "../../assets/media/logo/Amazon-logo.png";
-import { MdOutlinePlace } from "react-icons/md";
+import { MdOutlinePlace, MdSearch } from "react-icons/md";
+import ReactCountryFlag from "react-country-flag";
+import { BsCart2 } from "react-icons/bs";
 
 function Header() {
   console.log(useGlobalContext());
@@ -15,11 +17,56 @@ function Header() {
             />
           </div>
           <div className='header-address'>
-            <MdOutlinePlace></MdOutlinePlace>
+            <div>
+              <MdOutlinePlace size={20}></MdOutlinePlace>
+            </div>
             <article>
               <p>Iran</p>
               <p>Bndar-e-abbas</p>
             </article>
+          </div>
+          <div className='header-search'>
+            <div>
+              <select
+                name='category'
+                id='category'>
+                <option value='laptop'>laptop</option>
+                <option value='smartphone'>smart phone</option>
+                <option value='smartwatch'>smart watch</option>
+              </select>
+            </div>
+            <div>
+              <input
+                type='text'
+                name='search'
+                id='search'
+              />
+            </div>
+            <div>
+              <button>
+                <MdSearch size={25}></MdSearch>
+              </button>
+            </div>
+          </div>
+          <div className='header-country'>
+            <p>English</p>
+            <ReactCountryFlag
+              countryCode='US'
+              svg
+            />
+          </div>
+          <div className='header-signin'>
+            <p>Hello, sign in</p>
+            <h5>Account & Lists</h5>
+          </div>
+          <div className='header-r-o'>
+            <p>Returns</p>
+            <h5>& Orders</h5>
+          </div>
+          <div className='header-basket'>
+            <BsCart2 size={30}></BsCart2>
+            <span className='product-count'>99</span>
+            <h5>Cart</h5>
           </div>
         </main>
       </header>

@@ -19,7 +19,7 @@ header main {
 header main .main-logo img {
     width: 100px;
     padding: 0.3rem;
-    margin: 0.2rem 0.5rem 0 0.5rem;
+    margin: 0.3rem 0.5rem 0 1rem;
 }
 
 header main .main-logo img:hover {
@@ -49,4 +49,109 @@ header main .header-address p {
 header main .header-address article {
     display: flex;
     flex-direction: column;
+}
+
+header main .header-search {
+    display: flex;
+}
+
+header main .header-search div:nth-child(1) select {
+    border: none;
+    background-color: #f1f1f1;
+    font-family: 'AmazonEmber';
+    height: 40px;
+    border-radius: 4px 0 0 4px;
+}
+
+header main .header-search div:nth-child(2) input {
+    /* padding: 0.46rem; */
+    width: 700px;
+    height: 40px;
+    border: none;
+}
+
+header main .header-search div:nth-child(3) {
+    cursor: pointer;
+    height: 40px;
+}
+
+header .header-search div:nth-child(3) button {
+    height: 40px;
+    width: 40px;
+    background-color: #febd69;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+header main .header-country {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem;
+}
+
+header main .header-country:hover {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header main .header-country p {
+    /* margin: 0 0 0.3rem 0; */
+    font-size: 13px;
+}
+
+header main .header-signin {
+    padding: 0.3rem;
+}
+
+header main .header-signin p {
+    font-size: 13px;
+}
+
+header main .header-signin:hover {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header main .header-r-o {
+    margin: 0 1rem;
+    padding: 0.3rem;
+}
+
+header main .header-r-o p {
+    font-size: 13px;
+}
+
+header main .header-r-o:hover {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+header main .header-basket {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0.3rem;
+}
+
+header main .header-basket:hover {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header main .header-basket .product-count {
+    position: absolute;
+    top: 7px;
+    background-color: #febd69;
+    color: #333;
+    border-radius: 50%;
+    padding: 0.1rem 0.2rem;
 }
