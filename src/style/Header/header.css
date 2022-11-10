@@ -96,6 +96,37 @@ header main .header-country {
     align-items: center;
     justify-content: center;
     padding: 0.3rem;
+    position: relative;
+}
+
+header main .header-country .header-country-choose {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    background-color: #fff;
+    color: #333;
+    padding: 1rem;
+    border: 1px solid #9999;
+    border-radius: 5px;
+}
+
+header main .header-country .header-country-choose p {
+    border-bottom: 1px solid #9999;
+    padding: 0.7rem;
+}
+
+header main .header-country .header-country-choose p:last-child {
+    border: none;
+}
+
+header main .header-country .header-country-choose .header-country-choose-link {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+header main .header-country .header-country-choose p span {
+    margin: 0 0.3rem;
 }
 
 header main .header-country:hover {
@@ -104,10 +135,16 @@ header main .header-country:hover {
     cursor: pointer;
 }
 
+header main .header-country:hover .header-country-choose {
+    display: inline-block;
+    top: 49px;
+}
+
 header main .header-country p {
     /* margin: 0 0 0.3rem 0; */
     font-size: 13px;
 }
+
 
 header main .header-signin {
     padding: 0.3rem;

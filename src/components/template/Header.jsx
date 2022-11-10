@@ -58,6 +58,44 @@ function Header() {
               />
               <BsFillCaretDownFill size={10}></BsFillCaretDownFill>
             </div>
+            {/* hover country language choose */}
+            <div className='header-country-choose'>
+              <p>
+                <input
+                  type='radio'
+                  name='language'
+                  id='english'
+                  value='english'
+                />
+                <span>English - EN</span>
+              </p>
+              <p>
+                <input
+                  type='radio'
+                  name='language'
+                  id='espain'
+                  value='espain'
+                />
+                <span>Espanol - ES</span>
+                <a
+                  href='learnmore'
+                  className='header-country-choose-link'>
+                  Learn more
+                </a>
+              </p>
+              <p>
+                <ReactCountryFlag
+                  countryCode='US'
+                  svg
+                />
+                <span>You are shopping on Amazon.com</span>
+                <a
+                  href='changecountry'
+                  className='header-country-choose-link'>
+                  Change country/region
+                </a>
+              </p>
+            </div>
           </div>
           <div className='header-signin'>
             <p>Hello, sign in</p>
