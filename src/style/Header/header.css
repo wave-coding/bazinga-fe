@@ -68,6 +68,11 @@ header main .header-search div:nth-child(2) input {
     width: 700px;
     height: 40px;
     border: none;
+    font-family: 'AmazonEmber';
+}
+
+header main .header-search div:nth-child(2) input:focus {
+    outline: none;
 }
 
 header main .header-search div:nth-child(3) {
