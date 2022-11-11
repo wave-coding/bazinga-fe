@@ -112,7 +112,7 @@ header main .header-country .header-country-choose {
 }
 
 header main .header-country .header-country-choose p {
-    border-bottom: 1px solid #9999;
+    border-bottom: 1px solid #f0f0f0;
     padding: 0.7rem;
 }
 
@@ -148,6 +148,43 @@ header main .header-country p {
 
 header main .header-signin {
     padding: 0.3rem;
+    position: relative;
+}
+
+header main .header-signin .header-signin-card {
+    display: none;
+    position: absolute;
+    min-width: 400px;
+    z-index: 1;
+    background-color: #fff;
+    color: #333;
+    padding: 1rem;
+    border: 1px solid #9999;
+    border-radius: 5px;
+}
+
+header main .header-signin .header-signin-card .signin-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header main .header-signin .header-signin-card .signin-btn button {
+    padding: 0.7rem 2.5rem;
+    border: none;
+    background-color: #febd69;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'AmazonEmber';
+}
+
+header main .header-signin .header-signin-card .login-start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 0.5rem 0;
 }
 
 header main .header-country .header-signin-bottom-article .country-flag-m {
@@ -173,6 +210,39 @@ header main .header-signin:hover {
     border-radius: 5px;
     cursor: pointer;
 }
+
+header main .header-signin:hover .header-signin-card {
+    display: block;
+    top: 49px;
+    right: -40px;
+}
+
+header main .header-signin .header-signin-card .login-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+header main .header-signin .header-signin-card .login-content div:nth-child(2) {
+    border-left: 1px solid #f0f0f0;
+    padding: 1rem;
+}
+
+header main .header-signin .header-signin-card .login-content div:nth-child(2) p {
+    margin: 0.5rem 0;
+    font-size: 12px;
+}
+
+header main .header-signin .header-signin-card .login-content div:nth-child(1) {
+    padding: 1rem;
+}
+
+header main .header-signin .header-signin-card .login-content div:nth-child(1) p {
+    margin: 0.5rem 0;
+    font-size: 12px;
+}
+
+
 
 header main .header-r-o {
     margin: 0 1rem;

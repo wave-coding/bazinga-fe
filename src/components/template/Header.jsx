@@ -103,6 +103,42 @@ function Header() {
               <h5>Account & Lists</h5>
               <BsFillCaretDownFill size={10}></BsFillCaretDownFill>
             </div>
+            {/* Signin Hover */}
+            <div className='header-signin-card'>
+              <div className='signin-btn'>
+                <button>Signin</button>
+              </div>
+              <p className='login-start'>
+                New customer? <a href='login'>start here</a>
+              </p>
+              <div className='login-content'>
+                <div>
+                  <h5>Your Lists</h5>
+                  <p>Create a List</p>
+                  <p>Find a List or Registry</p>
+                  <p>AmazonSmile Charity Lists</p>
+                </div>
+                <div>
+                  <h5>Your Accounts</h5>
+                  <p>Account</p>
+                  <p>Orders</p>
+                  <p>Recommendations</p>
+                  <p>Browsing History</p>
+                  <p>Watchlist</p>
+                  <p>Video Purchases & Rentals</p>
+                  <p>Kindle Unlimited</p>
+                  <p>Content & Devices</p>
+                  <p>Subscribe & Save Items</p>
+                  <p>Memberships & Subscriptions</p>
+                  <p>Prime Membership</p>
+                  <p>Amazon Credit Cards</p>
+                  <p>Music Library</p>
+                  <p>Start a Selling Account</p>
+                  <p>Register for a Business Account</p>
+                  <p>Customer Service</p>
+                </div>
+              </div>
+            </div>
           </div>
           <div className='header-r-o'>
             <p>Returns</p>
