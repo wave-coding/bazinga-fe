@@ -122,7 +122,7 @@ header main .header-country .header-country-choose p:last-child {
 
 header main .header-country .header-country-choose .header-country-choose-link {
     display: block;
-    margin: 0.5rem 0;
+    margin: 1rem 0 0 0;
 }
 
 header main .header-country .header-country-choose p span {

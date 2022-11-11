@@ -66,6 +66,7 @@ function Header() {
                   name='language'
                   id='english'
                   value='english'
+                  checked
                 />
                 <span>English - EN</span>
               </p>
