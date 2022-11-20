@@ -187,6 +187,11 @@ header main .header-signin .header-signin-card .login-start {
     padding: 0.5rem 0;
 }
 
+header main .header-signin .header-signin-card .login-start a {
+    margin: 0 0.2rem;
+    color: #05a;
+}
+
 header main .header-country .header-signin-bottom-article .country-flag-m {
     margin: 0 0.2rem 0 0;
 }
@@ -242,6 +247,11 @@ header main .header-signin .header-signin-card .login-content div:nth-child(1) p
     font-size: 12px;
 }
 
+header main .header-signin .header-signin-card .login-content div p:hover {
+    color: #febd69;
+    text-decoration: underline;
+}
+
 
 
 header main .header-r-o {
@@ -280,4 +290,39 @@ header main .header-basket .product-count {
     color: #333;
     border-radius: 50%;
     padding: 0.1rem 0.2rem;
+}
+
+#sub-menu {
+    background-color: #232f3e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sub-menu ul {
+    display: flex;
+    align-items: center;
+    padding: 11px;
+}
+
+#sub-menu ul li {
+    display: flex;
+    margin: 0 0.5rem;
+    padding: 0.3rem 0.1rem;
+}
+
+#sub-menu ul li:hover {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sub-menu ul li h4 {
+    margin: 0 0.2rem;
+}
+
+#sub-menu ul li p {
+    font-size: 14px;
+    font-weight: bold;
 }
