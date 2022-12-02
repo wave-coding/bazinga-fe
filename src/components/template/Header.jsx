@@ -219,20 +219,207 @@ function Header() {
       <section id='hero-product'>
         <aside>
           <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-              numquam exercitationem illum et dolor, tempora corporis sint
-              voluptates? Adipisci, impedit?
-            </p>
+            <h4>Gaming accessories</h4>
+            <div className='column'>
+              <div className='column-1'>
+                <img
+                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg'
+                  alt=''
+                />
+                <p>headset</p>
+              </div>
+              <div className='column-2'>
+                <img
+                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg'
+                  alt=''
+                />
+                <p>keyboards</p>
+              </div>
+            </div>
+            <div className='column'>
+              <div className='column-1'>
+                <img
+                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg'
+                  alt=''
+                />
+                <p>headset</p>
+              </div>
+              <div className='column-2'>
+                <img
+                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg'
+                  alt=''
+                />
+                <p>keyboards</p>
+              </div>
+            </div>
           </div>
           <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-              numquam exercitationem illum et dolor, tempora corporis sint
-              voluptates? Adipisci, impedit?
-            </p>
+            <h4>Gaming accessories</h4>
+            <div className='column'>
+              <div className='column-1'>
+                <img
+                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg'
+                  alt=''
+                />
+                <p>headset</p>
+              </div>
+              <div className='column-2'>
+                <img
+                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg'
+                  alt=''
+                />
+                <p>keyboards</p>
+              </div>
+            </div>
+            <div className='column'>
+              <div className='column-1'>
+                <img
+                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg'
+                  alt=''
+                />
+                <p>headset</p>
+              </div>
+              <div className='column-2'>
+                <img
+                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg'
+                  alt=''
+                />
+                <p>keyboards</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h4>Gaming accessories</h4>
+            <div className='column'>
+              <div className='column-1'>
+                <img
+                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg'
+                  alt=''
+                />
+                <p>headset</p>
+              </div>
+              <div className='column-2'>
+                <img
+                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg'
+                  alt=''
+                />
+                <p>keyboards</p>
+              </div>
+            </div>
+            <div className='column'>
+              <div className='column-1'>
+                <img
+                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg'
+                  alt=''
+                />
+                <p>headset</p>
+              </div>
+              <div className='column-2'>
+                <img
+                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg'
+                  alt=''
+                />
+                <p>keyboards</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h4>Gaming accessories</h4>
+            <div className='column'>
+              <div className='column-1'>
+                <img
+                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg'
+                  alt=''
+                />
+                <p>headset</p>
+              </div>
+              <div className='column-2'>
+                <img
+                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg'
+                  alt=''
+                />
+                <p>keyboards</p>
+              </div>
+            </div>
+            <div className='column'>
+              <div className='column-1'>
+                <img
+                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg'
+                  alt=''
+                />
+                <p>headset</p>
+              </div>
+              <div className='column-2'>
+                <img
+                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg'
+                  alt=''
+                />
+                <p>keyboards</p>
+              </div>
+            </div>
           </div>
         </aside>
+      </section>
+      {/* Product Slider */}
+      <section id='product-slider'>
+        <div className='product-slider-container'>
+          <div className='product-gallery'>
+            <Swiper
+              modules={[Navigation, Pagination, Scrollbar, A11y]}
+              navigation
+              spaceBetween={50}
+              slidesPerView={5}>
+              <SwiperSlide>
+                <img
+                  src='https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2022/HOL22/GW/DesktopShoveler/Shoveler_Electronics_1x._CB608464074_.jpg'
+                  alt=''
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src='https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2022/HOL22/GW/DesktopShoveler/Shoveler_Electronics_1x._CB608464074_.jpg'
+                  alt=''
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src='https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2022/HOL22/GW/DesktopShoveler/Shoveler_Electronics_1x._CB608464074_.jpg'
+                  alt=''
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src='https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2022/HOL22/GW/DesktopShoveler/Shoveler_Electronics_1x._CB608464074_.jpg'
+                  alt=''
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src='https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2022/HOL22/GW/DesktopShoveler/Shoveler_Electronics_1x._CB608464074_.jpg'
+                  alt=''
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src='https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2022/HOL22/GW/DesktopShoveler/Shoveler_Electronics_1x._CB608464074_.jpg'
+                  alt=''
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src='https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2022/HOL22/GW/DesktopShoveler/Shoveler_Electronics_1x._CB608464074_.jpg'
+                  alt=''
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src='https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2022/HOL22/GW/DesktopShoveler/Shoveler_Electronics_1x._CB608464074_.jpg'
+                  alt=''
+                />
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
       </section>
     </>
   );
