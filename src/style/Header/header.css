@@ -7,22 +7,29 @@
 header {
     background-color: var(--bg-color);
     color: var(--light-color);
-    padding: var(--size-1);
-    height: 50px;
+    padding: var(--size-1) 0;
 }
 
 header main {
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+header main .main-logo {
+    padding: 0 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header main .main-logo img {
+    /* margin: 0.3rem 0.5rem 0 1rem; */
+    /* padding: 0 0.3rem; */
     width: 100px;
-    padding: 0.3rem;
-    margin: 0.3rem 0.5rem 0 1rem;
 }
 
-header main .main-logo img:hover {
+header main .main-logo:hover {
     border: 1px solid #fff;
     border-radius: 5px;
     cursor: pointer;
@@ -33,7 +40,7 @@ header main .header-address {
     align-items: flex-end;
     justify-content: center;
     margin: 0 1rem;
-    padding: 0.3rem;
+    padding: 0 0.3rem;
 }
 
 header main .header-address:hover {
@@ -61,11 +68,12 @@ header main .header-search div:nth-child(1) select {
     font-family: 'AmazonEmber';
     height: 40px;
     border-radius: 4px 0 0 4px;
+    padding: 0 0.5rem;
 }
 
 header main .header-search div:nth-child(2) input {
     padding: 0 0.3rem;
-    width: 700px;
+    width: 670px;
     height: 40px;
     border: none;
     font-family: 'AmazonEmber';
@@ -95,7 +103,7 @@ header main .header-country {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0.3rem;
+    padding: 0 0.3rem;
     position: relative;
 }
 
@@ -103,7 +111,7 @@ header main .header-country .header-country-choose {
     display: none;
     position: absolute;
     min-width: 160px;
-    z-index: 1;
+    z-index: 10;
     background-color: #fff;
     color: #333;
     padding: 1rem;
@@ -147,7 +155,7 @@ header main .header-country p {
 
 
 header main .header-signin {
-    padding: 0.3rem;
+    padding: 0 0.3rem;
     position: relative;
 }
 
@@ -155,7 +163,7 @@ header main .header-signin .header-signin-card {
     display: none;
     position: absolute;
     min-width: 400px;
-    z-index: 1;
+    z-index: 10;
     background-color: #fff;
     color: #333;
     padding: 1rem;
@@ -256,7 +264,7 @@ header main .header-signin .header-signin-card .login-content div p:hover {
 
 header main .header-r-o {
     margin: 0 1rem;
-    padding: 0.3rem;
+    padding: 0 0.3rem;
 }
 
 header main .header-r-o p {
@@ -274,7 +282,7 @@ header main .header-basket {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    padding: 0.3rem;
+    padding: 0 0.3rem;
 }
 
 header main .header-basket:hover {
@@ -292,6 +300,8 @@ header main .header-basket .product-count {
     padding: 0.1rem 0.2rem;
 }
 
+/* Sub menu */
+
 #sub-menu {
     background-color: #232f3e;
     color: #fff;
@@ -303,7 +313,8 @@ header main .header-basket .product-count {
 #sub-menu ul {
     display: flex;
     align-items: center;
-    padding: 11px;
+    height: 50px;
+    /* padding: 11px; */
 }
 
 #sub-menu ul li {
@@ -312,17 +323,90 @@ header main .header-basket .product-count {
     padding: 0.3rem 0.1rem;
 }
 
+
+#sub-menu ul li h4 {
+    margin: 0 0.5rem;
+}
+
 #sub-menu ul li:hover {
     border: 1px solid #fff;
     border-radius: 5px;
     cursor: pointer;
 }
 
-#sub-menu ul li h4 {
-    margin: 0 0.2rem;
-}
-
 #sub-menu ul li p {
     font-size: 14px;
     font-weight: bold;
+}
+
+/* Hero */
+
+#hero {
+    max-width: 1500px;
+    padding: 0 2rem;
+    margin: auto;
+    /* overflow: hidden; */
+    /* z-index: -100 !important; */
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+
+.swiper-button-next {
+    color: #000;
+    transition: all 0.4s ease;
+}
+
+.swiper-button-next::after {
+    font-size: 30px;
+    font-weight: 900;
+    padding: 0.4rem 0.5rem;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+}
+
+.swiper-button-prev {
+    color: #000;
+    transition: all 0.4s ease;
+}
+
+.swiper-button-prev::after {
+    font-size: 30px;
+    font-weight: 900;
+    padding: 0.4rem 0.5rem;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+
+}
+
+#hero-product {
+    max-width: 1500px;
+    padding: 0 2rem;
+    margin: 2rem auto;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#hero-product aside {
+    position: absolute;
+    color: #333;
+    /* width: 500px; */
+    /* height: 50px; */
+    padding: 1rem;
+    margin: -5rem 5rem;
+    z-index: 1 !important;
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+}
+
+#hero-product aside div {
+    border: 1px solid #05a;
+    padding: 1rem;
+    background-color: #f0f0f0;
 }

@@ -4,6 +4,16 @@ import { MdOutlinePlace, MdSearch } from "react-icons/md";
 import ReactCountryFlag from "react-country-flag";
 import { BsCart2, BsFillCaretDownFill } from "react-icons/bs";
 import { HiBars3CenterLeft } from "react-icons/hi2";
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+// import 'swiper/css/pagination';
+// import 'swiper/css/scrollbar';
 
 function Header() {
   console.log(useGlobalContext());
@@ -182,6 +192,48 @@ function Header() {
           </li>
         </ul>
       </aside>
+      {/* Hero */}
+      <section id='hero'>
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          navigation
+          loop={true}
+          spaceBetween={50}
+          slidesPerView={1}>
+          <SwiperSlide>
+            <img
+              src='https://m.media-amazon.com/images/I/71aQ3u78A3L._SX3000_.jpg'
+              alt=''
+              width={"50px"}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src='https://m.media-amazon.com/images/I/71dbxIcDioL._SX3000_.jpg'
+              alt=''
+            />
+          </SwiperSlide>
+        </Swiper>
+      </section>
+      {/* Hero Product */}
+      <section id='hero-product'>
+        <aside>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              numquam exercitationem illum et dolor, tempora corporis sint
+              voluptates? Adipisci, impedit?
+            </p>
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              numquam exercitationem illum et dolor, tempora corporis sint
+              voluptates? Adipisci, impedit?
+            </p>
+          </div>
+        </aside>
+      </section>
     </>
   );
 }
