@@ -118,7 +118,7 @@ function Header() {
             {/* Signin Hover */}
             <div className='header-signin-card'>
               <div className='signin-btn'>
-                <button>Signin</button>
+                <button>Sign in</button>
               </div>
               <p className='login-start'>
                 New customer? <a href='login'>start here</a>
@@ -337,8 +337,8 @@ function Header() {
           </div>
         </aside>
       </section>
-      <section id="independ-product">
-      <aside>
+      <section id='independ-product'>
+        <aside>
           <div>
             <h4>Gaming accessories</h4>
             <div className='column'>
@@ -542,6 +542,59 @@ function Header() {
           </div>
         </div>
       </section>
+      {/* Footer sign in */}
+      <section id='footer-signin'>
+        <main>
+          <p>See personalized recommendations</p>
+          <button>Sign in</button>
+          <p>
+            New customer? <a href='login'>start here</a>
+          </p>
+        </main>
+      </section>
+      {/* Footer Back top up */}
+      <section id='back-to-top'>
+        <main>
+          <p>Back to top</p>
+        </main>
+      </section>
+      {/* Footer Information */}
+      <section id="footer-information">
+        <div>
+          <ul>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <p>ONE</p>
+            <p>TWO</p>
+            <p>THREE</p>
+            <p>FOUR</p>
+          </ul>
+          <ul>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <p>ONE</p>
+            <p>TWO</p>
+            <p>THREE</p>
+            <p>FOUR</p>
+          </ul>
+          <ul>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <p>ONE</p>
+            <p>TWO</p>
+            <p>THREE</p>
+            <p>FOUR</p>
+          </ul>
+          <ul>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <p>ONE</p>
+            <p>TWO</p>
+            <p>THREE</p>
+            <p>FOUR</p>
+          </ul>
+        </div>
+      </section>
+      {/* Footer real */}
+      <footer>
+        <p>Hosein Sedaqat From Wave Coding 2022-2023</p>
+      </footer>
     </>
   );
 }

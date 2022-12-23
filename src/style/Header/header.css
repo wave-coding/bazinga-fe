@@ -145,7 +145,7 @@ header main .header-country:hover {
 
 header main .header-country:hover .header-country-choose {
     display: inline-block;
-    top: 49px;
+    top: 45px;
 }
 
 header main .header-country p {
@@ -226,7 +226,7 @@ header main .header-signin:hover {
 
 header main .header-signin:hover .header-signin-card {
     display: block;
-    top: 49px;
+    top: 45px;
     right: -40px;
 }
 
@@ -443,7 +443,7 @@ header main .header-basket .product-count {
     background-color: ;
 } */
 
-#hero-product aside .column-info div:nth-child(1){
+#hero-product aside .column-info div:nth-child(1) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -549,4 +549,87 @@ header main .header-basket .product-count {
 
 #product-slider .swiper-button-prev::after {
     font-size: 22px;
+}
+
+/* footer signin */
+
+#footer-signin {
+    background-color: #fff;
+    border-top: 1px solid #9999;
+    border-bottom: 1px solid #9999;
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+#footer-signin main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-signin p {
+    font-size: 14px;
+    margin: 0.5rem 0;
+}
+
+#footer-signin button {
+    font-family: 'AmazonEmber';
+    padding: 0.7rem 2rem;
+    background-color: #febd69;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* footer back to top */
+
+#back-to-top {
+    background-color: #37475A;
+    color: #f1f1f1;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+#back-to-top:hover {
+    background-color: #485769;
+    cursor: pointer;
+}
+
+/* footer information */
+
+#footer-information {
+    background-color: #232F3E;
+    padding: 1rem;
+}
+
+#footer-information div {
+    max-width: 1000px;
+    margin: 1rem auto;
+    padding: 0 2rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+#footer-information div ul {
+    text-align: center;
+}
+
+#footer-information div ul h5 {
+    color: #fff;
+}
+
+#footer-information div ul p {
+    margin: 0.5rem 0;
+    color: #DDD;
+}
+
+/* Footer */
+
+footer {
+    background-color: #131A22;
+    color: #DDD;
+    text-align: center;
+    padding: 1rem;
 }
