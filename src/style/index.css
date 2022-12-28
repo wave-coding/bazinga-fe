@@ -13,5 +13,10 @@ body {
     background-color: #EAEDED;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 @import url('./Header/header.css');
+@import url('./Footer/footer.css');

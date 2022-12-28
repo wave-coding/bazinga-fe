@@ -1,5 +1,4 @@
-import { useGlobalContext } from "../../context/useContext";
-import AmazonLogo from "../../assets/media/logo/Amazon-logo.png";
+import AmazonLogo from "@/assets/media/logo/Amazon-logo.png";
 import { MdOutlinePlace, MdSearch } from "react-icons/md";
 import ReactCountryFlag from "react-country-flag";
 import { BsCart2, BsFillCaretDownFill } from "react-icons/bs";
@@ -16,7 +15,6 @@ import "swiper/css/navigation";
 // import 'swiper/css/scrollbar';
 
 function Header() {
-  console.log(useGlobalContext());
   return (
     <>
       <header>
@@ -293,7 +291,7 @@ function Header() {
             <div className='column'>
               <div className='column-1'>
                 <img
-                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg'
+                  src='https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T1/images/G/01/DiscoTec/2022/HOL22/ShoulderPeriod/GW/QuadCard/DT/SP22_W5_PersonalCare_GW_QuadCard_1x._SY116_CB619975662_.jpg'
                   alt=''
                 />
                 <p>headset</p>
@@ -542,59 +540,6 @@ function Header() {
           </div>
         </div>
       </section>
-      {/* Footer sign in */}
-      <section id='footer-signin'>
-        <main>
-          <p>See personalized recommendations</p>
-          <button>Sign in</button>
-          <p>
-            New customer? <a href='login'>start here</a>
-          </p>
-        </main>
-      </section>
-      {/* Footer Back top up */}
-      <section id='back-to-top'>
-        <main>
-          <p>Back to top</p>
-        </main>
-      </section>
-      {/* Footer Information */}
-      <section id="footer-information">
-        <div>
-          <ul>
-            <h5>Lorem ipsum dolor sit amet.</h5>
-            <p>ONE</p>
-            <p>TWO</p>
-            <p>THREE</p>
-            <p>FOUR</p>
-          </ul>
-          <ul>
-            <h5>Lorem ipsum dolor sit amet.</h5>
-            <p>ONE</p>
-            <p>TWO</p>
-            <p>THREE</p>
-            <p>FOUR</p>
-          </ul>
-          <ul>
-            <h5>Lorem ipsum dolor sit amet.</h5>
-            <p>ONE</p>
-            <p>TWO</p>
-            <p>THREE</p>
-            <p>FOUR</p>
-          </ul>
-          <ul>
-            <h5>Lorem ipsum dolor sit amet.</h5>
-            <p>ONE</p>
-            <p>TWO</p>
-            <p>THREE</p>
-            <p>FOUR</p>
-          </ul>
-        </div>
-      </section>
-      {/* Footer real */}
-      <footer>
-        <p>Hosein Sedaqat From Wave Coding 2022-2023</p>
-      </footer>
     </>
   );
 }
