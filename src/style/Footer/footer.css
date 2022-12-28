@@ -1,5 +1,6 @@
 /* footer signin */
 
+
 #footer-signin {
     background-color: #fff;
     border-top: 1px solid #9999;
@@ -17,7 +18,7 @@
 
 #footer-signin p {
     font-size: 14px;
-    margin: 0.5rem 0;
+    margin: 0.8rem 0;
 }
 
 #footer-signin button {
@@ -63,13 +64,19 @@
     text-align: center;
 }
 
-#footer-information div ul h5 {
+#footer-information div ul h4 {
     color: #fff;
+    font-weight: 400;
 }
 
 #footer-information div ul p {
     margin: 0.5rem 0;
     color: #DDD;
+    cursor: pointer;
+}
+
+#footer-information div ul p:hover {
+    text-decoration: underline;
 }
 
 /* Footer */

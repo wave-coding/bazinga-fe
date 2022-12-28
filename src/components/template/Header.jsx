@@ -237,17 +237,17 @@ function Header() {
             <div className='column'>
               <div className='column-1'>
                 <img
-                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg'
+                  src='https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T1/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg'
                   alt=''
                 />
-                <p>headset</p>
+                <p>Computre mice</p>
               </div>
               <div className='column-2'>
                 <img
-                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg'
+                  src='https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T1/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg'
                   alt=''
                 />
-                <p>keyboards</p>
+                <p>Chairs</p>
               </div>
             </div>
           </div>
@@ -286,40 +286,14 @@ function Header() {
               </div>
             </div>
           </div>
-          <div>
-            <h4>Gaming accessories</h4>
-            <div className='column'>
-              <div className='column-1'>
-                <img
-                  src='https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T1/images/G/01/DiscoTec/2022/HOL22/ShoulderPeriod/GW/QuadCard/DT/SP22_W5_PersonalCare_GW_QuadCard_1x._SY116_CB619975662_.jpg'
-                  alt=''
-                />
-                <p>headset</p>
-              </div>
-              <div className='column-2'>
-                <img
-                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg'
-                  alt=''
-                />
-                <p>keyboards</p>
-              </div>
-            </div>
-            <div className='column'>
-              <div className='column-1'>
-                <img
-                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg'
-                  alt=''
-                />
-                <p>headset</p>
-              </div>
-              <div className='column-2'>
-                <img
-                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg'
-                  alt=''
-                />
-                <p>keyboards</p>
-              </div>
-            </div>
+          <div className='column-single-product'>
+            <article>
+              <h4>Easy returns</h4>
+              <img
+                src='https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T1/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Returns_1x._SY304_CB432774714_.jpg'
+                alt=''
+              />
+            </article>
           </div>
           <div className='column-info'>
             <div>
@@ -372,40 +346,14 @@ function Header() {
               </div>
             </div>
           </div>
-          <div>
-            <h4>Gaming accessories</h4>
-            <div className='column'>
-              <div className='column-1'>
-                <img
-                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg'
-                  alt=''
-                />
-                <p>headset</p>
-              </div>
-              <div className='column-2'>
-                <img
-                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg'
-                  alt=''
-                />
-                <p>keyboards</p>
-              </div>
-            </div>
-            <div className='column'>
-              <div className='column-1'>
-                <img
-                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg'
-                  alt=''
-                />
-                <p>headset</p>
-              </div>
-              <div className='column-2'>
-                <img
-                  src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg'
-                  alt=''
-                />
-                <p>keyboards</p>
-              </div>
-            </div>
+          <div className='column-single-product'>
+            <article>
+              <h4>Health & Personal Care</h4>
+              <img
+                src='https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T1/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/GW_CONS_AUS_HPC_HPCEssentials_CatCard_Desktop1x._SY304_CB627424361_.jpg'
+                alt=''
+              />
+            </article>
           </div>
           <div>
             <h4>Gaming accessories</h4>

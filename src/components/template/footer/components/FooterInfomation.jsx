@@ -7,7 +7,7 @@ function FooterInformation() {
         <div>
           {footerInformation.map((grid, index) => (
             <ul key={index}>
-              <h5>{grid.title}</h5>
+              <h4>{grid.title}</h4>
               {grid.item.map((subtitle, index) => (
                 <p key={index}>{subtitle}</p>
               ))}
