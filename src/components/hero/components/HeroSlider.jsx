@@ -7,6 +7,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 import "swiper/css/navigation";
+
+import { heroSlider } from "@/data/heroSlider";
+
 function HeroSlider() {
   return (
     <>
@@ -18,19 +21,14 @@ function HeroSlider() {
           loop={true}
           spaceBetween={50}
           slidesPerView={1}>
-          <SwiperSlide>
-            <img
-              src='https://m.media-amazon.com/images/I/71aQ3u78A3L._SX3000_.jpg'
-              alt=''
-              width={"50px"}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src='https://m.media-amazon.com/images/I/71dbxIcDioL._SX3000_.jpg'
-              alt=''
-            />
-          </SwiperSlide>
+          {heroSlider.map((slider, index) => (
+            <SwiperSlide key={index}>
+              <img
+                src={slider.img}
+                alt={slider.img}
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </section>
     </>
