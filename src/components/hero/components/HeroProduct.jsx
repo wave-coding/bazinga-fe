@@ -39,6 +39,15 @@ function HeroProduct() {
               </div>
             </div>
           </div>
+          <div className='column-single-product'>
+            <article>
+              <h4>Easy returns</h4>
+              <img
+                src='https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T1/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Returns_1x._SY304_CB432774714_.jpg'
+                alt=''
+              />
+            </article>
+          </div>
           <div>
             <h4>Gaming accessories</h4>
             <div className='column'>
@@ -73,15 +82,6 @@ function HeroProduct() {
                 <p>keyboards</p>
               </div>
             </div>
-          </div>
-          <div className='column-single-product'>
-            <article>
-              <h4>Easy returns</h4>
-              <img
-                src='https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T1/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Returns_1x._SY304_CB432774714_.jpg'
-                alt=''
-              />
-            </article>
           </div>
           <div className='column-info'>
             <div>
