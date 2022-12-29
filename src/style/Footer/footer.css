@@ -73,6 +73,7 @@
     margin: 0.5rem 0;
     color: #DDD;
     cursor: pointer;
+    font-size: 12px;
 }
 
 #footer-information div ul p:hover {

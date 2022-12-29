@@ -1,12 +1,9 @@
-import Header from "./components/template/Header";
-
-import Footer from "./components/template/footer/Footer";
+import Home from "./views/Home/Home";
 
 function App() {
     return (
         <>
-            <Header />
-            <Footer />
+            <Home />
         </>
     );
 }
