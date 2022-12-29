@@ -1,0 +1,58 @@
+#independ-product {
+    max-width: 1500px;
+    margin: 16rem auto 0 auto;
+    padding: 2rem;
+}
+
+
+#independ-product aside {
+    color: #333;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+#independ-product aside div {
+    padding: 1rem;
+    background-color: #fff;
+    margin: 0 0.22rem;
+    border-radius: 5px;
+}
+
+#independ-product aside div h4 {
+    font-weight: 900;
+}
+
+#independ-product aside div .column {
+    display: flex;
+}
+
+#independ-product aside div .column img {
+    width: 100px;
+}
+
+#independ-product aside div .column .column-1,
+#independ-product aside div .column .column-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#independ-product aside div .column .column-1 p,
+#independ-product aside div .column .column-2 p {
+    font-size: 12px;
+    margin: 0.2rem;
+}
+
+#independ-product aside .column-single-product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: start;
+}
+
+
+#independ-product aside .column-single-product img {
+    width: 320px;
+    height: 100%;
+    margin: 0.5rem 0;
+}

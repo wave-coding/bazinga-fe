@@ -1,0 +1,138 @@
+/* Hero */
+
+#hero {
+    max-width: 1500px;
+    padding: 0 2rem;
+    margin: auto;
+    /* overflow: hidden; */
+    /* z-index: -100 !important; */
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+
+.swiper-button-next {
+    color: #000;
+    transition: all 0.4s ease;
+}
+
+.swiper-button-next::after {
+    font-size: 30px;
+    font-weight: 900;
+    padding: 0.4rem 0.5rem;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+}
+
+.swiper-button-prev {
+    color: #000;
+    transition: all 0.4s ease;
+}
+
+.swiper-button-prev::after {
+    font-size: 30px;
+    font-weight: 900;
+    padding: 0.4rem 0.5rem;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+
+}
+
+#hero-product {
+    max-width: 1500px;
+    padding: 0 1.2rem;
+    margin: 2rem auto;
+    overflow: hidden;
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
+}
+
+#hero-product aside {
+    position: absolute;
+    color: #333;
+    /* width: 500px; */
+    /* height: 50px; */
+    padding: 1rem;
+    margin: -10rem 0;
+    z-index: 1 !important;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    /* display: flex !important;
+    align-items: flex-start;
+    justify-content: center; */
+}
+
+#hero-product aside div {
+    padding: 1rem;
+    background-color: #fff;
+    margin: 0 0.22rem;
+    border-radius: 5px;
+}
+
+#hero-product aside div h4 {
+    font-weight: 900;
+}
+
+#hero-product aside div .column {
+    display: flex;
+}
+
+#hero-product aside div .column img {
+    width: 100px;
+}
+
+#hero-product aside div .column .columns {
+    display: flex;
+    flex-direction: column;
+}
+
+#hero-product aside div .column .columns {
+    font-size: 12px;
+    margin: 0.2rem;
+}
+
+/* #hero-product aside div .column-info {
+    background-color: ;
+} */
+
+#hero-product aside .column-info div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero-product aside .column-info div img {
+    width: 100%;
+    height: auto;
+}
+
+#hero-product aside .column-info div button {
+    background-color: #FFD814;
+    font-family: 'AmazonEmber';
+    border: none;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+#hero-product aside .column-single-product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: start;
+}
+
+
+#hero-product aside .column-single-product img {
+    width: 320px;
+    height: 100%;
+    margin: 0.5rem 0;
+}

@@ -1,0 +1,38 @@
+/* Sub menu */
+
+#sub-menu {
+    background-color: #232f3e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sub-menu ul {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    /* padding: 11px; */
+}
+
+#sub-menu ul li {
+    display: flex;
+    margin: 0 0.5rem;
+    padding: 0.3rem 0.1rem;
+}
+
+
+#sub-menu ul li h4 {
+    margin: 0 0.5rem;
+}
+
+#sub-menu ul li:hover {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sub-menu ul li p {
+    font-size: 14px;
+    font-weight: bold;
+}
