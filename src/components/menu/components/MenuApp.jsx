@@ -1,19 +1,14 @@
 import { HiBars3CenterLeft } from "react-icons/hi2";
+import { RiMapPinUserFill } from "react-icons/ri";
+import { useGlobalContext } from "@/context/useContext";
 
 function MenuApp() {
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.body.style.opacity = "0.9";
-  }
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.body.style.opacity = "1";
-  }
+  const { open_nav, close_nav } = useGlobalContext();
   return (
     <>
       <aside id='sub-menu'>
         <ul>
-          <li onClick={() => openNav()}>
+          <li onClick={() => open_nav()}>
             <HiBars3CenterLeft size={20}></HiBars3CenterLeft>
             <h4>All</h4>
           </li>
@@ -39,11 +34,22 @@ function MenuApp() {
           </li>
         </ul>
       </aside>
+      {/* side nav */}
       <nav
         id='mySidenav'
         class='sidenav'>
-        <h4>test</h4>
-        <h4 onClick={() => closeNav()}>close Nav</h4>
+        <div className='side-profile-nav'>
+          <RiMapPinUserFill size={20} />
+          <h4>Hello, Hosein</h4>
+        </div>
+        <div className="side-content-nav">
+          <div>
+            <h3>Trending</h3>
+            <li>Best Sellers</li>
+            <li>Best Sellers</li>
+          </div>
+        </div>
+        <h4 onClick={() => close_nav()}>close Nav</h4>
       </nav>
     </>
   );

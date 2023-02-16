@@ -56,3 +56,15 @@
     height: 100%;
     margin: 0.5rem 0;
 }
+
+@media screen and (max-width:678px){
+    #independ-product {
+        margin: 0 auto;
+    }
+    #independ-product aside {
+        grid-template-columns: repeat(1, 100%);
+    }
+    #independ-product aside .column-single-product img{
+        width: 290px;
+    }
+}

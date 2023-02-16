@@ -15,9 +15,17 @@ const AppProvider = ({ children }) => {
     function back_to_top() {
         dispatch({ type: 'back_to_top' })
     }
+    // open nav
+    function open_nav() {
+        dispatch({ type: 'open_nav' })
+    }
+    // close nav
+    function close_nav() {
+        dispatch({ type: 'close_nav' })
+    }
 
     return (
-        <AppContext.Provider value={{ lang, back_to_top }}>{children}</AppContext.Provider>
+        <AppContext.Provider value={{ lang, back_to_top, open_nav, close_nav }}>{children}</AppContext.Provider>
     )
 }
 

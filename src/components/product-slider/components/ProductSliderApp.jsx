@@ -18,7 +18,19 @@ function ProductSliderApp() {
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               navigation
               spaceBetween={110}
-              slidesPerView={5}>
+              breakpoints={{
+                576: {
+                  // width: 576,
+                  slidesPerView: 1,
+                },
+                768: {
+                  // width: 768,
+                  slidesPerView: 1,
+                },
+                1024: {
+                  slidesPerView: 5,
+                }
+              }}>
               <SwiperSlide>
                 <img
                   src='https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2022/HOL22/GW/DesktopShoveler/Shoveler_Electronics_1x._CB608464074_.jpg'

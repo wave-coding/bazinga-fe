@@ -48,7 +48,53 @@
     left: 0;
     background-color: #fff;
     overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+    transition: 0.3s;
+    margin: 0;
     color: #333;
+}
+
+.sidenav .side-profile-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #232f3e;
+    text-align: center;
+    color: #fff;
+    padding: 0.9rem 0;
+}
+
+.sidenav .side-profile-nav h4 {
+    margin: 0 0.4rem;
+}
+
+.sidenav .side-content-nav {
+    border-bottom: 1px solid #ccc;
+}
+
+.sidenav .side-content-nav div {
+    margin: 1rem;
+}
+
+.sidenav .side-content-nav h3 {
+    padding: 0.4rem;
+}
+
+.sidenav .side-content-nav li {
+    margin: 0.4rem 0;
+    padding: 0.4rem;
+    list-style: none;
+}
+
+.sidenav .side-content-nav li:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* idea about close btn ornage color bootom of profile */
+
+@media screen and (max-width:900px){
+    #sub-menu{
+        display: none !important;
+    }
 }

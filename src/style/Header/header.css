@@ -299,3 +299,10 @@ header main .header-basket .product-count {
     border-radius: 50%;
     padding: 0.1rem 0.2rem;
 }
+
+/* sm problem */
+@media screen and (max-width:900px){
+    header,header main{
+        display: none !important;
+    }
+}
