@@ -12,6 +12,8 @@ import ProductSlider from "@/components/product-slider/ProductSlider";
 import ProductCategoryApp from "@/components/prodcut-category/components/ProductCategoryApp";
 // footer
 import Footer from "@/components/template/footer/Footer";
+// mobile header
+import MobileHeaderApp from "@/components/template/header/components/MobileHeaderApp";
 
 function Home() {
   return (
@@ -19,6 +21,7 @@ function Home() {
       {/* Template */}
       <Header />
       <Menu />
+      <MobileHeaderApp />
       <Hero />
       <ProductRow />
       <ProductSlider />

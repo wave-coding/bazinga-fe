@@ -23,7 +23,7 @@ function HeaderApp() {
             </div>
             <article>
               <p>Iran</p>
-              <p>Bndar-e-abbas</p>
+              <p>Bandar-e-abbas</p>
             </article>
           </div>
           <div className='header-search'>

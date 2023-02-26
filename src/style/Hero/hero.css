@@ -144,4 +144,10 @@
         padding: 0;
         position: static;
     }
+    .swiper-button-next::after {
+        font-size: 15px;
+    }
+    .swiper-button-prev::after {
+        font-size: 15px;
+    }
 }
