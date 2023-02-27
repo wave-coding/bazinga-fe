@@ -301,7 +301,7 @@ header main .header-basket .product-count {
 }
 
 /* sm problem */
-@media screen and (max-width:900px){
+@media screen and (max-width:1508px){
     header,header main{
         display: none !important;
     }
