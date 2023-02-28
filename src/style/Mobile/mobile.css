@@ -116,6 +116,11 @@
     font-size: 12px;
 }
 
+.mobile-deals ul li p:hover {
+    color: orange;
+    cursor: pointer;
+}
+
 .mobile-deliver {
     background-color: #37475A;
     color: #fff;
@@ -146,3 +151,5 @@
         display: block;
     }
 }
+
+/* plan to responsive other thing in homepage after that go to create other page */
