@@ -151,3 +151,9 @@
         font-size: 15px;
     }
 }
+/* work on other problems */
+@media screen and (max-width:380px){
+    #hero-product aside .column-single-product img {
+        width: 280px;
+    }
+}
