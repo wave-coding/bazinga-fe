@@ -36,6 +36,8 @@
 #product-category aside div .column .column-2 {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #product-category aside div .column .column-1 p,
@@ -59,8 +61,34 @@
     margin: 0.5rem 0;
 }
 
-@media screen and (max-width:678px){
+@media screen and (max-width:678px) {
     #product-category aside {
         grid-template-columns: repeat(1, 100%);
+    }
+
+    #product-category aside div .column .column-1,
+    #product-category aside div .column .column-2 {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #product-category aside div {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    #product-category aside div .column img {
+        width: 110px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    #product-category aside div {
+        margin: 0;
+        padding: 0.8rem;
+    }
+
+    #product-category aside div .column img {
+        width: 100px;
     }
 }

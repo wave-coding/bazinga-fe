@@ -89,6 +89,8 @@
 #hero-product aside div .column .columns {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #hero-product aside div .column .columns {
@@ -137,23 +139,50 @@
     margin: 0.5rem 0;
 }
 
-@media screen and (max-width:678px){
-    #hero-product aside  {
+@media screen and (max-width:678px) {
+    #hero-product aside {
         grid-template-columns: repeat(1, 100%);
         margin: 0;
         padding: 0;
         position: static;
     }
+
     .swiper-button-next::after {
         font-size: 15px;
     }
+
     .swiper-button-prev::after {
         font-size: 15px;
     }
+
+
+    #hero-product aside div .column .columns {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #hero-product aside div {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    #hero-product aside div .column img {
+        width: 110px;
+    }
 }
+
 /* work on other problems */
-@media screen and (max-width:380px){
+@media screen and (max-width:380px) {
     #hero-product aside .column-single-product img {
         width: 280px;
+    }
+
+    #hero-product aside div {
+        margin: 0;
+        padding: 0.8rem;
+    }
+
+    #hero-product aside div .column img {
+        width: 100px;
     }
 }
