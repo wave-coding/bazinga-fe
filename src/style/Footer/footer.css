@@ -88,3 +88,15 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
+@media screen and (max-width:678px) {
+
+    #footer-information div {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #footer-information div ul {
+        margin: 0.5rem 0;
+    }
+
+}

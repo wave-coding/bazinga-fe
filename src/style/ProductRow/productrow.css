@@ -80,25 +80,21 @@
 
     #independ-product aside div {
         padding: 0.9rem;
-        margin: 0; 
+        margin: 0;
     }
 
     #independ-product aside div .column img {
-        width: 110px;
+        width: 100%;
+    }
+
+    #independ-product aside .column-single-product img {
+        width: 100%;
     }
 }
 
 @media screen and (max-width:380px) {
-    #independ-product aside .column-single-product img {
-        width: 250px;
-    }
-
     #independ-product aside div {
         padding: 0.7rem;
-        margin: 0; 
-    }
-
-    #independ-product aside div .column img {
-        width: 100px;
+        margin: 0;
     }
 }

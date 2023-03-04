@@ -78,7 +78,7 @@
     }
 
     #product-category aside div .column img {
-        width: 110px;
+        width: 100%;
     }
 }
 
@@ -86,9 +86,5 @@
     #product-category aside div {
         margin: 0;
         padding: 0.8rem;
-    }
-
-    #product-category aside div .column img {
-        width: 100px;
     }
 }

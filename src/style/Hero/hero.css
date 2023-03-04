@@ -140,6 +140,10 @@
 }
 
 @media screen and (max-width:678px) {
+    #hero-product aside .column-single-product img {
+        width: 100%;
+    }
+
     #hero-product aside {
         grid-template-columns: repeat(1, 100%);
         margin: 0;
@@ -171,11 +175,7 @@
     }
 }
 
-/* work on other problems */
 @media screen and (max-width:380px) {
-    #hero-product aside .column-single-product img {
-        width: 280px;
-    }
 
     #hero-product aside div {
         margin: 0;
@@ -183,6 +183,6 @@
     }
 
     #hero-product aside div .column img {
-        width: 100px;
+        width: 100%;
     }
 }
