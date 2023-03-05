@@ -37,7 +37,7 @@ function MenuApp() {
       {/* side nav */}
       <nav
         id='mySidenav'
-        class='sidenav'>
+        className='sidenav'>
         <div className='side-profile-nav'>
           <RiMapPinUserFill size={20} />
           <h4>Hello, Hosein</h4>

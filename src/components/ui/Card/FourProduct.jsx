@@ -2,8 +2,8 @@ function FourProduct({ products }) {
   return (
     <>
       <div>
-        {products.map((product, _index) => (
-          <>
+        {products.map((product, index) => (
+          <section key={index}>
             <h4>{product.title}</h4>
             <div className='column'>
               {product.products_col_one.map((single_product, index) => (
@@ -31,7 +31,7 @@ function FourProduct({ products }) {
                 </div>
               ))}
             </div>
-          </>
+          </section>
         ))}
       </div>
     </>

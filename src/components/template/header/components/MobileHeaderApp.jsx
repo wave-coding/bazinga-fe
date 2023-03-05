@@ -13,9 +13,9 @@ function MobileHeaderApp() {
         <div className='img-menu'>
           <ul>
             <li>
-              <li onClick={() => open_nav()}>
+              <span onClick={() => open_nav()}>
                 <HiBars3CenterLeft size={20}></HiBars3CenterLeft>
-              </li>
+              </span>
             </li>
             <li>
               <div>
@@ -77,11 +77,9 @@ function MobileHeaderApp() {
       {/* Deliver */}
       <section className='mobile-deliver'>
         <div>
-          <MdOutlinePlace size={15}/>
+          <MdOutlinePlace size={15} />
         </div>
-        <div>
-          Deliver to Iran, Bandar-e-Abbas
-        </div>
+        <div>Deliver to Iran, Bandar-e-Abbas</div>
       </section>
     </>
   );
