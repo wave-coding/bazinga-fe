@@ -2,6 +2,8 @@ import { gameProduct } from "@/data/gameProduct";
 
 import { easyReturn } from "@/data/easyReturn";
 
+import { categoryShop } from "@/data/categoryShop";
+
 import { informationProduct } from "@/data/informationProduct";
 
 import FourProduct from "../../ui/Card/FourProduct";
@@ -18,7 +20,7 @@ function HeroProduct() {
         <aside>
           <FourProduct products={gameProduct} />
           <SingleProduct product={easyReturn} />
-          <FourProduct products={gameProduct} />
+          <FourProduct products={categoryShop} />
           <InformationProduct product={informationProduct} />
         </aside>
       </section>

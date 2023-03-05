@@ -84,6 +84,7 @@
 
 #hero-product aside div .column img {
     width: 100px;
+    height: 70px;
 }
 
 #hero-product aside div .column .columns {
@@ -94,8 +95,12 @@
 }
 
 #hero-product aside div .column .columns {
-    font-size: 12px;
+    font-size: 11px;
     margin: 0.2rem;
+}
+
+#hero-product aside div .column .columns p {
+    margin: 0.6rem 0;
 }
 
 /* #hero-product aside div .column-info {
