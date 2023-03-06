@@ -147,6 +147,7 @@
 @media screen and (max-width:678px) {
     #hero-product aside .column-single-product img {
         width: 100%;
+        height: auto;
     }
 
     #hero-product aside {
@@ -168,14 +169,15 @@
     #hero-product aside div .column .columns {
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
 
     #hero-product aside div {
-        margin: 0;
+        margin: 0.5rem 0 !important;
         padding: 1rem;
     }
 
-    #hero-product aside div .column img {
+    #hero-product aside div .column .columns img {
         width: 110px;
     }
 }
@@ -187,7 +189,7 @@
         padding: 0.8rem;
     }
 
-    #hero-product aside div .column img {
-        width: 100%;
+    #hero-product aside div .column .columns img {
+        width: 100px;
     }
 }

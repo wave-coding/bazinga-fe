@@ -73,12 +73,13 @@
     }
 
     #product-category aside div {
-        margin: 0;
+        margin: 0.5rem 0 !important;
         padding: 1rem;
     }
 
     #product-category aside div .column img {
         width: 100%;
+        /* height: auto; */
     }
 }
 

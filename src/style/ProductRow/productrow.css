@@ -28,6 +28,12 @@
 
 #independ-product aside div .column img {
     width: 100px;
+    height: 80px;
+}
+
+#independ-product aside div:nth-child(4) .column img {
+    width: 100px;
+    height: 120px;
 }
 
 #independ-product aside div .column .column-1,
@@ -80,15 +86,21 @@
 
     #independ-product aside div {
         padding: 0.9rem;
-        margin: 0;
+        margin: 0.5rem 0 !important;
     }
 
     #independ-product aside div .column img {
-        width: 100%;
+        width: 100px;
     }
 
     #independ-product aside .column-single-product img {
         width: 100%;
+        height: auto;
+    }
+
+    #independ-product aside div:nth-child(4) .column img {
+        width: 100px;
+        height: 120px;
     }
 }
 
@@ -96,5 +108,10 @@
     #independ-product aside div {
         padding: 0.7rem;
         margin: 0;
+    }
+
+    #independ-product aside div:nth-child(4) .column img {
+        width: 100px;
+        height: 120px;
     }
 }
