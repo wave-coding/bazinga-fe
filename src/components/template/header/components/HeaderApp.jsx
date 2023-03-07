@@ -6,17 +6,21 @@ import ReactCountryFlag from "react-country-flag";
 
 import { BsCart2, BsFillCaretDownFill } from "react-icons/bs";
 
+import { Link } from "react-router-dom";
+
 function HeaderApp() {
   return (
     <>
       <header>
         <main>
-          <div className='main-logo'>
-            <img
-              src={AmazonLogo}
-              alt='Amazon-logo'
-            />
-          </div>
+          <Link to={"/"}>
+            <div className='main-logo'>
+              <img
+                src={AmazonLogo}
+                alt='Amazon-logo'
+              />
+            </div>
+          </Link>
           <div className='header-address'>
             <div>
               <MdOutlinePlace size={20}></MdOutlinePlace>
