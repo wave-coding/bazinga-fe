@@ -1,9 +1,9 @@
 /* Hero */
 
 #hero {
-    max-width: 1500px;
-    padding: 0 2rem;
-    margin: auto;
+    max-width: 100%;
+    /* padding: 0 2rem; */
+    /* margin: auto; */
     /* overflow: hidden; */
     /* z-index: -100 !important; */
 }
@@ -44,9 +44,9 @@
 }
 
 #hero-product {
-    max-width: 1500px;
-    padding: 0 1.2rem;
-    margin: 2rem auto;
+    max-width: 100%;
+    /* padding: 0 1.2rem; */
+    /* margin: 2rem auto; */
     overflow: hidden;
     /* display: grid;
     grid-template-columns: repeat(4, 1fr); */
@@ -57,11 +57,11 @@
     color: #333;
     /* width: 500px; */
     /* height: 50px; */
-    padding: 1rem;
+    /* padding: 1rem; */
     margin: -10rem 0;
     z-index: 1 !important;
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(4, 1fr);
     /* display: flex !important;
     align-items: flex-start;
     justify-content: center; */
@@ -70,7 +70,7 @@
 #hero-product aside div {
     padding: 1rem;
     background-color: #fff;
-    margin: 0 0.22rem;
+    margin: 0 0.5rem;
     border-radius: 5px;
 }
 
@@ -79,7 +79,12 @@
 }
 
 #hero-product aside div .column {
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 #hero-product aside div .column img {
@@ -139,12 +144,16 @@
 
 
 #hero-product aside .column-single-product img {
-    width: 320px;
+    width: 100%;
     height: 100%;
     margin: 0.5rem 0;
 }
 
 @media screen and (max-width:678px) {
+    #hero-product aside .column-single-product {
+        align-items: center;
+        justify-content: center;
+    }
     #hero-product aside .column-single-product img {
         width: 100%;
         height: auto;
@@ -174,11 +183,11 @@
 
     #hero-product aside div {
         margin: 0.5rem 0 !important;
-        padding: 1rem;
+        /* padding: 1rem; */
     }
 
     #hero-product aside div .column .columns img {
-        width: 110px;
+        width: 100%;
     }
 }
 
@@ -190,6 +199,6 @@
     }
 
     #hero-product aside div .column .columns img {
-        width: 100px;
+        width: 100%;
     }
 }

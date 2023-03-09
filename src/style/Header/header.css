@@ -14,6 +14,7 @@ header main {
     display: flex;
     align-items: center;
     justify-content: center;
+    align-self: center;
 }
 
 header main .main-logo {
@@ -29,11 +30,11 @@ header main .main-logo img {
     width: 100px;
 }
 
-header main .main-logo:hover {
+/* header main .main-logo:hover {
     border: 1px solid #fff;
     border-radius: 5px;
     cursor: pointer;
-}
+} */
 
 header main .header-address {
     display: flex;
@@ -43,14 +44,15 @@ header main .header-address {
     padding: 0 0.3rem;
 }
 
-header main .header-address:hover {
+/* header main .header-address:hover {
     border: 1px solid #fff;
     border-radius: 5px;
     cursor: pointer;
-}
+} */
 
 header main .header-address p {
     margin: 0 0.5rem;
+    font-size: 12px;
 }
 
 header main .header-address article {
@@ -137,11 +139,11 @@ header main .header-country .header-country-choose p span {
     margin: 0 0.3rem;
 }
 
-header main .header-country:hover {
+/* header main .header-country:hover {
     border: 1px solid #fff;
     border-radius: 5px;
     cursor: pointer;
-}
+} */
 
 header main .header-country:hover .header-country-choose {
     display: inline-block;
@@ -212,17 +214,18 @@ header main .header-signin .header-signin-bottom-article {
 
 header main .header-signin .header-signin-bottom-article h5 {
     margin: 0 0.1rem 0 0;
+    font-size: 9px;
 }
 
 header main .header-signin p {
     font-size: 13px;
 }
 
-header main .header-signin:hover {
+/* header main .header-signin:hover {
     border: 1px solid #fff;
     border-radius: 5px;
     cursor: pointer;
-}
+} */
 
 header main .header-signin:hover .header-signin-card {
     display: block;
@@ -271,11 +274,15 @@ header main .header-r-o p {
     font-size: 13px;
 }
 
-header main .header-r-o:hover {
+header main .header-r-o h5 {
+    font-size: 11px;
+}
+
+/* header main .header-r-o:hover {
     border: 1px solid #fff;
     border-radius: 5px;
     cursor: pointer;
-}
+} */
 
 
 header main .header-basket {
@@ -285,11 +292,11 @@ header main .header-basket {
     padding: 0 0.3rem;
 }
 
-header main .header-basket:hover {
+/* header main .header-basket:hover {
     border: 1px solid #fff;
     border-radius: 5px;
     cursor: pointer;
-}
+} */
 
 header main .header-basket .product-count {
     position: absolute;
@@ -301,8 +308,8 @@ header main .header-basket .product-count {
 }
 
 /* sm problem */
-@media screen and (max-width:1508px){
+/* @media screen and (max-width:1441px){
     header,header main{
         display: none !important;
     }
-}
+} */

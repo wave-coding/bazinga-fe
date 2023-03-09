@@ -134,7 +134,7 @@
     margin: 0 0.5rem;
 }
 
-@media screen and (max-width:1507px) {
+@media screen and (max-width:1439px) {
     .mobile-header {
         display: flex;
     }
@@ -149,5 +149,9 @@
 
     .mobile-deals {
         display: block;
+    }
+
+    #sub-menu,header,header main{
+        display: none !important;
     }
 }
