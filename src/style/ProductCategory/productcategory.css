@@ -66,7 +66,7 @@
     margin: 0.5rem 0;
 }
 
-@media screen and (max-width:678px) {
+@media screen and (max-width:1200px) {
     #product-category aside {
         grid-template-columns: repeat(1, 100%);
     }

@@ -30,11 +30,11 @@ header main .main-logo img {
     width: 100px;
 }
 
-/* header main .main-logo:hover {
-    border: 1px solid #fff;
-    border-radius: 5px;
+header main .main-logo:hover {
+    /* border: 1px solid #fff;
+    border-radius: 5px; */
     cursor: pointer;
-} */
+}
 
 header main .header-address {
     display: flex;
@@ -44,11 +44,11 @@ header main .header-address {
     padding: 0 0.3rem;
 }
 
-/* header main .header-address:hover {
-    border: 1px solid #fff;
-    border-radius: 5px;
+header main .header-address:hover {
+    /* border: 1px solid #fff;
+    border-radius: 5px; */
     cursor: pointer;
-} */
+}
 
 header main .header-address p {
     margin: 0 0.5rem;
@@ -139,11 +139,11 @@ header main .header-country .header-country-choose p span {
     margin: 0 0.3rem;
 }
 
-/* header main .header-country:hover {
-    border: 1px solid #fff;
-    border-radius: 5px;
+header main .header-country:hover {
+    /* border: 1px solid #fff;
+    border-radius: 5px; */
     cursor: pointer;
-} */
+}
 
 header main .header-country:hover .header-country-choose {
     display: inline-block;
@@ -221,11 +221,11 @@ header main .header-signin p {
     font-size: 13px;
 }
 
-/* header main .header-signin:hover {
-    border: 1px solid #fff;
-    border-radius: 5px;
+header main .header-signin:hover {
+    /* border: 1px solid #fff;
+    border-radius: 5px; */
     cursor: pointer;
-} */
+}
 
 header main .header-signin:hover .header-signin-card {
     display: block;
@@ -278,11 +278,11 @@ header main .header-r-o h5 {
     font-size: 11px;
 }
 
-/* header main .header-r-o:hover {
-    border: 1px solid #fff;
-    border-radius: 5px;
+header main .header-r-o:hover {
+    /* border: 1px solid #fff;
+    border-radius: 5px; */
     cursor: pointer;
-} */
+}
 
 
 header main .header-basket {
@@ -292,11 +292,11 @@ header main .header-basket {
     padding: 0 0.3rem;
 }
 
-/* header main .header-basket:hover {
-    border: 1px solid #fff;
-    border-radius: 5px;
+header main .header-basket:hover {
+    /* border: 1px solid #fff;
+    border-radius: 5px; */
     cursor: pointer;
-} */
+}
 
 header main .header-basket .product-count {
     position: absolute;

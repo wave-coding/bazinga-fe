@@ -65,11 +65,11 @@
 
 #independ-product aside .column-single-product img {
     width: 100%;
-    height: 100%;
+    height: auto;
     margin: 0.5rem 0;
 }
 
-@media screen and (max-width:678px) {
+@media screen and (max-width:1200px) {
     #independ-product {
         margin: 0 auto;
     }

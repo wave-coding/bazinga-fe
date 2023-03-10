@@ -151,7 +151,7 @@
         display: block;
     }
 
-    #sub-menu,header,header main{
+    #sub-menu, header, header main {
         display: none !important;
     }
 }

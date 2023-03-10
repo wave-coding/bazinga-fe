@@ -89,7 +89,7 @@ footer {
     padding: 1rem;
 }
 
-@media screen and (max-width:678px) {
+@media screen and (max-width:1200px) {
 
     #footer-information div {
         grid-template-columns: repeat(1, 1fr);
