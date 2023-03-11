@@ -1,0 +1,9 @@
+.sponsored {
+    max-width: 1200px;
+    margin: 1rem auto;
+}
+
+.sponsored img {
+    width: 100%;
+    height: auto;
+}
