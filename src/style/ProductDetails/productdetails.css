@@ -1,22 +1,36 @@
 .product-details-container {
-    max-width: 1200px;
+    max-width: 1300px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
     margin: 3rem auto;
 }
 
-.product-details-gallery img{
+.product-details-gallery img {
     width: 100%;
     height: auto;
 }
 
 .product-details-information article {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #d1d1d1;
 }
 
 .product-details-information article p {
-    margin: 0.5rem 0;
+    margin: 0.7rem 0;
+}
+
+.product-details-information article .brand {
+    color: #0167c0 !important;
+    font-size: 13px;
+}
+
+.product-details-information article .price span:nth-child(1) {
+    color: #918382;
+    margin: 0 0.2rem 0 0;
+}
+
+.product-details-information article .price span:nth-child(2) {
+    color: #b12705;
 }
 
 .product-details-information ul {
@@ -25,13 +39,19 @@
 
 .product-details-information ul li {
     font-size: 15px;
-    margin: 0.5rem 0;
+    margin: 1rem 0;
 }
 
 .product-details-checkout .box {
-    background-color: #d1d1d1;
+    background-color: #e1e1e1;
     border: 1px solid #ddd;
     padding: 1rem;
+    border-radius: 5px;
+}
+
+.product-details-checkout .box p:nth-child(1) {
+    margin: 0.5rem 0;
+    color: #b12705;
 }
 
 .product-details-checkout .box button {
@@ -39,4 +59,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #febd69;
+    border: 1px solid #f1c964;
+    border-radius: 5px;
+}
+
+.product-details-checkout .box p:nth-child(2) {
+    margin: 0.7rem 0;
+    font-family: 'AmazonEmber';
+}
+
+@media screen and (max-width:1200px) {
+    .product-details-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product-details-information {
+        margin: 0 1rem;
+    }
+
+    .product-details-checkout {
+        margin: 0 1rem;
+    }
 }

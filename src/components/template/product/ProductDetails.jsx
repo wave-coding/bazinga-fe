@@ -4,7 +4,23 @@ import Footer from "@/components/template/footer/Footer";
 import MobileHeaderApp from "@/components/template/header/components/MobileHeaderApp";
 import ProductSliderApp from "../../product-slider/components/ProductSliderApp";
 import { MdAddShoppingCart } from "react-icons/md";
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 function ProductDetails() {
+  const gallery = [
+    {
+      original:
+        "https://images-na.ssl-images-amazon.com/images/I/71jT8sUbriL._AC_SL1500_.jpg",
+      thumbnail:
+        "https://images-na.ssl-images-amazon.com/images/I/71jT8sUbriL._AC_SL1500_.jpg",
+    },
+    {
+      original:
+        "https://images-na.ssl-images-amazon.com/images/I/71jT8sUbriL._AC_SL1500_.jpg",
+      thumbnail:
+        "https://images-na.ssl-images-amazon.com/images/I/71jT8sUbriL._AC_SL1500_.jpg",
+    },
+  ];
   return (
     <>
       <Header />
@@ -14,9 +30,11 @@ function ProductDetails() {
       <section className='product-details'>
         <div className='product-details-container'>
           <div className='product-details-gallery'>
-            <img
-              src='https://images-na.ssl-images-amazon.com/images/I/71jT8sUbriL._AC_SL1500_.jpg'
-              alt=''
+            <ImageGallery
+              items={gallery}
+              showNav={false}
+              thumbnailPosition={"left"}
+              showPlayButton={false}
             />
           </div>
           <div className='product-details-information'>
@@ -25,8 +43,11 @@ function ProductDetails() {
                 Olympus OM-D E-M5 Mark III Camera - Kit with 14-150mm Lens
                 (Silver)
               </h4>
-              <p>Brand: Olympus</p>
-              <p>Price: $1,895.00</p>
+              <p className='brand'>Brand: Olympus</p>
+              <p className='price'>
+                <span>Price:</span>
+                <span>$1,895.00</span>
+              </p>
             </article>
             <ul>
               <li>20MP live MOS sensor</li>
