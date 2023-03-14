@@ -29,3 +29,5 @@ html {
 @import url('./Sponsored/sponsored.css');
 @import url('./ProductDetails/productdetails.css');
 @import url('./ProductList/productlist.css');
+@import url('./Login/login.css');
+@import url('./Signup/signup.css');
