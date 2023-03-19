@@ -1,9 +1,9 @@
+import AmazonLogo from "@/assets/media/logo/Amazon-logo.png";
+import { MdSearch, MdOutlinePlace } from "react-icons/md";
+import { useGlobalContext } from "@/context/useContext";
 import { HiBars3CenterLeft } from "react-icons/hi2";
 import { RiMapPinUserFill } from "react-icons/ri";
-import { MdSearch, MdOutlinePlace } from "react-icons/md";
 import { BsCart2 } from "react-icons/bs";
-import { useGlobalContext } from "@/context/useContext";
-import AmazonLogo from "@/assets/media/logo/Amazon-logo.png";
 
 function MobileHeaderApp() {
   const { open_nav } = useGlobalContext();

@@ -116,7 +116,7 @@ header main .header-country .header-country-choose {
     z-index: 10;
     background-color: #fff;
     color: #333;
-    padding: 1rem;
+    padding: 0.5rem;
     border: 1px solid #9999;
     border-radius: 5px;
 }
@@ -147,7 +147,7 @@ header main .header-country:hover {
 
 header main .header-country:hover .header-country-choose {
     display: inline-block;
-    top: 45px;
+    top: 40px;
 }
 
 header main .header-country p {
@@ -229,7 +229,7 @@ header main .header-signin:hover {
 
 header main .header-signin:hover .header-signin-card {
     display: block;
-    top: 45px;
+    top: 40px;
     right: -40px;
 }
 

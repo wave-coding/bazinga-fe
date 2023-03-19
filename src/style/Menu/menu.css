@@ -77,12 +77,14 @@
 
 .sidenav .side-content-nav h3 {
     padding: 0.4rem;
+    font-size: 16px;
 }
 
 .sidenav .side-content-nav li {
     margin: 0.4rem 0;
     padding: 0.4rem;
     list-style: none;
+    font-size: 13px;
 }
 
 .sidenav .side-content-nav li:hover {
@@ -91,7 +93,48 @@
     border-radius: 5px;
 }
 
-/* idea about close btn ornage color bootom of profile */
+.sidenav .side-content-nav-with-arrow {
+    border-bottom: 1px solid #ccc;
+}
+
+.sidenav .side-content-nav-with-arrow div {
+    margin: 1rem;
+}
+
+.sidenav .side-content-nav-with-arrow h3 {
+    padding: 0.4rem;
+    font-size: 16px;
+}
+
+.sidenav .side-content-nav-with-arrow li {
+    margin: 0.4rem 0;
+    padding: 0.4rem;
+    list-style: none;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidenav .side-content-nav-with-arrow li:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sidenav .side-profile-closeNav {
+    width: 100%;
+}
+
+.sidenav .side-profile-closeNav button {
+    width: 100%;
+    background-color: #febd69;
+    border: none;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-family: 'AmazonEmber';
+    cursor: pointer;
+}
 
 /* @media screen and (max-width:1441px){
     #sub-menu{
