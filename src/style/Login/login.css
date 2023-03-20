@@ -1,38 +1,38 @@
-.login-container {
+.signup-container {
     max-width: 450px;
     margin: 1rem auto;
 }
 
-.login-container .login-logo {
+.signup-container .signup-logo {
     text-align: center;
 }
 
-.login-container .login-logo img {
+.signup-container .signup-logo img {
     width: 200px;
 }
 
-.login-container .login-content {
+.signup-container .signup-content {
     border: 1px solid #9999;
     padding: 1rem;
     border-radius: 5px;
     margin: 0 1rem;
 }
 
-.login-form {
+.signup-form {
     margin: 0.7rem 0;
 }
 
-.login-form .login-form-content {
+.signup-form .signup-form-content {
     display: flex;
     flex-direction: column;
     margin: 1rem 0;
 }
 
-.login-form .login-form-content label {
+.signup-form .signup-form-content label {
     font-size: 13px;
 }
 
-.login-form .login-form-content input {
+.signup-form .signup-form-content input {
     padding: 0.5rem;
     background-color: #EAEDED;
     border: 1px solid #9999;
@@ -41,7 +41,7 @@
     outline: none;
 }
 
-.login-form .login-button button {
+.signup-form .signup-button button {
     width: 100%;
     padding: 0.6rem 0;
     background-color: #febd69;
@@ -51,10 +51,21 @@
     cursor: pointer;
 }
 
-.login-form .login-term {
+.signup-form .signup-term {
     margin: 1rem 0;
 }
 
-.login-form .switch-to-register small:nth-child(2) {
-    font-weight: bold;
+.signup-form .switch-to-login small {
+    color: #777;
+}
+
+.signup-form .switch-to-login-button button {
+    width: 100%;
+    padding: 0.6rem 0;
+    background-color: #ddd;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    font-family: 'AmazonEmber';
+    cursor: pointer;
+    margin: 0.7rem 0 0 0;
 }

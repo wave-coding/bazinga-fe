@@ -14,6 +14,13 @@ function SignupApp() {
           <h3>Sign-In</h3>
           <div className='signup-form'>
             <div className='signup-form-content'>
+              <label htmlFor='Name'>Your name</label>
+              <input
+                type='text'
+                name='Name'
+              />
+            </div>
+            <div className='signup-form-content'>
               <label htmlFor='Email'>Email</label>
               <input
                 type='email'
@@ -25,11 +32,20 @@ function SignupApp() {
               <input
                 type='password'
                 name='Password'
+                placeholder='At least 6 characters'
+              />
+            </div>
+            <div className='signup-form-content'>
+              <label htmlFor='RePassword'>Re-enter password</label>
+              <input
+                type='password'
+                name='RePassword'
+                placeholder='password'
               />
             </div>
             <div className='signup-button'>
               <button>
-                <p>Sign In</p>
+                <p>Create Your Amazon account</p>
               </button>
             </div>
             <div className='signup-term'>
@@ -38,13 +54,9 @@ function SignupApp() {
                 and Privacy Notice.
               </small>
             </div>
-            <div className='switch-to-login'>
-              <small>New to Amazon ? </small>
-            </div>
-            <div className='switch-to-login-button'>
-              <button>
-                <p>Create your Amazon Account</p>
-              </button>
+            <div className='switch-to-register'>
+              <small>Already have an account ? </small>
+              <small>Sign-In</small>
             </div>
           </div>
         </div>

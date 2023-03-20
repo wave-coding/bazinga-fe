@@ -14,13 +14,6 @@ function LoginApp() {
           <h3>Create account</h3>
           <div className='login-form'>
             <div className='login-form-content'>
-              <label htmlFor='Name'>Your name</label>
-              <input
-                type='text'
-                name='Name'
-              />
-            </div>
-            <div className='login-form-content'>
               <label htmlFor='Email'>Email</label>
               <input
                 type='email'
@@ -32,20 +25,11 @@ function LoginApp() {
               <input
                 type='password'
                 name='Password'
-                placeholder='At least 6 characters'
-              />
-            </div>
-            <div className='login-form-content'>
-              <label htmlFor='RePassword'>Re-enter password</label>
-              <input
-                type='password'
-                name='RePassword'
-                placeholder='password'
               />
             </div>
             <div className='login-button'>
               <button>
-                <p>Create Your Amazon account</p>
+                <p>Sign In</p>
               </button>
             </div>
             <div className='login-term'>
@@ -54,9 +38,13 @@ function LoginApp() {
                 and Privacy Notice.
               </small>
             </div>
-            <div className='switch-to-register'>
-              <small>Already have an account ? </small>
-              <small>Sign-In</small>
+            <div className='switch-to-login'>
+              <small>New to Amazon ? </small>
+            </div>
+            <div className='switch-to-login-button'>
+              <button>
+                <p>Create your Amazon Account</p>
+              </button>
             </div>
           </div>
         </div>
