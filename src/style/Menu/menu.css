@@ -136,6 +136,15 @@
     cursor: pointer;
 }
 
+.mx-2 {
+    margin: 0 0.5rem;
+}
+
+.display-flex {
+    display: flex;
+    align-items: center;
+}
+
 /* @media screen and (max-width:1441px){
     #sub-menu{
         display: none !important;

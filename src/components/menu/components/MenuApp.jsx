@@ -2,6 +2,8 @@ import { MdKeyboardArrowRight, MdKeyboardArrowDown } from "react-icons/md";
 import { useGlobalContext } from "@/context/useContext";
 import { HiBars3CenterLeft } from "react-icons/hi2";
 import { RiMapPinUserFill } from "react-icons/ri";
+import ReactCountryFlag from "react-country-flag";
+import { TfiWorld } from "react-icons/tfi";
 
 function MenuApp() {
   const { open_nav, close_nav } = useGlobalContext();
@@ -126,6 +128,24 @@ function MenuApp() {
             <li>
               <p>See All</p> <MdKeyboardArrowDown />
             </li>
+          </div>
+        </div>
+        <div className='side-content-nav'>
+          <div>
+            <h3>Help & Setting</h3>
+            <li>Your Account</li>
+            <li className='display-flex'>
+              <TfiWorld />
+              <p className='mx-2'>English</p>
+            </li>
+            <li className='display-flex'>
+              <ReactCountryFlag
+                countryCode='US'
+                svg
+              />
+              <p className='mx-2'>United States</p>
+            </li>
+            <li>Sign Out</li>
           </div>
         </div>
       </nav>
