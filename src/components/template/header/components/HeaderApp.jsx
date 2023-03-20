@@ -35,9 +35,13 @@ function HeaderApp() {
               <select
                 name='category'
                 id='category'>
-                <option value='laptop'>laptop</option>
-                <option value='smartphone'>smart phone</option>
-                <option value='smartwatch'>smart watch</option>
+                <option value='All'>All</option>
+                <option value='Books'>Books</option>
+                <option value='Movies'>Movies</option>
+                <option value='Series'>Series</option>
+                <option value='Sport'>Sport</option>
+                <option value='Music'>Music</option>
+                <option value='Gaming'>Gaming</option>
               </select>
             </div>
             <div>

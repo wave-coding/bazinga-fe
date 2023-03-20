@@ -229,7 +229,7 @@ header main .header-signin:hover {
 
 header main .header-signin:hover .header-signin-card {
     display: block;
-    top: 40px;
+    top: 36px;
     right: -40px;
 }
 
@@ -304,7 +304,7 @@ header main .header-basket .product-count {
     background-color: #febd69;
     color: #333;
     border-radius: 50%;
-    padding: 0.1rem 0.2rem;
+    padding: 0.1rem 0.3rem;
 }
 
 /* sm problem */
