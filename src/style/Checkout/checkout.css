@@ -1,0 +1,81 @@
+.checkout {
+    max-width: 1300px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-gap: 1rem;
+    margin: 1rem auto;
+}
+
+.checkout .checkout-product {
+    grid-column: 1/span 15;
+}
+
+.checkout .checkout-product img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.checkout .checkout-product .checkout-shopping {
+    margin: 1rem 0;
+}
+
+.checkout .checkout-product .checkout-shopping h2 {
+    color: #333;
+}
+
+.checkout .checkout-product .checkout-shopping p {
+    text-align: right;
+    color: #333;
+}
+
+
+.checkout .checkout-shopping-box-content {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #9999;
+    padding: 1rem 0;
+}
+
+.checkout .checkout-shopping-box-content div p {
+    margin: 0 1rem;
+}
+
+.checkout .checkout-shopping-box-content:last-child {
+    border-bottom: 1px solid #9999;
+}
+
+.checkout .checkout-shopping-box-content div:nth-child(1) {
+    display: flex;
+}
+
+.checkout .checkout-shopping .checkout-subtotal {
+    margin: 0.5rem 0;
+}
+
+.checkout .checkout-price {
+    grid-column: 16/span 4;
+}
+
+
+.checkout .checkout-price div {
+    background-color: #e1e1e1;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.checkout .checkout-price div p {
+    font-size: 13px;
+    margin: 0.5rem 0;
+}
+
+.checkout .checkout-price div button {
+    width: 100%;
+    background-color: #febd69;
+    border: 1px solid #f1c964;
+    border-radius: 5px;
+    padding: 0.5rem 0;
+    font-family: 'AmazonEmber';
+    cursor: pointer;
+}
