@@ -1,38 +1,38 @@
-.signup-container {
+.login-container {
     max-width: 450px;
     margin: 1rem auto;
 }
 
-.signup-container .signup-logo {
+.login-container .login-logo {
     text-align: center;
 }
 
-.signup-container .signup-logo img {
+.login-container .login-logo img {
     width: 200px;
 }
 
-.signup-container .signup-content {
+.login-container .login-content {
     border: 1px solid #9999;
     padding: 1rem;
     border-radius: 5px;
     margin: 0 1rem;
 }
 
-.signup-form {
+.login-form {
     margin: 0.7rem 0;
 }
 
-.signup-form .signup-form-content {
+.login-form .login-form-content {
     display: flex;
     flex-direction: column;
     margin: 1rem 0;
 }
 
-.signup-form .signup-form-content label {
+.login-form .login-form-content label {
     font-size: 13px;
 }
 
-.signup-form .signup-form-content input {
+.login-form .login-form-content input {
     padding: 0.5rem;
     background-color: #EAEDED;
     border: 1px solid #9999;
@@ -41,7 +41,7 @@
     outline: none;
 }
 
-.signup-form .signup-button button {
+.login-form .login-button button {
     width: 100%;
     padding: 0.6rem 0;
     background-color: #febd69;
@@ -51,15 +51,15 @@
     cursor: pointer;
 }
 
-.signup-form .signup-term {
+.login-form .login-term {
     margin: 1rem 0;
 }
 
-.signup-form .switch-to-login small {
+.login-form .switch-to-login small {
     color: #777;
 }
 
-.signup-form .switch-to-login-button button {
+.login-form .switch-to-login-button button {
     width: 100%;
     padding: 0.6rem 0;
     background-color: #ddd;

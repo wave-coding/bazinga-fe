@@ -11,7 +11,7 @@ function SignupApp() {
           />
         </div>
         <div className='signup-content'>
-          <h3>Sign-In</h3>
+          <h3>Create account</h3>
           <div className='signup-form'>
             <div className='signup-form-content'>
               <label htmlFor='Name'>Your name</label>
