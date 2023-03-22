@@ -1,5 +1,5 @@
 import MobileHeaderApp from "@/components/template/header/components/MobileHeaderApp";
-import ProductSliderApp from "../../product-slider/components/ProductSliderApp";
+import ProductSliderApp from "@/components/product-slider/components/ProductSliderApp";
 import "react-image-gallery/styles/css/image-gallery.css";
 import Header from "@/components/template/header/Header";
 import Footer from "@/components/template/footer/Footer";
@@ -9,7 +9,7 @@ import Menu from "@/components/menu/Menu";
 import { useEffect, useState } from "react";
 import { asusSuggestLaptop } from "@/data/HeroSuggest/asusLaptop";
 import { useParams } from "react-router-dom";
-function ProductDetails() {
+function AsusLaptopSuggest() {
   const [product, setProduct] = useState({});
   const id = useParams();
   useEffect(() => {
@@ -88,4 +88,4 @@ function ProductDetails() {
   );
 }
 
-export default ProductDetails;
+export default AsusLaptopSuggest;

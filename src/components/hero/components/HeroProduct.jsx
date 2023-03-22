@@ -1,16 +1,16 @@
-import { gameProduct } from "@/data/gameProduct";
+import { asusSuggestLaptop } from "@/data/HeroSuggest/asusLaptop";
 
-import { easyReturn } from "@/data/easyReturn";
-
-import { categoryShop } from "@/data/categoryShop";
+import InformationProduct from "../../ui/Card/InformationProduct";
 
 import { informationProduct } from "@/data/informationProduct";
 
-import FourProduct from "../../ui/Card/FourProduct";
-
 import SingleProduct from "../../ui/Card/SingleProduct";
 
-import InformationProduct from "../../ui/Card/InformationProduct";
+import { ps5Game } from "@/data/HeroSuggest/ps5Game";
+
+import FourProduct from "../../ui/Card/FourProduct";
+
+import { easyReturn } from "@/data/easyReturn";
 
 function HeroProduct() {
   return (
@@ -18,9 +18,9 @@ function HeroProduct() {
       {/* Hero Product */}
       <section id='hero-product'>
         <aside>
-          <FourProduct products={gameProduct} />
+          <FourProduct products={asusSuggestLaptop} />
           <SingleProduct product={easyReturn} />
-          <FourProduct products={categoryShop} />
+          <FourProduct products={ps5Game} />
           <InformationProduct product={informationProduct} />
         </aside>
       </section>

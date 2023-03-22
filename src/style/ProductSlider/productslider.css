@@ -42,3 +42,8 @@
 #product-slider .swiper-button-prev::after {
     font-size: 22px;
 }
+
+#product-slider img {
+    width: auto;
+    height: 200px;
+}

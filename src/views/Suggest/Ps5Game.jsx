@@ -1,5 +1,5 @@
 import MobileHeaderApp from "@/components/template/header/components/MobileHeaderApp";
-import ProductSliderApp from "../../product-slider/components/ProductSliderApp";
+import ProductSliderApp from "@/components/product-slider/components/ProductSliderApp";
 import "react-image-gallery/styles/css/image-gallery.css";
 import Header from "@/components/template/header/Header";
 import Footer from "@/components/template/footer/Footer";
@@ -7,19 +7,19 @@ import { MdAddShoppingCart } from "react-icons/md";
 import ImageGallery from "react-image-gallery";
 import Menu from "@/components/menu/Menu";
 import { useEffect, useState } from "react";
-import { asusSuggestLaptop } from "@/data/HeroSuggest/asusLaptop";
+import { ps5Game } from "@/data/HeroSuggest/ps5Game";
 import { useParams } from "react-router-dom";
-function ProductDetails() {
+function Ps5Game() {
   const [product, setProduct] = useState({});
   const id = useParams();
   useEffect(() => {
-    asusSuggestLaptop[0].products_col_one.forEach((products, idx) => {
+    ps5Game[0].products_col_one.forEach((products, idx) => {
       if (products.id === id.id) {
         setProduct({ ...products });
       }
       return;
     });
-    asusSuggestLaptop[0].products_col_two.forEach((products, idx) => {
+    ps5Game[0].products_col_two.forEach((products, idx) => {
       if (products.id === id.id) {
         setProduct({ ...products });
       }
@@ -88,4 +88,4 @@ function ProductDetails() {
   );
 }
 
-export default ProductDetails;
+export default Ps5Game;

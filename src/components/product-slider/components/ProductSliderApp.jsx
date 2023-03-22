@@ -39,7 +39,7 @@ function ProductSliderApp() {
               </SwiperSlide>
               <SwiperSlide>
                 <img
-                  src='https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2022/HOL22/GW/DesktopShoveler/Shoveler_Electronics_1x._CB608464074_.jpg'
+                  src='https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/51vf1R1wS9L._AC_UY327_FMwebp_QL65_.jpg'
                   alt=''
                 />
               </SwiperSlide>

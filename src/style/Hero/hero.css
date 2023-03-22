@@ -89,7 +89,7 @@
 
 #hero-product aside div .column img {
     width: 100px;
-    height: 70px;
+    height: 85px;
 }
 
 #hero-product aside div .column .columns {
@@ -124,6 +124,10 @@
     height: auto;
 }
 
+#hero-product aside .column-info div img:hover {
+    cursor: pointer;
+}
+
 #hero-product aside .column-info div button {
     background-color: #FFD814;
     font-family: 'AmazonEmber';
@@ -149,11 +153,16 @@
     margin: 0.5rem 0;
 }
 
+#hero-product aside .column-single-product img:hover {
+    cursor: pointer;
+}
+
 @media screen and (max-width:1200px) {
     #hero-product aside .column-single-product {
         align-items: center;
         justify-content: center;
     }
+
     #hero-product aside .column-single-product img {
         width: 100%;
         height: auto;
