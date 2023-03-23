@@ -1,9 +1,13 @@
+import { Link } from "react-router-dom";
+
 function InformationProduct({ product }) {
   return (
     <div className='column-info'>
       <div>
         <h4>{product.title}</h4>
-        <button>{product.button_title}</button>
+        <Link to={"/signup"}>
+          <button>{product.button_title}</button>
+        </Link>
       </div>
       <div>
         <img

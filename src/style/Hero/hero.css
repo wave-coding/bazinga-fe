@@ -119,6 +119,10 @@
     justify-content: center;
 }
 
+#hero-product aside .column-info a {
+    width: 100%;
+}
+
 #hero-product aside .column-info div img {
     width: 100%;
     height: auto;

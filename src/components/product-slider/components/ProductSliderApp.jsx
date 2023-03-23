@@ -12,6 +12,7 @@ function ProductSliderApp() {
     <>
       {/* Product Slider */}
       <section id='product-slider'>
+        <h3>Books</h3>
         <div className='product-slider-container'>
           <div className='product-gallery'>
             <Swiper
@@ -29,7 +30,7 @@ function ProductSliderApp() {
                 },
                 1024: {
                   slidesPerView: 5,
-                }
+                },
               }}>
               <SwiperSlide>
                 <img
@@ -42,6 +43,7 @@ function ProductSliderApp() {
                   src='https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/51vf1R1wS9L._AC_UY327_FMwebp_QL65_.jpg'
                   alt=''
                 />
+                <p>Nokia G50</p>
               </SwiperSlide>
               <SwiperSlide>
                 <img

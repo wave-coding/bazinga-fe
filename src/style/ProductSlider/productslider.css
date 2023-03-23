@@ -1,7 +1,12 @@
 #product-slider {
-    margin: 1rem 0 3rem 0;
+    margin: 1rem 0 2rem 0;
     background-color: #fff;
-    padding: 2rem;
+    padding: 1rem 0;
+}
+
+#product-slider h3 {
+    margin: 1rem 0 1rem 3rem;
+    font-weight: bold;
 }
 
 #product-slider .product-slider-container {
@@ -12,6 +17,10 @@
 
 #product-slider .product-slider-container .product-gallery {
     text-align: center;
+}
+
+#product-slider .product-slider-container .product-gallery p {
+    margin: 0.5rem 0;
 }
 
 
