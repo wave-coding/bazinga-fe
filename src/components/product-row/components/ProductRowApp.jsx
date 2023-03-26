@@ -1,27 +1,23 @@
+import SingleProduct from "../../ui/Card/SingleProduct";
+import {
+  HealthProduct,
+  KindleProduct,
+} from "@/data/ProductRow/SingleRowProduct";
+
 function ProductRowApp() {
   // refactor this
   return (
     <>
       <section id='independ-product'>
         <aside>
-          <div className='column-single-product'>
-            <article>
-              <h4>Health & Personal Care</h4>
-              <img
-                src='https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T1/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/GW_CONS_AUS_HPC_HPCEssentials_CatCard_Desktop1x._SY304_CB627424361_.jpg'
-                alt=''
-              />
-            </article>
-          </div>
-          <div className='column-single-product'>
-            <article>
-              <h4>Kindle Unlimited</h4>
-              <img
-                src='https://m.media-amazon.com/images/I/415Tfn6RqiL._SX370_.jpg'
-                alt=''
-              />
-            </article>
-          </div>
+          <SingleProduct
+            key={"HealthProduct"}
+            product={HealthProduct}
+          />
+          <SingleProduct
+            key={"Kindleproduct"}
+            product={KindleProduct}
+          />
           <div>
             <h4>Your wellness favorites</h4>
             <div className='column'>

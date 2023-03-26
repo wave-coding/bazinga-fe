@@ -9,10 +9,10 @@ function FourProduct({ products }) {
             <h4>{product.title}</h4>
             <div className='column'>
               {product.products_col_one.map((single_product, index) => (
-                <Link to={`${product.path}/${single_product.id}`}>
-                  <div
-                    className='columns'
-                    key={index}>
+                <Link
+                  key={index}
+                  to={`${product.path}/${single_product.id}`}>
+                  <div className='columns'>
                     <img
                       src={single_product.img}
                       alt={single_product.name}
@@ -24,10 +24,10 @@ function FourProduct({ products }) {
             </div>
             <div className='column'>
               {product.products_col_two.map((single_product, index) => (
-                <Link to={`${product.path}/${single_product.id}`}>
-                  <div
-                    className='columns'
-                    key={index}>
+                <Link
+                  key={index}
+                  to={`${product.path}/${single_product.id}`}>
+                  <div className='columns'>
                     <img
                       src={single_product.img}
                       alt={single_product.name}
