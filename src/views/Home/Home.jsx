@@ -20,6 +20,9 @@ import SponsoredApp from "@/components/sponsored/SponsoredApp";
 // products
 import { BooksProduct } from "@/data/ProductSlider/Books";
 import { smartWatchProduct } from "@/data/ProductSlider/SmartWatch";
+import { backpackPorduct } from "@/data/ProductSlider/Backpack";
+import { smartPhoneProducts } from "@/data/ProductSlider/Smartphone";
+import { chocolateProducts } from "@/data/ProductSlider/Chocolate";
 
 function Home() {
   return (
@@ -40,9 +43,18 @@ function Home() {
       />
       <SponsoredApp />
       <ProductCategoryApp />
-      {/* <ProductSlider /> */}
-      {/* <ProductSlider /> */}
-      {/* <ProductSlider /> */}
+      <ProductSlider
+        key={"runningshoes"}
+        products={backpackPorduct}
+      />
+      <ProductSlider
+        key={"smartphone"}
+        products={smartPhoneProducts}
+      />
+      <ProductSlider
+        key={"chocolate"}
+        products={chocolateProducts}
+      />
       {/* sponser img */}
       <ProductCategoryApp />
       {/* <ProductSlider /> */}
