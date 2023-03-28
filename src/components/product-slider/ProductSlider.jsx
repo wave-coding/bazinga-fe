@@ -1,9 +1,10 @@
 import ProductSliderApp from "./components/ProductSliderApp";
 
-function ProductSlider() {
+function ProductSlider(products) {
+  // console.log(products.products);
   return (
     <>
-      <ProductSliderApp />
+      <ProductSliderApp products={products} />
     </>
   );
 }
