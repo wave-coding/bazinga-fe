@@ -23,6 +23,9 @@ import { smartWatchProduct } from "@/data/ProductSlider/SmartWatch";
 import { backpackPorduct } from "@/data/ProductSlider/Backpack";
 import { smartPhoneProducts } from "@/data/ProductSlider/Smartphone";
 import { chocolateProducts } from "@/data/ProductSlider/Chocolate";
+import { cameraProduct } from "@/data/ProductSlider/Camera";
+import { puddleBoardProducts } from "@/data/ProductSlider/PuddleBoard";
+import { boostedBoardProducts } from "@/data/ProductSlider/BoostedBoard";
 
 function Home() {
   return (
@@ -57,10 +60,19 @@ function Home() {
       />
       {/* sponser img */}
       <ProductCategoryApp />
-      {/* <ProductSlider /> */}
-      {/* <ProductSlider /> */}
+      <ProductSlider
+        key={"camera"}
+        products={cameraProduct}
+      />
+      <ProductSlider
+        key={"puddleboard"}
+        products={puddleBoardProducts}
+      />
       <ProductCategoryApp />
-      {/* <ProductSlider /> */}
+      <ProductSlider
+        key={"boostedboard"}
+        products={boostedBoardProducts}
+      />
       <Footer />
     </>
   );
