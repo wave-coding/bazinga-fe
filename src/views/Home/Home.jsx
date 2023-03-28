@@ -19,6 +19,7 @@ import MobileHeaderApp from "@/components/template/header/components/MobileHeade
 import SponsoredApp from "@/components/sponsored/SponsoredApp";
 // products
 import { BooksProduct } from "@/data/ProductSlider/Books";
+import { smartWatchProduct } from "@/data/ProductSlider/SmartWatch";
 
 function Home() {
   return (
@@ -33,7 +34,10 @@ function Home() {
         key={"books"}
         products={BooksProduct}
       />
-      {/* <ProductSlider /> */}
+      <ProductSlider
+        key={"smartwatch"}
+        products={smartWatchProduct}
+      />
       <SponsoredApp />
       <ProductCategoryApp />
       {/* <ProductSlider /> */}
