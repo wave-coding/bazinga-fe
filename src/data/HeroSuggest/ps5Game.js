@@ -8,8 +8,34 @@ export const ps5Game = [
         path: '/suggest/video-games/ps5',
         products_col_one: [
             {
-                id: uuidv4(),
+                id: 78,
                 img: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/91gO2A87g+L._AC_UY327_FMwebp_QL65_.jpg',
+                gly: [
+                    {
+                        original: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/91gO2A87g+L._AC_UY327_FMwebp_QL65_.jpg',
+                        thumbnail: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/91gO2A87g+L._AC_UY327_FMwebp_QL65_.jpg',
+                    },
+                    {
+                        original: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/91gO2A87g+L._AC_UY327_FMwebp_QL65_.jpg',
+                        thumbnail: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/91gO2A87g+L._AC_UY327_FMwebp_QL65_.jpg',
+                    },
+                    {
+                        original: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/91gO2A87g+L._AC_UY327_FMwebp_QL65_.jpg',
+                        thumbnail: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/91gO2A87g+L._AC_UY327_FMwebp_QL65_.jpg',
+                    },
+                    {
+                        original: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/91gO2A87g+L._AC_UY327_FMwebp_QL65_.jpg',
+                        thumbnail: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/91gO2A87g+L._AC_UY327_FMwebp_QL65_.jpg',
+                    },
+                    {
+                        original: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/91gO2A87g+L._AC_UY327_FMwebp_QL65_.jpg',
+                        thumbnail: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/91gO2A87g+L._AC_UY327_FMwebp_QL65_.jpg',
+                    },
+                    {
+                        original: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/91gO2A87g+L._AC_UY327_FMwebp_QL65_.jpg',
+                        thumbnail: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/91gO2A87g+L._AC_UY327_FMwebp_QL65_.jpg',
+                    },
+                ],
                 name: 'Hogwarts Legacy: The Official Game Guide'
             },
             {

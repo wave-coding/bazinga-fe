@@ -11,29 +11,28 @@ import { ps5Game } from "@/data/HeroSuggest/ps5Game";
 import { useParams } from "react-router-dom";
 function Ps5Game() {
   const [product, setProduct] = useState({});
+  const [gallery, setGallery] = useState([]);
+  const [test,setTest] = useState(false)
   const id = useParams();
   useEffect(() => {
     ps5Game[0].products_col_one.forEach((products, idx) => {
-      if (products.id === id.id) {
+      if (products.id == id.id) {
         setProduct({ ...products });
+        setGallery([...products.gly]);
+        setTest(true)
+        console.log(gallery);
       }
-      return;
     });
     ps5Game[0].products_col_two.forEach((products, idx) => {
-      if (products.id === id.id) {
+      if (products.id == id.id) {
         setProduct({ ...products });
+        setGallery(products.gly);
       }
-      return;
     });
     document.body.scrollTop = 1;
     document.documentElement.scrollTop = 1;
-  }, [id.id]);
-  const gallery = [
-    {
-      original: product.img,
-      thumbnail: product.img,
-    },
-  ];
+  }, []);
+
   return (
     <>
       <Header />
@@ -43,12 +42,12 @@ function Ps5Game() {
       <section className='product-details'>
         <div className='product-details-container'>
           <div className='product-details-gallery'>
-            <ImageGallery
+           {test ?  <ImageGallery
               items={gallery}
               showNav={false}
               thumbnailPosition={"left"}
               showPlayButton={false}
-            />
+            /> : 'nice'}
           </div>
           <div className='product-details-information'>
             <article>
