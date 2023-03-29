@@ -10,7 +10,7 @@ export const ps5Game = [
             {
                 id: 78,
                 img: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/91gO2A87g+L._AC_UY327_FMwebp_QL65_.jpg',
-                gly: [
+                gallery: [
                     {
                         original: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/91gO2A87g+L._AC_UY327_FMwebp_QL65_.jpg',
                         thumbnail: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/91gO2A87g+L._AC_UY327_FMwebp_QL65_.jpg',
