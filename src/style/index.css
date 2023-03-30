@@ -17,6 +17,11 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+    color: #333;
+}
+
 
 @import url('./ProductCategory/productcategory.css');
 @import url('./ProductDetails/productdetails.css');

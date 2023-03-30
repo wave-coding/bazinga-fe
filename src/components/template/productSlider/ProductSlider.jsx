@@ -7,6 +7,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
 import "swiper/css";
 
+import { Link } from "react-router-dom";
+
 function ProductSlider({ products }) {
   return (
     <>
@@ -34,11 +36,13 @@ function ProductSlider({ products }) {
               }}>
               {products.products.map((slider, index) => (
                 <SwiperSlide key={index}>
-                  <img
-                    src={slider.img}
-                    alt={slider.name}
-                  />
-                  <p>{slider.name.substring(0, 20) + " ..."}</p>
+                  <Link to={`/slider/${slider.name}/${index}`}>
+                    <img
+                      src={slider.img}
+                      alt={slider.name}
+                    />
+                    <p>{slider.name.substring(0, 20) + " ..."}</p>
+                  </Link>
                 </SwiperSlide>
               ))}
             </Swiper>
