@@ -1,18 +1,33 @@
 import ProductSliderApp from "@/components/product-slider/components/ProductSliderApp";
+
 import MobileHeaderApp from "@/components/template/header/components/MobileHeaderApp";
+
 import { asusSuggestLaptop } from "@/data/HeroSuggest/asusLaptop";
+
 import "react-image-gallery/styles/css/image-gallery.css";
+
 import Header from "@/components/template/header/Header";
+
 import Footer from "@/components/template/footer/Footer";
+
 import { MdAddShoppingCart } from "react-icons/md";
+
 import ImageGallery from "react-image-gallery";
+
 import { useParams } from "react-router-dom";
+
 import { useEffect, useState } from "react";
+
 import Menu from "@/components/menu/Menu";
+
 function AsusLaptopSuggest() {
+  // set Products
   const [product, setProduct] = useState({});
+  // set Gallery
   const [gallery, setGallery] = useState([]);
+  // set Loading
   const [loading, setLoading] = useState(false);
+  // for show each product
   const id = useParams();
   useEffect(() => {
     asusSuggestLaptop[0].products_col_one.forEach((products, idx) => {
@@ -73,14 +88,6 @@ function AsusLaptopSuggest() {
               ) : (
                 "Is Loading..."
               )}
-              {/* <li>20MP live MOS sensor</li>
-              <li>Portable, weather sealed design</li>
-              <li>121-point all-cross-type on-chip phase detection AF</li>
-              <li>
-                Compact, in-body 5-axis image stabilization (up to approx. 5.5
-                EV steps of compensation)
-              </li>
-              <li>50MP tripod high-res shot</li> */}
             </ul>
           </div>
           <div className='product-details-checkout'>

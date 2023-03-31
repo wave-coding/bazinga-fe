@@ -1,18 +1,33 @@
-import MobileHeaderApp from "@/components/template/header/components/MobileHeaderApp";
 import ProductSliderApp from "@/components/product-slider/components/ProductSliderApp";
+
+import MobileHeaderApp from "@/components/template/header/components/MobileHeaderApp";
+
 import "react-image-gallery/styles/css/image-gallery.css";
+
 import Header from "@/components/template/header/Header";
+
 import Footer from "@/components/template/footer/Footer";
-import { MdAddShoppingCart } from "react-icons/md";
-import ImageGallery from "react-image-gallery";
-import Menu from "@/components/menu/Menu";
-import { useEffect, useState } from "react";
+
 import { ps5Game } from "@/data/HeroSuggest/ps5Game";
+
+import { MdAddShoppingCart } from "react-icons/md";
+
+import ImageGallery from "react-image-gallery";
+
+import { useEffect, useState } from "react";
+
 import { useParams } from "react-router-dom";
+
+import Menu from "@/components/menu/Menu";
+
 function Ps5Game() {
+  // set Products
   const [product, setProduct] = useState({});
+  // set Gallery
   const [gallery, setGallery] = useState([]);
+  // set Loading
   const [loading, setLoading] = useState(false);
+  // for show each product
   const id = useParams();
   useEffect(() => {
     ps5Game[0].products_col_one.forEach((products, idx) => {
@@ -56,26 +71,29 @@ function Ps5Game() {
           <div className='product-details-information'>
             <article>
               <h4>{product.name}</h4>
-              <p className='brand'>Brand: Olympus</p>
+              <p className='brand'>Brand: {product.brand}</p>
               <p className='price'>
                 <span>Price:</span>
-                <span>$1,895.00</span>
+                <span>$ {product.price}</span>
               </p>
             </article>
             <ul>
-              <li>20MP live MOS sensor</li>
-              <li>Portable, weather sealed design</li>
-              <li>121-point all-cross-type on-chip phase detection AF</li>
-              <li>
-                Compact, in-body 5-axis image stabilization (up to approx. 5.5
-                EV steps of compensation)
-              </li>
-              <li>50MP tripod high-res shot</li>
+              {loading ? (
+                <>
+                  {product.information.map((info, idx) => (
+                    <li key={idx}>
+                      <b>{info.title}</b>: {info.description}
+                    </li>
+                  ))}
+                </>
+              ) : (
+                "Is Loading..."
+              )}
             </ul>
           </div>
           <div className='product-details-checkout'>
             <div className='box'>
-              <p>$1,895.00</p>
+              <p>$ {product.price}</p>
               <button>
                 <MdAddShoppingCart size={20} />
                 <p>Add to Cart</p>

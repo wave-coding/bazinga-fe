@@ -292,6 +292,10 @@ header main .header-basket {
     padding: 0 0.3rem;
 }
 
+header main .header-basket-link {
+    color: #fff;
+}
+
 header main .header-basket:hover {
     /* border: 1px solid #fff;
     border-radius: 5px; */

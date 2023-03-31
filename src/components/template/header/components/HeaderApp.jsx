@@ -154,11 +154,15 @@ function HeaderApp() {
             <p>Returns</p>
             <h5>& Orders</h5>
           </div>
-          <div className='header-basket'>
-            <BsCart2 size={30}></BsCart2>
-            <span className='product-count'>99</span>
-            <h5>Cart</h5>
-          </div>
+          <Link
+            to={"/checkout"}
+            className='header-basket-link'>
+            <div className='header-basket'>
+              <BsCart2 size={30}></BsCart2>
+              <span className='product-count'>99</span>
+              <h5>Cart</h5>
+            </div>
+          </Link>
         </main>
       </header>
     </>
