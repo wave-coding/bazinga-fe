@@ -1,10 +1,10 @@
+import { BsCart2, BsFillCaretDownFill } from "react-icons/bs";
+
 import AmazonLogo from "@/assets/media/logo/Amazon-logo.png";
 
 import { MdOutlinePlace, MdSearch } from "react-icons/md";
 
 import ReactCountryFlag from "react-country-flag";
-
-import { BsCart2, BsFillCaretDownFill } from "react-icons/bs";
 
 import { Link } from "react-router-dom";
 

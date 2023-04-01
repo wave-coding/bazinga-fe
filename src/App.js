@@ -14,7 +14,10 @@ import LoginApp from './views/Login/LoginApp';
 
 import Ps5Game from './views/Suggest/Ps5Game';
 
+import Books from './views/Products/Books';
+
 import Home from "./views/Home/Home";
+
 
 function App() {
     return (
@@ -29,6 +32,8 @@ function App() {
                     <Route path="/checkout" element={<CheckoutApp />}></Route>
                     <Route path="/suggest/laptop/asus/:id" element={<AsusLaptopSuggest />}></Route>
                     <Route path="/suggest/video-games/ps5/:id" element={<Ps5Game />}></Route>
+                    <Route path="/suggest/video-games/ps5/:id" element={<Ps5Game />}></Route>
+                    <Route path="/product/books/:id" element={<Books />}></Route>
                 </Routes>
             </Router>
         </>

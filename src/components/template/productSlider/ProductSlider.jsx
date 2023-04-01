@@ -36,12 +36,12 @@ function ProductSlider({ products }) {
               }}>
               {products.products.map((slider, index) => (
                 <SwiperSlide key={index}>
-                  <Link to={`/slider/${slider.name}/${index}`}>
+                  <Link to={`/product/${slider.path}/${slider.id}`}>
                     <img
                       src={slider.img}
                       alt={slider.name}
                     />
-                    <p>{slider.name.substring(0, 20) + " ..."}</p>
+                    <p>{slider.name.substring(0, 25) + " ..."}</p>
                   </Link>
                 </SwiperSlide>
               ))}
