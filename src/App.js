@@ -8,6 +8,8 @@ import AsusLaptopSuggest from './views/Suggest/AsusLaptopSuggest';
 
 import CheckoutApp from './views/Checkout/CheckoutApp';
 
+import SmartWatch from './views/Products/SmartWatch';
+
 import SignupApp from './views/Signup/SignupApp';
 
 import LoginApp from './views/Login/LoginApp';
@@ -34,6 +36,7 @@ function App() {
                     <Route path="/suggest/video-games/ps5/:id" element={<Ps5Game />}></Route>
                     <Route path="/suggest/video-games/ps5/:id" element={<Ps5Game />}></Route>
                     <Route path="/product/books/:id" element={<Books />}></Route>
+                    <Route path="/product/smartwatch/:id" element={<SmartWatch />}></Route>
                 </Routes>
             </Router>
         </>

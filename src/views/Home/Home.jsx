@@ -21,7 +21,7 @@ import SponsoredApp from "@/components/sponsored/SponsoredApp";
 import { BooksProduct } from "@/data/ProductSlider/Books";
 import { smartWatchProduct } from "@/data/ProductSlider/SmartWatch";
 import { backpackPorduct } from "@/data/ProductSlider/Backpack";
-import { smartPhoneProducts } from "@/data/ProductSlider/Smartphone";
+import { smartPhoneProducts } from "@/data/ProductSlider/SmartPhone";
 import { chocolateProducts } from "@/data/ProductSlider/Chocolate";
 import { cameraProduct } from "@/data/ProductSlider/Camera";
 import { puddleBoardProducts } from "@/data/ProductSlider/PuddleBoard";

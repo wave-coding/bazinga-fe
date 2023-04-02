@@ -2,7 +2,7 @@ import ProductSliderApp from "@/components/product-slider/components/ProductSlid
 
 import MobileHeaderApp from "@/components/template/header/components/MobileHeaderApp";
 
-import { BooksProduct } from "@/data/ProductSlider/Books";
+import { smartWatchProduct } from "@/data/ProductSlider/SmartWatch";
 
 import "react-image-gallery/styles/css/image-gallery.css";
 
@@ -20,7 +20,7 @@ import { useEffect, useState } from "react";
 
 import Menu from "@/components/menu/Menu";
 
-function Books() {
+function SmartWatch() {
   // set Products
   const [product, setProduct] = useState({});
   // set Gallery
@@ -30,7 +30,7 @@ function Books() {
   // for show each product
   const id = useParams();
   useEffect(() => {
-    BooksProduct.products.forEach((products, idx) => {
+    smartWatchProduct.products.forEach((products, idx) => {
       // eslint-disable-next-line
       if (products.id == id.id) {
         setProduct({ ...products });
@@ -103,4 +103,4 @@ function Books() {
   );
 }
 
-export default Books;
+export default SmartWatch;

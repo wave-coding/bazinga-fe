@@ -3,6 +3,42 @@ export const smartWatchProduct = {
     products: [
         // https://www.amazon.com/SAMSUNG-Bluetooth-Smartwatch-Improved-Sapphire/dp/B0B2HXJZ98/ref=sr_1_1_sspa?crid=3M4M3ZNLZM9GI&keywords=smart+watch&qid=1680029112&sprefix=smart+watc%2Caps%2C369&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFUVDNaNDFVUjQyS0wmZW5jcnlwdGVkSWQ9QTA3NjY5NjJNUlBKNk1ITlpVTVUmZW5jcnlwdGVkQWRJZD1BMDI3NzYxNTdaUTZWWlFZR1pCNiZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=
         {
+            id: `44ff42ac-35de-4928-a680-4132d0641e31`,
+            price: '419.99',
+            brand: 'SAMSUNG',
+            path: 'smartwatch',
+            information: [
+                {
+                    title: 'Model Name',
+                    description: 'Galaxy Watch5 Pro'
+                },
+                {
+                    title: 'Color',
+                    description: 'Black'
+                },
+                {
+                    title: 'Screen Size',
+                    description: '1.4 Inches'
+                },
+                {
+                    title: 'Size',
+                    description: '45mm'
+                },
+            ],
+            gallery: [
+                {
+                    original: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61Sl+xoVHoL._AC_SX300_SY300_.jpg',
+                    thumbnail: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61Sl+xoVHoL._AC_SX300_SY300_.jpg',
+                },
+                {
+                    original: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/71aj77Jdp9L._AC_SX466_.jpg',
+                    thumbnail: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/71aj77Jdp9L._AC_SX466_.jpg',
+                },
+                {
+                    original: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61Su0aM8NoL._AC_SX466_.jpg',
+                    thumbnail: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61Su0aM8NoL._AC_SX466_.jpg',
+                }
+            ],
             img: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61Sl+xoVHoL._AC_SX300_SY300_.jpg',
             name: 'SAMSUNG Galaxy Watch 5 Pro 45mm Bluetooth Smartwatch w/ Body, Health, Fitness and Sleep Tracker, Improved Battery, Sapphire Crystal Glass, GPS Route Tracking, Titanium Frame, US Version, Black'
         },

@@ -75,7 +75,7 @@ function HeaderApp() {
                   name='language'
                   id='english'
                   value='english'
-                  checked
+                  defaultChecked={true}
                 />
                 <span>English - EN</span>
               </p>
