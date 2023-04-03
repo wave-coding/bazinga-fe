@@ -4,6 +4,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
     margin: 3rem auto;
+    height: 90vh;
 }
 
 .product-details-gallery img {
@@ -73,6 +74,7 @@
 @media screen and (max-width:1200px) {
     .product-details-container {
         grid-template-columns: repeat(1, 1fr);
+        height: auto;
     }
 
     .product-details-information {

@@ -12,6 +12,8 @@ import SmartWatch from './views/Products/SmartWatch';
 
 import SignupApp from './views/Signup/SignupApp';
 
+import BackPack from './views/Products/BackPack';
+
 import LoginApp from './views/Login/LoginApp';
 
 import Ps5Game from './views/Suggest/Ps5Game';
@@ -19,6 +21,7 @@ import Ps5Game from './views/Suggest/Ps5Game';
 import Books from './views/Products/Books';
 
 import Home from "./views/Home/Home";
+
 
 
 function App() {
@@ -37,6 +40,7 @@ function App() {
                     <Route path="/suggest/video-games/ps5/:id" element={<Ps5Game />}></Route>
                     <Route path="/product/books/:id" element={<Books />}></Route>
                     <Route path="/product/smartwatch/:id" element={<SmartWatch />}></Route>
+                    <Route path="/product/backpack/:id" element={<BackPack />}></Route>
                 </Routes>
             </Router>
         </>
