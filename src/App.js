@@ -10,6 +10,8 @@ import CheckoutApp from './views/Checkout/CheckoutApp';
 
 import SmartWatch from './views/Products/SmartWatch';
 
+import SmartPhone from './views/Products/SmartPhone';
+
 import SignupApp from './views/Signup/SignupApp';
 
 import BackPack from './views/Products/BackPack';
@@ -41,6 +43,7 @@ function App() {
                     <Route path="/product/books/:id" element={<Books />}></Route>
                     <Route path="/product/smartwatch/:id" element={<SmartWatch />}></Route>
                     <Route path="/product/backpack/:id" element={<BackPack />}></Route>
+                    <Route path="/product/smartphone/:id" element={<SmartPhone />}></Route>
                 </Routes>
             </Router>
         </>

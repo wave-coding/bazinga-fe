@@ -4,7 +4,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
     margin: 3rem auto;
-    height: 90vh;
+    height: 95vh;
 }
 
 .product-details-gallery img {
