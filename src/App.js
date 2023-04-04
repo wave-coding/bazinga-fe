@@ -12,6 +12,8 @@ import SmartWatch from './views/Products/SmartWatch';
 
 import SmartPhone from './views/Products/SmartPhone';
 
+import Chocolate from './views/Products/Chocolate';
+
 import SignupApp from './views/Signup/SignupApp';
 
 import BackPack from './views/Products/BackPack';
@@ -23,8 +25,6 @@ import Ps5Game from './views/Suggest/Ps5Game';
 import Books from './views/Products/Books';
 
 import Home from "./views/Home/Home";
-
-
 
 function App() {
     return (
@@ -44,6 +44,7 @@ function App() {
                     <Route path="/product/smartwatch/:id" element={<SmartWatch />}></Route>
                     <Route path="/product/backpack/:id" element={<BackPack />}></Route>
                     <Route path="/product/smartphone/:id" element={<SmartPhone />}></Route>
+                    <Route path="/product/chocolate/:id" element={<Chocolate />}></Route>
                 </Routes>
             </Router>
         </>
