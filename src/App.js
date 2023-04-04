@@ -22,6 +22,8 @@ import LoginApp from './views/Login/LoginApp';
 
 import Ps5Game from './views/Suggest/Ps5Game';
 
+import Camera from './views/Products/Camera';
+
 import Books from './views/Products/Books';
 
 import Home from "./views/Home/Home";
@@ -45,6 +47,7 @@ function App() {
                     <Route path="/product/backpack/:id" element={<BackPack />}></Route>
                     <Route path="/product/smartphone/:id" element={<SmartPhone />}></Route>
                     <Route path="/product/chocolate/:id" element={<Chocolate />}></Route>
+                    <Route path="/product/camera/:id" element={<Camera />}></Route>
                 </Routes>
             </Router>
         </>
