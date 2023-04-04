@@ -8,6 +8,8 @@ import AsusLaptopSuggest from './views/Suggest/AsusLaptopSuggest';
 
 import CheckoutApp from './views/Checkout/CheckoutApp';
 
+import PuddleBoard from './views/Products/PuddleBoard';
+
 import SmartWatch from './views/Products/SmartWatch';
 
 import SmartPhone from './views/Products/SmartPhone';
@@ -48,6 +50,7 @@ function App() {
                     <Route path="/product/smartphone/:id" element={<SmartPhone />}></Route>
                     <Route path="/product/chocolate/:id" element={<Chocolate />}></Route>
                     <Route path="/product/camera/:id" element={<Camera />}></Route>
+                    <Route path="/product/puddleboard/:id" element={<PuddleBoard />}></Route>
                 </Routes>
             </Router>
         </>
