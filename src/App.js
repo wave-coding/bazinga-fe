@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import AsusLaptopSuggest from './views/Suggest/AsusLaptopSuggest';
 
+import BoostedBoard from './views/Products/BoostedBoard';
+
 import CheckoutApp from './views/Checkout/CheckoutApp';
 
 import PuddleBoard from './views/Products/PuddleBoard';
@@ -51,6 +53,7 @@ function App() {
                     <Route path="/product/chocolate/:id" element={<Chocolate />}></Route>
                     <Route path="/product/camera/:id" element={<Camera />}></Route>
                     <Route path="/product/puddleboard/:id" element={<PuddleBoard />}></Route>
+                    <Route path="/product/boostedboard/:id" element={<BoostedBoard />}></Route>
                 </Routes>
             </Router>
         </>
