@@ -1,9 +1,21 @@
+import {
+  FashionTrends,
+  StripLights,
+  Tracker,
+  PetSupplies,
+} from "../../../data/ProductRow/SingleRowProduct";
+import SingleProduct from "../../ui/Card/SingleProduct";
+
 function ProductCategoryApp() {
   return (
     <>
       <section id='product-category'>
         <aside>
-          <div>
+          <SingleProduct product={FashionTrends} />
+          <SingleProduct product={StripLights} />
+          <SingleProduct product={Tracker} />
+          <SingleProduct product={PetSupplies} />
+          {/* <div>
             <h4>Gaming accessories</h4>
             <div className='column'>
               <div className='column-1'>
@@ -37,8 +49,8 @@ function ProductCategoryApp() {
                 <p>keyboards</p>
               </div>
             </div>
-          </div>
-          <div>
+          </div> */}
+          {/* <div>
             <h4>Gaming accessories</h4>
             <div className='column'>
               <div className='column-1'>
@@ -72,8 +84,8 @@ function ProductCategoryApp() {
                 <p>keyboards</p>
               </div>
             </div>
-          </div>
-          <div>
+          </div> */}
+          {/* <div>
             <h4>Gaming accessories</h4>
             <div className='column'>
               <div className='column-1'>
@@ -107,8 +119,8 @@ function ProductCategoryApp() {
                 <p>keyboards</p>
               </div>
             </div>
-          </div>
-          <div>
+          </div> */}
+          {/* <div>
             <h4>Gaming accessories</h4>
             <div className='column'>
               <div className='column-1'>
@@ -142,7 +154,7 @@ function ProductCategoryApp() {
                 <p>keyboards</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </aside>
       </section>
     </>

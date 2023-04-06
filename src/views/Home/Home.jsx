@@ -26,6 +26,8 @@ import { chocolateProducts } from "@/data/ProductSlider/Chocolate";
 import { cameraProduct } from "@/data/ProductSlider/Camera";
 import { puddleBoardProducts } from "@/data/ProductSlider/PuddleBoard";
 import { boostedBoardProducts } from "@/data/ProductSlider/BoostedBoard";
+import PCRowOne from "@/components/prodcut-category/PCRowOne";
+import PCRowTwo from "@/components/prodcut-category/PCRowTwo";
 
 function Home() {
   return (
@@ -59,7 +61,7 @@ function Home() {
         products={chocolateProducts}
       />
       {/* sponser img */}
-      <ProductCategoryApp />
+      <PCRowOne />
       <ProductSlider
         key={"camera"}
         products={cameraProduct}
@@ -68,7 +70,7 @@ function Home() {
         key={"puddleboard"}
         products={puddleBoardProducts}
       />
-      <ProductCategoryApp />
+      <PCRowTwo />
       <ProductSlider
         key={"boostedboard"}
         products={boostedBoardProducts}

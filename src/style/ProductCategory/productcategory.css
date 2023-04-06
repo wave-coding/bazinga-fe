@@ -62,9 +62,15 @@
 
 
 #product-category aside .column-single-product img {
-    width: 320px;
-    height: 100%;
+    /* width: 320px;
+    height: 100%; */
+    width: 100%;
+    height: auto;
     margin: 0.5rem 0;
+}
+
+#product-category aside .column-single-product img:hover {
+    cursor: pointer;
 }
 
 @media screen and (max-width:1200px) {
@@ -86,6 +92,11 @@
     #product-category aside div .column img {
         width: 100%;
         /* height: auto; */
+    }
+
+    #product-category aside .column-single-product {
+        align-items: center;
+        justify-content: center;
     }
 }
 

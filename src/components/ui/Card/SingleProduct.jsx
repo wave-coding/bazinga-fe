@@ -7,6 +7,7 @@ function SingleProduct({ product }) {
           src={product.img}
           alt={product.title}
         />
+        <a href="/" style={{fontSize:"12px",textDecoration:"underline",color:"blue"}}>Shop Now</a>
       </article>
     </div>
   );
