@@ -9,9 +9,9 @@ import { AppProvider } from "./context/useContext";
 import './style/index.css';
 
 ReactDom.render(
-    <React.StrictMode>
+    // <React.StrictMode>
         <AppProvider>
             <App />
         </AppProvider>
-    </React.StrictMode>
+    // </React.StrictMode>
     , document.getElementById('root'))

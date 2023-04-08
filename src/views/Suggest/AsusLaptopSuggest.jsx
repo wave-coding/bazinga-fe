@@ -10,6 +10,8 @@ import Header from "@/components/template/header/Header";
 
 import Footer from "@/components/template/footer/Footer";
 
+import { useGlobalContext } from "@/context/useContext";
+
 import { MdAddShoppingCart } from "react-icons/md";
 
 import ImageGallery from "react-image-gallery";
@@ -29,8 +31,11 @@ function AsusLaptopSuggest() {
   const [loading, setLoading] = useState(false);
   // for show each product
   const id = useParams();
+  // global cart
+  const { add_to_cart } = useGlobalContext();
   useEffect(() => {
     asusSuggestLaptop[0].products_col_one.forEach((products, idx) => {
+      // eslint-disable-next-line
       if (products.id == id.id) {
         setProduct({ ...products });
         setGallery([...products.gallery]);
@@ -38,6 +43,7 @@ function AsusLaptopSuggest() {
       }
     });
     asusSuggestLaptop[0].products_col_two.forEach((products, idx) => {
+      // eslint-disable-next-line
       if (products.id == id.id) {
         setProduct({ ...products });
         setGallery([...products.gallery]);
@@ -46,6 +52,7 @@ function AsusLaptopSuggest() {
     });
     document.body.scrollTop = 1;
     document.documentElement.scrollTop = 1;
+    // eslint-disable-next-line
   }, []);
   return (
     <>
@@ -93,7 +100,7 @@ function AsusLaptopSuggest() {
           <div className='product-details-checkout'>
             <div className='box'>
               <p>$ {product.price}</p>
-              <button>
+              <button onClick={() => add_to_cart(product)}>
                 <MdAddShoppingCart size={20} />
                 <p>Add to Cart</p>
               </button>

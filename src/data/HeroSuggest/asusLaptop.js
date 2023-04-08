@@ -42,6 +42,7 @@ export const asusSuggestLaptop = [
                     }
                 ],
                 img: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/81+m+3pPAeL._AC_SX679_.jpg',
+                quantity: 1,
                 name: 'ASUS 2023 Vivobook 15.6" FHD Touchscreen Thin Laptop, Intel Core i3-1115G4 Up to 3.9Ghz, 20GB RAM,1TB PCIE SSD, HDMI, Fingerprint, Backlit KB, Windows 11S, Grey+ GM Accessories'
             },
             {
@@ -81,6 +82,7 @@ export const asusSuggestLaptop = [
                         thumbnail: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/811UMKiM4vL._AC_SX466_.jpg'
                     }
                 ],
+                quantity: 1,
                 name: 'ASUS TUF Dash 15 (2022) Gaming Laptop, 15.6" 144Hz FHD Display, Intel Core i7-12650H, GeForce RTX 3060, 16GB DDR5, 512GB SSD, Thunderbolt 4, Windows 11 Home, Off Black, FX517ZM-AS73'
             },
         ],
@@ -124,6 +126,7 @@ export const asusSuggestLaptop = [
                         thumbnail: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/816tFLwj09L._AC_SX466_.jpg'
                     }
                 ],
+                quantity: 1,
                 name: 'ASUS TUF F15 Gaming Laptop, 15.6" 144Hz FHD IPS-Type Display, Intel Core i5-10300H Processor, GeForce GTX 1650, 8GB DDR4 RAM, 512GB PCIe SSD, Wi-Fi 6, Windows 11 Home, FX506LH-AS51'
             },
             {
@@ -163,6 +166,7 @@ export const asusSuggestLaptop = [
                         thumbnail: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/71bgLSBYzrL._AC_SX466_.jpg'
                     }
                 ],
+                quantity: 1,
                 name: 'ASUS ROG Strix Scar 15 Gaming Laptop, 15.6" 300Hz IPS Type FHD Display, NVIDIA GeForce RTX 3080, AMD Ryzen 9 5900HX, 16GB DDR4, 1TB SSD, Opti-Mechanical Per-Key RGB Keyboard, Windows 11, G533QS-DS94'
             },
         ]

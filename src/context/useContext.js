@@ -23,9 +23,13 @@ const AppProvider = ({ children }) => {
     function close_nav() {
         dispatch({ type: 'close_nav' })
     }
+    // add to cart
+    function add_to_cart(product) {
+        dispatch({ type: 'add_to_cart', data: product })
+    }
 
     return (
-        <AppContext.Provider value={{ lang, back_to_top, open_nav, close_nav }}>{children}</AppContext.Provider>
+        <AppContext.Provider value={{ lang, back_to_top, open_nav, close_nav, add_to_cart, cart: state.cart }}>{children}</AppContext.Provider>
     )
 }
 
