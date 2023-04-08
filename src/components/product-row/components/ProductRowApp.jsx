@@ -4,7 +4,7 @@ import RecommendedProdcut from "./RecommendedProduct";
 import FourProductApp from "./FourProductApp";
 import {
   HealthProduct,
-  KindleProduct,
+  DressProduct,
 } from "@/data/ProductRow/SingleRowProduct";
 
 function ProductRowApp() {
@@ -18,7 +18,7 @@ function ProductRowApp() {
           />
           <SingleProduct
             key={"Kindleproduct"}
-            product={KindleProduct}
+            product={DressProduct}
           />
           <FourProductApp
             key={"FavoritesProduct"}
