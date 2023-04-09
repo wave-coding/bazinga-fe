@@ -34,6 +34,9 @@ const reducer = (state, action) => {
                 total_prices += product.price * product.quantity
             })
             return { ...state, total_price: total_prices.toFixed(2) }
+        case 'delete_item':
+            const shop_cart = state.cart.filter(product => product.id !== action.data)
+            return { ...state, cart: [...shop_cart] }
         default:
             throw new Error('Dispatch Type is Wrong!')
     }

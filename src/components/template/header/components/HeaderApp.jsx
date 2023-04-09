@@ -1,3 +1,5 @@
+import { useGlobalContext } from "@/context/useContext";
+
 import { BsCart2, BsFillCaretDownFill } from "react-icons/bs";
 
 import AmazonLogo from "@/assets/media/logo/Amazon-logo.png";
@@ -9,6 +11,7 @@ import ReactCountryFlag from "react-country-flag";
 import { Link } from "react-router-dom";
 
 function HeaderApp() {
+  const { cart } = useGlobalContext();
   return (
     <>
       <header>
@@ -159,7 +162,7 @@ function HeaderApp() {
             className='header-basket-link'>
             <div className='header-basket'>
               <BsCart2 size={30}></BsCart2>
-              <span className='product-count'>99</span>
+              <span className='product-count'>{cart.length}</span>
               <h5>Cart</h5>
             </div>
           </Link>

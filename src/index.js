@@ -8,10 +8,12 @@ import { AppProvider } from "./context/useContext";
 
 import './style/index.css';
 
+import 'react-toastify/dist/ReactToastify.css';
+
 ReactDom.render(
     // <React.StrictMode>
-        <AppProvider>
-            <App />
-        </AppProvider>
+    <AppProvider>
+        <App />
+    </AppProvider>
     // </React.StrictMode>
     , document.getElementById('root'))

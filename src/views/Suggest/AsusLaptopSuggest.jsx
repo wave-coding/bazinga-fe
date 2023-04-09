@@ -14,6 +14,8 @@ import { useGlobalContext } from "@/context/useContext";
 
 import { MdAddShoppingCart } from "react-icons/md";
 
+import { ToastContainer } from "react-toastify";
+
 import ImageGallery from "react-image-gallery";
 
 import { useParams } from "react-router-dom";
@@ -111,6 +113,8 @@ function AsusLaptopSuggest() {
       {/* product Details */}
       <ProductSliderApp />
       <Footer />
+      {/* Toast Contaienr */}
+      <ToastContainer></ToastContainer>
     </>
   );
 }

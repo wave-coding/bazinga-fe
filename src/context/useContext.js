@@ -2,6 +2,8 @@ import { createContext, useContext, useReducer, useState, useEffect } from 'reac
 
 import { initialState, reducer } from '../reducer/useReducer';
 
+import { toast } from "react-toastify";
+
 import enLanguage from '../lang/en.json';
 
 const AppContext = createContext();
@@ -27,6 +29,23 @@ const AppProvider = ({ children }) => {
     function add_to_cart(product) {
         dispatch({ type: 'add_to_cart', data: product })
         dispatch({ type: 'get_total' })
+        add_toast_success()
+    }
+    // delete from cart
+    function delete_item(id) {
+        dispatch({ type: 'delete_item', data: id })
+        cart_delete_toast()
+    }
+    // function toastify
+    function add_toast_success() {
+        toast.success('Add to Cart', {
+            position: toast.POSITION.TOP_CENTER
+        })
+    }
+    function cart_delete_toast() {
+        toast.error('Delete Item', {
+            position: toast.POSITION.TOP_CENTER
+        })
     }
 
     useEffect(() => {
@@ -34,7 +53,7 @@ const AppProvider = ({ children }) => {
     }, [state.cart])
 
     return (
-        <AppContext.Provider value={{ ...state, lang, back_to_top, open_nav, close_nav, add_to_cart }}>{children}</AppContext.Provider>
+        <AppContext.Provider value={{ ...state, lang, back_to_top, open_nav, close_nav, add_to_cart, delete_item }}>{children}</AppContext.Provider>
     )
 }
 
