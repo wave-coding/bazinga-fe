@@ -1,5 +1,6 @@
 const initialState = {
-    cart: []
+    cart: [],
+    total_price: 0,
 }
 const reducer = (state, action) => {
     switch (action.type) {
@@ -27,6 +28,12 @@ const reducer = (state, action) => {
                 state.cart.push(action.data)
             }
             return { ...state }
+        case 'get_total':
+            let total_prices = 0
+            state.cart.forEach(product => {
+                total_prices += product.price * product.quantity
+            })
+            return { ...state, total_price: total_prices.toFixed(2) }
         default:
             throw new Error('Dispatch Type is Wrong!')
     }

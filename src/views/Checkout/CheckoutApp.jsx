@@ -5,8 +5,7 @@ import Footer from "@/components/template/footer/Footer";
 import { useGlobalContext } from "@/context/useContext";
 import Menu from "@/components/menu/Menu";
 function CheckoutApp() {
-  const { cart } = useGlobalContext();
-  console.log(cart);
+  const { cart, total_price } = useGlobalContext();
   return (
     <>
       <Header />
@@ -26,41 +25,34 @@ function CheckoutApp() {
               <h2>Shopping Cart</h2>
               <p>Price</p>
               <div className='checkout-shopping-box'>
-                <article className='checkout-shopping-box-content'>
-                  <div>
-                    <img
-                      src='https://images-fe.ssl-images-amazon.com/images/I/31jNXNVKclL._AC_AA160_.jpg'
-                      alt=''
-                      width={"20px"}
-                    />
-                    <p>text</p>
-                  </div>
-                  <div>$599.99</div>
-                </article>
-                <article className='checkout-shopping-box-content'>
-                  <div>
-                    <img
-                      src='https://images-fe.ssl-images-amazon.com/images/I/31jNXNVKclL._AC_AA160_.jpg'
-                      alt=''
-                      width={"20px"}
-                    />
-                    <p>text</p>
-                  </div>
-                  <div>$599.99</div>
-                </article>
+                {cart.map((product) => (
+                  <article
+                    key={product.id}
+                    className='checkout-shopping-box-content'>
+                    <div>
+                      <img
+                        src={product.img}
+                        alt={product.name}
+                        width={"20px"}
+                      />
+                      <p style={{ textAlign: "justify" }}>{product.name}</p>
+                    </div>
+                    <div>${product.price}</div>
+                  </article>
+                ))}
               </div>
               <p className='checkout-subtotal'>
-                Subtotal(2 items): <b>$628.08</b>
+                Subtotal({cart.length} items): <b>{total_price} $</b>
               </p>
             </div>
           ) : (
-            <h3 style={{margin:'1rem 0'}}>Your Amazon Cart is empty.</h3>
+            <h3 style={{ margin: "1rem 0" }}>Your Amazon Cart is empty.</h3>
           )}
         </div>
         <div className='checkout-price'>
           <div>
             <p>
-              Subtotal(2 items): <b>$628.08</b>
+              Subtotal({cart.length} items): <b>{total_price} $</b>
             </p>
             <button>Procced to checkout</button>
           </div>

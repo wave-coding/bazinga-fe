@@ -1,4 +1,4 @@
-import { createContext, useContext, useReducer, useState } from 'react';
+import { createContext, useContext, useReducer, useState, useEffect } from 'react';
 
 import { initialState, reducer } from '../reducer/useReducer';
 
@@ -26,10 +26,15 @@ const AppProvider = ({ children }) => {
     // add to cart
     function add_to_cart(product) {
         dispatch({ type: 'add_to_cart', data: product })
+        dispatch({ type: 'get_total' })
     }
 
+    useEffect(() => {
+        dispatch({ type: 'get_total' })
+    }, [state.cart])
+
     return (
-        <AppContext.Provider value={{ lang, back_to_top, open_nav, close_nav, add_to_cart, cart: state.cart }}>{children}</AppContext.Provider>
+        <AppContext.Provider value={{ ...state, lang, back_to_top, open_nav, close_nav, add_to_cart }}>{children}</AppContext.Provider>
     )
 }
 

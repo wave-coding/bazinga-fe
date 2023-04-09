@@ -7,7 +7,7 @@ export const asusSuggestLaptop = [
         products_col_one: [
             {
                 id: `d4ab5416-025c-472c-be3d-b769b8692d90`,
-                price: `539.00`,
+                price: 539.00,
                 brand: 'Asus',
                 information: [
                     {
@@ -48,7 +48,7 @@ export const asusSuggestLaptop = [
             {
                 id: `4064373a-5f2f-4966-88c5-e2fe20fd3454`,
                 img: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/71AGOX9MORL._AC_SX679_.jpg',
-                price: `1149.99`,
+                price: 1149.99,
                 brand: 'Asus',
                 information: [
                     {
@@ -92,7 +92,7 @@ export const asusSuggestLaptop = [
             {
                 id: `c0308944-5c88-4380-b11a-a1a9b335b0b8`,
                 img: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/81OiT2-NoeL._AC_SX466_.jpg',
-                price: `736.99`,
+                price: 736.99,
                 brand: 'Asus',
                 information: [
                     {
@@ -132,7 +132,7 @@ export const asusSuggestLaptop = [
             {
                 id: `5970819a-57c0-4352-a6b7-fb24971f504f`,
                 img: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/71sgAr9atBS._AC_SX466_.jpg',
-                price: `1999.99`,
+                price: 1999.99,
                 brand: 'Asus',
                 information: [
                     {

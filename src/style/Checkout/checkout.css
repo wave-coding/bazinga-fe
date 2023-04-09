@@ -37,8 +37,14 @@
     padding: 1rem 0;
 }
 
+.checkout .checkout-shopping-box-content img {
+    width: 100px;
+    height: 80px;
+}
+
 .checkout .checkout-shopping-box-content div p {
     margin: 0 1rem;
+    width: 50%;
 }
 
 .checkout .checkout-shopping-box-content:last-child {
