@@ -9,7 +9,7 @@ export const ps5Game = [
                 id: `9cdb787f-d260-47d5-a80f-9b04e2a39923`,
                 img: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/91gO2A87g+L._AC_UY327_FMwebp_QL65_.jpg',
                 brand: `Paul Davies`,
-                price: `14.99`,
+                price: 14.99,
                 information: [
                     {
                         title: 'Reading age',
@@ -42,12 +42,13 @@ export const ps5Game = [
                         thumbnail: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/91keLAcpi5L.jpg',
                     }
                 ],
+                quantity: 1,
                 name: 'Hogwarts Legacy: The Official Game Guide'
             },
             {
                 id: `330b7e2e-3b42-4b38-abca-e2eeca4cd9f3`,
                 brand: `Amy Ratcliffe`,
-                price: `44.99`,
+                price: 44.99,
                 information: [
                     {
                         title: 'Publisher',
@@ -73,6 +74,7 @@ export const ps5Game = [
                     },
                 ],
                 img: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/81I-Kiv9n8L._AC_UY327_FMwebp_QL65_.jpg',
+                quantity: 1,
                 name: 'The Art of God of War Ragnarök'
             },
         ],
@@ -82,7 +84,7 @@ export const ps5Game = [
             {
                 id: `25213b26-28f8-47f9-9a39-f0242ea974e5`,
                 brand: `Woodrow Mayert`,
-                price: `12.99`,
+                price: 12.99,
                 information: [
                     {
                         title: 'Publication date',
@@ -112,13 +114,14 @@ export const ps5Game = [
                     }
                 ],
                 img: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/719zeqpAKQL._AC_UY327_FMwebp_QL65_.jpg',
-                name: 'Call of Duty: Modern Warfare II Game Guide 2022: CoD: Modern Warfare 2, CoD MW2 - How to become a professional gamer '
+                quantity: 1,
+                name: 'Call of Duty: Modern Warfare II Game Guide 2022: CoD: Modern Warfare 2, CoD MW2 - How to become a professional gamer'
             },
             {
                 id: `7bbe7d72-a6bc-4b46-9e84-0dd420dbfa43`,
                 img: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/71zuRxgKrvL._AC_UY327_FMwebp_QL65_.jpg',
                 brand: `Jimmi Laustsen`,
-                price: `12.99`,
+                price: 15.99,
                 information: [
                     {
                         title: 'Publication date',
@@ -147,6 +150,7 @@ export const ps5Game = [
                         thumbnail: 'https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/31rrRMu-hzL.jpg',
                     }
                 ],
+                quantity: 1,
                 name: 'The Last of Us: Part I Complete Guide: BEST TIPS - CHEATS - AND MORE!'
             },
         ]

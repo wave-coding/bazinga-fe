@@ -13,7 +13,8 @@ import { ToastContainer } from "react-toastify";
 import Menu from "@/components/menu/Menu";
 
 function CheckoutApp() {
-  const { cart, total_price, delete_item } = useGlobalContext();
+  const { cart, total_price, delete_item, increase_product, decrease_product } =
+    useGlobalContext();
   return (
     <>
       <Header />
@@ -56,6 +57,15 @@ function CheckoutApp() {
                           }}>
                           Delete
                         </span>
+                        <div className='s'>
+                          <button onClick={() => increase_product(product.id)}>
+                            +
+                          </button>
+                          <button>{product.quantity}</button>
+                          <button onClick={() => decrease_product(product.id)}>
+                            -
+                          </button>
+                        </div>
                       </p>
                     </div>
                     <div>${product.price}</div>

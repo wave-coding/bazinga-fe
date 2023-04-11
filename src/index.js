@@ -11,9 +11,9 @@ import './style/index.css';
 import 'react-toastify/dist/ReactToastify.css';
 
 ReactDom.render(
-    // <React.StrictMode>
+    <React.StrictMode>
     <AppProvider>
         <App />
     </AppProvider>
-    // </React.StrictMode>
+    </React.StrictMode>
     , document.getElementById('root'))

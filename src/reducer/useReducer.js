@@ -37,6 +37,16 @@ const reducer = (state, action) => {
         case 'delete_item':
             const shop_cart = state.cart.filter(product => product.id !== action.data)
             return { ...state, cart: [...shop_cart] }
+        case 'increase':
+            const item = state.cart.find(item => item.id === action.data)
+            item.quantity++
+            return { ...state }
+        case 'decrease':
+            const product_item = state.cart.find(item => item.id === action.data)
+            if (product_item.quantity > 1) {
+                product_item.quantity--
+            }
+            return { ...state }
         default:
             throw new Error('Dispatch Type is Wrong!')
     }

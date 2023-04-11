@@ -2,9 +2,9 @@ import { createContext, useContext, useReducer, useState, useEffect } from 'reac
 
 import { initialState, reducer } from '../reducer/useReducer';
 
-import { toast } from "react-toastify";
-
 import enLanguage from '../lang/en.json';
+
+import { toast } from "react-toastify";
 
 const AppContext = createContext();
 
@@ -36,6 +36,16 @@ const AppProvider = ({ children }) => {
         dispatch({ type: 'delete_item', data: id })
         cart_delete_toast()
     }
+    // increase product
+    function increase_product(id) {
+        dispatch({ type: 'increase', data: id })
+        dispatch({ type: 'get_total' })
+    }
+    // decrease product
+    function decrease_product(id) {
+        dispatch({ type: 'decrease', data: id })
+        dispatch({ type: 'get_total' })
+    }
     // function toastify
     function add_toast_success() {
         toast.success('Add to Cart', {
@@ -53,7 +63,7 @@ const AppProvider = ({ children }) => {
     }, [state.cart])
 
     return (
-        <AppContext.Provider value={{ ...state, lang, back_to_top, open_nav, close_nav, add_to_cart, delete_item }}>{children}</AppContext.Provider>
+        <AppContext.Provider value={{ ...state, lang, back_to_top, open_nav, close_nav, add_to_cart, delete_item, increase_product,decrease_product }}>{children}</AppContext.Provider>
     )
 }
 

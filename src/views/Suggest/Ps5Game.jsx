@@ -8,9 +8,13 @@ import Header from "@/components/template/header/Header";
 
 import Footer from "@/components/template/footer/Footer";
 
+import { useGlobalContext } from "@/context/useContext";
+
 import { ps5Game } from "@/data/HeroSuggest/ps5Game";
 
 import { MdAddShoppingCart } from "react-icons/md";
+
+import { ToastContainer } from "react-toastify";
 
 import ImageGallery from "react-image-gallery";
 
@@ -29,8 +33,11 @@ function Ps5Game() {
   const [loading, setLoading] = useState(false);
   // for show each product
   const id = useParams();
+  // global cart
+  const { add_to_cart } = useGlobalContext();
   useEffect(() => {
     ps5Game[0].products_col_one.forEach((products, idx) => {
+      // eslint-disable-next-line
       if (products.id == id.id) {
         setProduct({ ...products });
         setGallery([...products.gallery]);
@@ -38,6 +45,7 @@ function Ps5Game() {
       }
     });
     ps5Game[0].products_col_two.forEach((products, idx) => {
+      // eslint-disable-next-line
       if (products.id == id.id) {
         setProduct({ ...products });
         setGallery([...products.gallery]);
@@ -46,6 +54,7 @@ function Ps5Game() {
     });
     document.body.scrollTop = 1;
     document.documentElement.scrollTop = 1;
+    // eslint-disable-next-line
   }, []);
 
   return (
@@ -94,7 +103,7 @@ function Ps5Game() {
           <div className='product-details-checkout'>
             <div className='box'>
               <p>$ {product.price}</p>
-              <button>
+              <button onClick={() => add_to_cart(product)}>
                 <MdAddShoppingCart size={20} />
                 <p>Add to Cart</p>
               </button>
@@ -105,6 +114,8 @@ function Ps5Game() {
       {/* product Details */}
       <ProductSliderApp />
       <Footer />
+      {/* Toast Contaienr */}
+      <ToastContainer></ToastContainer>
     </>
   );
 }
