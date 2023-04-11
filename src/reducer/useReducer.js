@@ -28,23 +28,34 @@ const reducer = (state, action) => {
                 state.cart.push(action.data)
             }
             return { ...state }
+        // get total items
         case 'get_total':
             let total_prices = 0
             state.cart.forEach(product => {
                 total_prices += product.price * product.quantity
             })
             return { ...state, total_price: total_prices.toFixed(2) }
+        // delete items from cart
         case 'delete_item':
             const shop_cart = state.cart.filter(product => product.id !== action.data)
             return { ...state, cart: [...shop_cart] }
+        // increase product in cart
         case 'increase':
             const item = state.cart.find(item => item.id === action.data)
             item.quantity++
             return { ...state }
+        // decrease product in cart
         case 'decrease':
             const product_item = state.cart.find(item => item.id === action.data)
-            if (product_item.quantity > 1) {
+            const delete_item = state.cart.filter(product => product.id !== action.data)
+            if (product_item.quantity >= 1) {
                 product_item.quantity--
+            }
+            if (product_item.quantity <= 0) {
+                return {
+                    ...state,
+                    cart: [...delete_item]
+                }
             }
             return { ...state }
         default:
