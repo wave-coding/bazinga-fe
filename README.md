@@ -1,7 +1,7 @@
 # Home Page 😉✌
 
 <div align="center">
-  <img width=100% height="100%" src="https://user-images.githubusercontent.com/66621982/231040204-a82bda83-f939-4318-a6f4-4957e1a1cec2.png" />
+  <img width=100% height="100%" src="https://user-images.githubusercontent.com/66621982/231041232-85445c4c-1387-474c-b415-88efc91eb164.png" />
 </div>
 
 # Getting Started with Create React App
