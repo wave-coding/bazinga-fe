@@ -4,6 +4,8 @@ import Checkout_Sponsored from "@/assets/media/sponsored/Checkout_Img.jpg";
 
 import Header from "@/components/template/header/Header";
 
+import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
+
 import Footer from "@/components/template/footer/Footer";
 
 import { useGlobalContext } from "@/context/useContext";
@@ -44,7 +46,7 @@ function CheckoutApp() {
                         alt={product.name}
                         width={"20px"}
                       />
-                      <p style={{ textAlign: "justify", fontSize: "13px" }}>
+                      <p style={{ textAlign: "start", fontSize: "13px" }}>
                         {product.name}
                         <span
                           onClick={() => delete_item(product.id)}
@@ -57,15 +59,15 @@ function CheckoutApp() {
                           }}>
                           Delete
                         </span>
-                        <div className='s'>
+                        <span className='checkout-quantity'>
                           <button onClick={() => increase_product(product.id)}>
-                            +
+                            <AiOutlinePlus />
                           </button>
-                          <button>{product.quantity}</button>
+                          <span>{product.quantity}</span>
                           <button onClick={() => decrease_product(product.id)}>
-                            -
+                            <AiOutlineMinus />
                           </button>
-                        </div>
+                        </span>
                       </p>
                     </div>
                     <div>${product.price}</div>

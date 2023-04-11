@@ -86,6 +86,31 @@
     cursor: pointer;
 }
 
+.checkout .checkout-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.checkout .checkout-quantity button:nth-child(1) {
+    border: none;
+    margin: 0 0.5rem 0 0;
+    color: green;
+    cursor: pointer;
+}
+
+.checkout .checkout-quantity button:last-child {
+    border: none;
+    margin: 0 0 0 0.5rem;
+    color: red;
+    cursor: pointer;
+}
+
+.checkout .checkout-quantity span {
+    border: 1px solid #999;
+    padding: 0 0.5rem;
+    border-radius: 5px;
+}
+
 @media screen and (max-width:1100px) {
     .checkout {
         grid-template-columns: repeat(1, 1fr);
