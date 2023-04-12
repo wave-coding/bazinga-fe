@@ -4,7 +4,8 @@ export const puddleBoardProducts = {
         // https://www.amazon.com/Highpi-Inflatable-11x33x6W-Accessories-Backpack/dp/B08Y8SBYXQ/ref=sr_1_1_sspa?keywords=puddle+board&qid=1680049384&sprefix=pudle+boa%2Caps%2C530&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFEOVlLT0RaSzVMNVYmZW5jcnlwdGVkSWQ9QTAwNTU5MzFEUTA2TDZGNTdVWVUmZW5jcnlwdGVkQWRJZD1BMDc0MTEzNU1IWFNHVk5OUzVUVCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=
         {
             id: `035803c6-d1df-4be9-a350-c32d4aec100b`,
-            price: `319.99`,
+            price: 319.99,
+            quantity: 1,
             path: 'puddleboard',
             brand: 'Highpi',
             information: [
@@ -45,7 +46,8 @@ export const puddleBoardProducts = {
         // https://www.amazon.com/SereneLife-Inflatable-Accessories-Paddling-Non-Slip/dp/B0892HRPSB/ref=sr_1_6?keywords=puddle+board&qid=1680049384&sprefix=pudle+boa%2Caps%2C530&sr=8-6
         {
             id: `88b46fc8-a2af-4daf-9d38-fed0405dc2ab`,
-            price: `332.55`,
+            price: 332.55,
+            quantity: 1,
             path: 'puddleboard',
             brand: 'SereneLife',
             information: [
@@ -86,7 +88,8 @@ export const puddleBoardProducts = {
         // https://www.amazon.com/PORTAL-Inflatable-Accessories-Including-Waterproof/dp/B08ZHVPWG5/ref=sr_1_17?keywords=puddle+board&qid=1680049384&sprefix=pudle+boa%2Caps%2C530&sr=8-17
         {
             id: `7233d7c0-98e6-4e81-a075-b84f971d4c5a`,
-            price: `359.99`,
+            price: 359.99,
+            quantity: 1,
             path: 'puddleboard',
             brand: 'PORTAL',
             information: [
@@ -127,7 +130,8 @@ export const puddleBoardProducts = {
         // https://www.amazon.com/Inflatable-Paddle-Family-Friendly-Stripes/dp/B0BGCFCPGP/ref=sr_1_20_sspa?keywords=puddle+board&qid=1680049384&sprefix=pudle+boa%2Caps%2C530&sr=8-20-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFEOVlLT0RaSzVMNVYmZW5jcnlwdGVkSWQ9QTAwNTU5MzFEUTA2TDZGNTdVWVUmZW5jcnlwdGVkQWRJZD1BMDQyODIzNjFPUTZXQUZYMTM5UFYmd2lkZ2V0TmFtZT1zcF9tdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl
         {
             id: `057671ba-702d-438c-b37b-1b16152c4f34`,
-            price: `499.99`,
+            price: 499.99,
+            quantity: 1,
             path: 'puddleboard',
             brand: 'Bote',
             information: [
@@ -168,7 +172,8 @@ export const puddleBoardProducts = {
         // https://www.amazon.com/Highpi-Inflatable-106x32x6-Accessories-Anti-Slip/dp/B08R389LLS/ref=sr_1_28?keywords=puddle%2Bboard&qid=1680049384&sprefix=pudle%2Bboa%2Caps%2C530&sr=8-28&th=1
         {
             id: `81e02560-e7ae-40ca-96ae-2798bca7ca3b`,
-            price: `289.00`,
+            price: 289.00,
+            quantity: 1,
             path: 'puddleboard',
             brand: 'Highpi',
             information: [
@@ -209,7 +214,8 @@ export const puddleBoardProducts = {
         // https://www.amazon.com/FAYEAN-Inflatable-Include-Backpack-Waterproof/dp/B08FMFLNHK/ref=sr_1_52?keywords=puddle+board&qid=1680049384&sprefix=pudle+boa%2Caps%2C530&sr=8-52
         {
             id: `580b02b5-ff7e-4a3b-9eed-fa8e06812fb8`,
-            price: `216.59`,
+            price: 216.59,
+            quantity: 1,
             path: 'puddleboard',
             brand: 'FAYEAN',
             information: [
@@ -250,7 +256,8 @@ export const puddleBoardProducts = {
         // https://www.amazon.com/Goplus-Inflatable-Accessories-Paddling-Non-Slip/dp/B086XBW2B1/ref=sr_1_53?keywords=puddle+board&qid=1680049384&sprefix=pudle+boa%2Caps%2C530&sr=8-53
         {
             id: `6e95b2e6-d96e-4a30-b7e7-622272ea3d9c`,
-            price: `159.99`,
+            price: 159.99,
+            quantity: 1,
             path: 'puddleboard',
             brand: 'Goplus',
             information: [

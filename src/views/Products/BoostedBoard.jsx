@@ -10,7 +10,11 @@ import Header from "@/components/template/header/Header";
 
 import Footer from "@/components/template/footer/Footer";
 
+import { useGlobalContext } from "@/context/useContext";
+
 import { MdAddShoppingCart } from "react-icons/md";
+
+import { ToastContainer } from "react-toastify";
 
 import ImageGallery from "react-image-gallery";
 
@@ -29,6 +33,8 @@ function BoostedBoard() {
   const [loading, setLoading] = useState(false);
   // for show each product
   const id = useParams();
+  // global cart
+  const { add_to_cart } = useGlobalContext();
   useEffect(() => {
     boostedBoardProducts.products.forEach((products, idx) => {
       // eslint-disable-next-line
@@ -88,7 +94,7 @@ function BoostedBoard() {
           <div className='product-details-checkout'>
             <div className='box'>
               <p>$ {product.price}</p>
-              <button>
+              <button onClick={() => add_to_cart(product)}>
                 <MdAddShoppingCart size={20} />
                 <p>Add to Cart</p>
               </button>
@@ -99,6 +105,8 @@ function BoostedBoard() {
       {/* product Details */}
       <ProductSliderApp />
       <Footer />
+      {/* Toast Contaienr */}
+      <ToastContainer></ToastContainer>
     </>
   );
 }

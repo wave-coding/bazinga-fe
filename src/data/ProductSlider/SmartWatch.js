@@ -4,7 +4,8 @@ export const smartWatchProduct = {
         // https://www.amazon.com/SAMSUNG-Bluetooth-Smartwatch-Improved-Sapphire/dp/B0B2HXJZ98/ref=sr_1_1_sspa?crid=3M4M3ZNLZM9GI&keywords=smart+watch&qid=1680029112&sprefix=smart+watc%2Caps%2C369&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFUVDNaNDFVUjQyS0wmZW5jcnlwdGVkSWQ9QTA3NjY5NjJNUlBKNk1ITlpVTVUmZW5jcnlwdGVkQWRJZD1BMDI3NzYxNTdaUTZWWlFZR1pCNiZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=
         {
             id: `44ff42ac-35de-4928-a680-4132d0641e31`,
-            price: '419.99',
+            price: 419.99,
+            quantity: 1,
             brand: 'SAMSUNG',
             path: 'smartwatch',
             information: [
@@ -45,7 +46,8 @@ export const smartWatchProduct = {
         // https://www.amazon.com/Amazfit-Smartwatch-Military-Certified-Waterproof/dp/B08X9WS6VW/ref=sr_1_2_sspa?crid=3M4M3ZNLZM9GI&keywords=smart+watch&qid=1680029112&sprefix=smart+watc%2Caps%2C369&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFUVDNaNDFVUjQyS0wmZW5jcnlwdGVkSWQ9QTA3NjY5NjJNUlBKNk1ITlpVTVUmZW5jcnlwdGVkQWRJZD1BMDY2MTM2NDMzMEY0RlYyODEzMVImd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl
         {
             id: `5ada865a-9ced-4669-8549-42e9414a6207`,
-            price: '141.45',
+            price: 141.45,
+            quantity: 1,
             brand: 'Amazfit',
             path: 'smartwatch',
             information: [
@@ -86,7 +88,8 @@ export const smartWatchProduct = {
         // https://www.amazon.com/Samsung-Bluetooth-Advanced-Monitoring-Tracking/dp/B08HL5K8JB/ref=sr_1_5?crid=MODJTW6ASJI3&keywords=smart+watch&qid=1680029290&sprefix=smart+wat%2Caps%2C421&sr=8-5
         {
             id: `ccfb932f-87c9-4515-82a2-f730cb1845db`,
-            price: '83.95',
+            price: 83.95,
+            quantity: 1,
             brand: 'SAMSUNG',
             path: 'smartwatch',
             information: [
@@ -127,7 +130,8 @@ export const smartWatchProduct = {
         // https://www.amazon.com/Touchscreen-Activity-Smartwatch-Signature-Charger/dp/B0B8L69BJW/ref=sr_1_17_sspa?crid=MODJTW6ASJI3&keywords=smart+watch&qid=1680029290&sprefix=smart+wat%2Caps%2C421&sr=8-17-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExVUs0NkFVUEMwSzc0JmVuY3J5cHRlZElkPUEwODUyNjE1M1FaRzNSMDkzWExQRCZlbmNyeXB0ZWRBZElkPUEwNTIzMzkxMzBNQlhEUzMwNTZLMiZ3aWRnZXROYW1lPXNwX210ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=
         {
             id: `a34dc604-38fc-495f-9f98-dbd12b34f4a6`,
-            price: '299.00',
+            price: 299.00,
+            quantity: 1,
             brand: 'Certified Brands',
             path: 'smartwatch',
             information: [
@@ -168,7 +172,8 @@ export const smartWatchProduct = {
         // https://www.amazon.com/Apple-Cellular-Titanium-Precision-Extra-Long/dp/B0BDJK4G9C?ref_=ast_sto_dp
         {
             id: `a3ced6d2-e881-470e-8f66-c81a9d04bc2a`,
-            price: '998.75',
+            price: 998.75,
+            quantity: 1,
             brand: 'APPLE',
             path: 'smartwatch',
             information: [
@@ -209,7 +214,8 @@ export const smartWatchProduct = {
         // https://www.amazon.com/Apple-Cellular-Starlight-Aluminum-Always/dp/B0BDJ5SP5Q?ref_=ast_sto_dp
         {
             id: `05997617-4f98-46cc-83a7-523539ee2485`,
-            price: '498.75',
+            price: 498.75,
+            quantity: 1,
             brand: 'APPLE',
             path: 'smartwatch',
             information: [
@@ -250,7 +256,8 @@ export const smartWatchProduct = {
         // https://www.amazon.com/Apple-Watch-Midnight-Aluminum-Always/dp/B0BDHM49BJ?ref_=ast_sto_dp
         {
             id: `be89d174-36c9-4e67-a684-ce2b31624b97`,
-            price: '498.75',
+            price: 498.75,
+            quantity: 1,
             brand: 'APPLE',
             path: 'smartwatch',
             information: [

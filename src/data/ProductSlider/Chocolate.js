@@ -4,7 +4,8 @@ export const chocolateProducts = {
         // https://www.amazon.com/Ferrero-Rocher-Collection-Hazelnut-Chocolates/dp/B01BDI89SW/ref=sr_1_1?keywords=chocolate&qid=1680036449&sprefix=choc%2Caps%2C358&sr=8-1
         {
             id: `c0ea3714-e13d-4750-a7f5-f84f283787cc`,
-            price: `16.90`,
+            price: 16.90,
+            quantity: 1,
             path: 'chocolate',
             brand: 'Ferrero',
             information: [
@@ -45,7 +46,8 @@ export const chocolateProducts = {
         // https://www.amazon.com/Dove-Easter-Assorted-Springtime-Chocolate/dp/B01N6BVQGL/ref=sr_1_3?keywords=chocolate&qid=1680036449&sprefix=choc%2Caps%2C358&sr=8-3
         {
             id: `d253cf53-5529-4c50-b47b-3c0d66bd7be5`,
-            price: `11.99`,
+            price: 11.99,
+            quantity: 1,
             path: 'chocolate',
             brand: 'DOVE',
             information: [
@@ -86,7 +88,8 @@ export const chocolateProducts = {
         // https://www.amazon.com/Ghirardelli-Assorted-Squares-15-77-Ounce/dp/B00V54CP0I/ref=sr_1_2?keywords=chocolate&qid=1680036449&sprefix=choc%2Caps%2C358&sr=8-2
         {
             id: `162e1728-0c69-43ce-a631-8fc1e7559218`,
-            price: `39.99`,
+            price: 39.99,
+            quantity: 1,
             path: 'chocolate',
             brand: 'Ghirardelli ',
             information: [
@@ -127,7 +130,8 @@ export const chocolateProducts = {
         // https://www.amazon.com/HERSHEYS-Nuggets-Chocolate-Candy-Assortment/dp/B07PFF8J2P/ref=sr_1_4?keywords=chocolate&qid=1680036449&sprefix=choc%2Caps%2C358&sr=8-4
         {
             id: `08fdf324-e694-45fd-a8eb-13a973c273c6`,
-            price: `24.99`,
+            price: 24.99,
+            quantity: 1,
             path: 'chocolate',
             brand: 'HERSHEY',
             information: [
@@ -168,7 +172,8 @@ export const chocolateProducts = {
         // https://www.amazon.com/MS-Peanut-Chocolate-Candy-38-Ounce/dp/B07W5B3Z7Q/ref=sr_1_22?keywords=chocolate&qid=1680036449&sprefix=choc%2Caps%2C358&sr=8-22
         {
             id: `c5bfd692-2270-4fc0-98a2-355b31a1671a`,
-            price: `11.98`,
+            price: 11.98,
+            quantity: 1,
             path: 'chocolate',
             brand: 'M&M',
             information: [
@@ -209,7 +214,8 @@ export const chocolateProducts = {
         // https://www.amazon.com/TWIX-CARAMEL-SIZE-18-28-OUNCE/dp/B09NCF31SX/ref=sr_1_25?keywords=chocolate&qid=1680036449&sprefix=choc%2Caps%2C358&sr=8-25
         {
             id: `7474cc51-da65-4f08-972c-c2571d990a9a`,
-            price: `19.99`,
+            price: 19.99,
+            quantity: 1,
             path: 'chocolate',
             brand: 'Twix',
             information: [
@@ -250,7 +256,8 @@ export const chocolateProducts = {
         // amazon.com/Chocolate-Snack-Candy-Individually-Wrapped/dp/B09JJYGCDH/ref=sr_1_39?keywords=chocolate&qid=1680036449&sprefix=choc%2Caps%2C358&sr=8-39
         {
             id: `5ab5e0fe-ee6c-4a0d-9ef6-f2bfb890316c`,
-            price: `38.99`,
+            price: 38.99,
+            quantity: 1,
             path: 'chocolate',
             brand: 'Kit Kat',
             information: [

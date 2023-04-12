@@ -39,7 +39,7 @@
 
 .checkout .checkout-shopping-box-content img {
     width: 100px;
-    height: 80px;
+    height: 120px;
 }
 
 .checkout .checkout-shopping-box-content div p {
@@ -108,6 +108,7 @@
 .checkout .checkout-quantity span {
     border: 1px solid #999;
     padding: 0 0.5rem;
+    background-color: #fff;
     border-radius: 5px;
 }
 

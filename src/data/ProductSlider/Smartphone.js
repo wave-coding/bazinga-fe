@@ -4,7 +4,8 @@ export const smartPhoneProducts = {
         // https://www.amazon.com/Nothing-Phone1-256GB-Factory-Unlocked/dp/B0B76J71DJ/ref=sr_1_2?keywords=nothing+phone+1&qid=1680035495&sprefix=nothing%2Caps%2C341&sr=8-2
         {
             id: `adbc5e57-c8f5-4457-af0a-a7a57ba06a84`,
-            price: `416.00`,
+            price: 416.00,
+            quantity: 1,
             path: 'smartphone',
             brand: 'Nothing',
             information: [
@@ -37,7 +38,8 @@ export const smartPhoneProducts = {
         // https://www.amazon.com/Nokia-G21-Dual-SIM-Unlocked-Smartphone/dp/B09SZDN5H7/ref=sr_1_1?crid=3LZLX2IY1HCR2&keywords=nokia+g21&qid=1680035643&sprefix=nokia+g%2Caps%2C393&sr=8-1
         {
             id: `abcb45c8-9d74-4003-973d-d1b4086c1bd4`,
-            price: `227.00`,
+            price: 227.00,
+            quantity: 1,
             path: 'smartphone',
             brand: 'Nokia',
             information: [
@@ -82,7 +84,8 @@ export const smartPhoneProducts = {
         // https://www.amazon.com/SAMSUNG-Unlocked-Smartphone-Adaptive-Lavender/dp/B0BLP46C86/ref=sr_1_1?crid=2O047R25DCCYM&keywords=s23&qid=1680035680&sprefix=nokia+g21%2Caps%2C1279&sr=8-1
         {
             id: `d2d3a059-8102-4531-84fa-a4cec4fe5233`,
-            price: `759.99`,
+            price: 759.99,
+            quantity: 1,
             path: 'smartphone',
             brand: 'Samsung',
             information: [
@@ -127,7 +130,8 @@ export const smartPhoneProducts = {
         // https://www.amazon.com/Apple-iPhone-256GB-Deep-Purple/dp/B0BN91GD3J/ref=sr_1_3?crid=3T5UV1YXP5FS&keywords=iphone+14&qid=1680035759&sprefix=iphone+14+pro+m%2Caps%2C503&sr=8-3
         {
             id: `2f5e334c-8c65-4d48-8273-0e31c9484bae`,
-            price: `1200.00`,
+            price: 1200.00,
+            quantity: 1,
             path: 'smartphone',
             brand: 'Apple',
             information: [
@@ -172,7 +176,8 @@ export const smartPhoneProducts = {
         // https://www.amazon.com/ASUS-ZenFone-2400x1080-Unlocked-AI2202-16G256G-BK/dp/B0BBP4HCSN/ref=sr_1_1?keywords=asus+zenfone+9&qid=1680035816&sprefix=asus%2Caps%2C537&sr=8-1
         {
             id: `df2fc1da-682c-4c52-b143-db00bb5871fe`,
-            price: `799.99`,
+            price: 799.99,
+            quantity: 1,
             path: 'smartphone',
             brand: 'Asus',
             information: [
@@ -217,7 +222,8 @@ export const smartPhoneProducts = {
         // https://www.amazon.com/OPPO-Dual-SIM-Factory-Unlocked-Smartphone/dp/B082F1QKHK/ref=sr_1_2?keywords=oppo+find+n2+flip&qid=1680035903&sprefix=oppo%2Caps%2C397&sr=8-2
         {
             id: `bbf00f33-8b14-4309-b10b-dcd892adc1d6`,
-            price: `850.00`,
+            price: 850.00,
+            quantity: 1,
             path: 'smartphone',
             brand: 'Oppo',
             information: [
@@ -262,7 +268,8 @@ export const smartPhoneProducts = {
         // https://www.amazon.com/SAMSUNG-Factory-Unlocked-SM-F721U1-Graphite/dp/B0BKTWLR31/ref=sr_1_1?keywords=samsung+z+flip+4&qid=1680035941&sprefix=samsung+z+fl%2Caps%2C434&sr=8-1
         {
             id: `ce939d17-578b-414b-a039-e7f1726ce9d9`,
-            price: `589.00`,
+            price: 589.00,
+            quantity: 1,
             path: 'smartphone',
             brand: 'Samsung',
             information: [

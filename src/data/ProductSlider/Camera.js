@@ -4,7 +4,8 @@ export const cameraProduct = {
         // https://www.amazon.com/Canon-Rebel-T7-18-55mm-II/dp/B07C2Z21X5/ref=sr_1_3?crid=E4O51BASX90A&keywords=camera&qid=1680037072&sprefix=camera%2Caps%2C824&sr=8-3
         {
             id: `10c0d155-3d95-49bc-914e-d4ce5b9fd9c7`,
-            price: `348.00`,
+            price: 348.00,
+            quantity: 1,
             path: 'camera',
             brand: 'Canon',
             information: [
@@ -45,7 +46,8 @@ export const cameraProduct = {
         // https://www.amazon.com/Sony-Alpha-a6400-Mirrorless-Camera/dp/B07MV3P74D/ref=sr_1_4?crid=E4O51BASX90A&keywords=camera&qid=1680037072&sprefix=camera%2Caps%2C824&sr=8-4
         {
             id: `c980871e-d584-41cd-baa0-9d9cdc8bc8a5`,
-            price: `1298.00`,
+            price: 1298.00,
+            quantity: 1,
             path: 'camera',
             brand: 'Sony',
             information: [
@@ -86,7 +88,8 @@ export const cameraProduct = {
         // https://www.amazon.com/Canon-Mirrorless-Camera-24-105mm-4147C013/dp/B08C6CWVNZ/ref=sr_1_6?crid=E4O51BASX90A&keywords=camera&qid=1680037072&sprefix=camera%2Caps%2C824&sr=8-6
         {
             id: `7d3c7825-6928-45d5-83d3-e8bbe0f6f981`,
-            price: `4799.00`,
+            price: 4799.00,
+            quantity: 1,
             path: 'camera',
             brand: 'Canon',
             information: [
@@ -127,7 +130,8 @@ export const cameraProduct = {
         // https://www.amazon.com/Nikon-D850-FX-Format-Digital-Camera/dp/B07524LHMT/ref=sr_1_14?crid=E4O51BASX90A&keywords=camera&qid=1680037072&sprefix=camera%2Caps%2C824&sr=8-14
         {
             id: `3c49b4e4-6bc9-4b1a-b897-68de823e4faa`,
-            price: `2147.38`,
+            price: 2147.38,
+            quantity: 1,
             path: 'camera',
             brand: 'Nikon',
             information: [
@@ -168,7 +172,8 @@ export const cameraProduct = {
         // https://www.amazon.com/Canon-RF-S18-45mm-Mirrorless-High-Speed-Lightweight/dp/B0B2KV35NX/ref=sr_1_21?crid=E4O51BASX90A&keywords=camera&qid=1680037072&sprefix=camera%2Caps%2C824&sr=8-21
         {
             id: `7d1e5044-d24a-491e-8ca2-2f1de7f011b0`,
-            price: `999.00`,
+            price: 999.00,
+            quantity: 1,
             path: 'camera',
             brand: 'Canon',
             information: [
@@ -209,7 +214,8 @@ export const cameraProduct = {
         // https://www.amazon.com/OM-System-OM-1-Camera-Black/dp/B09S5JBX56/ref=sr_1_2_sspa?content-id=amzn1.sym.1b55e175-aab2-4228-be7e-b2330901df8b%3Aamzn1.sym.1b55e175-aab2-4228-be7e-b2330901df8b&keywords=digital+camera&pd_rd_r=d2590fff-5e1e-4ce2-96a4-a9fd8621527d&pd_rd_w=FX6JQ&pd_rd_wg=2elBq&pf_rd_p=1b55e175-aab2-4228-be7e-b2330901df8b&pf_rd_r=WF2NMDRY0NKY4Q8AHQ0A&qid=1680037318&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyREtXV1pBUEdBR1NTJmVuY3J5cHRlZElkPUEwNTI0MDgxSVQwRTRSTkRZSjMzJmVuY3J5cHRlZEFkSWQ9QTA4MzMyNzgzVVkzSzlRN0xHSEdDJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==
         {
             id: `0b6f6376-37f9-434d-8c0e-4c984ca5ad52`,
-            price: `1999.99`,
+            price: 1999.99,
+            quantity: 1,
             path: 'camera',
             brand: 'Olympus',
             information: [
@@ -250,7 +256,8 @@ export const cameraProduct = {
         // https://www.amazon.com/Vlogging-Autofocus-Photography-Batteries-Charging/dp/B0BGLDXHGY/ref=sr_1_6_mod_primary_new?content-id=amzn1.sym.1b55e175-aab2-4228-be7e-b2330901df8b%3Aamzn1.sym.1b55e175-aab2-4228-be7e-b2330901df8b&keywords=digital+camera&pd_rd_r=d2590fff-5e1e-4ce2-96a4-a9fd8621527d&pd_rd_w=FX6JQ&pd_rd_wg=2elBq&pf_rd_p=1b55e175-aab2-4228-be7e-b2330901df8b&pf_rd_r=WF2NMDRY0NKY4Q8AHQ0A&qid=1680037318&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-6
         {
             id: `56a4033e-1eac-4b94-83ef-52ca30ced444`,
-            price: `115.99`,
+            price: 115.99,
+            quantity: 1,
             path: 'camera',
             brand: 'IWEUKJLO',
             information: [
