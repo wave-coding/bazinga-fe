@@ -1,6 +1,19 @@
 import AuthLogo from "@/assets/media/logo/auth-logo.png";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function SignupApp() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [rePassword, setRePassword] = useState("");
+  function createSignup() {
+    console.log(name, email, password, rePassword);
+    setName("");
+    setEmail("");
+    setPassword("");
+    setRePassword("");
+  }
   return (
     <>
       <section className='signup-container'>
@@ -18,6 +31,8 @@ function SignupApp() {
               <input
                 type='text'
                 name='Name'
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
             </div>
             <div className='signup-form-content'>
@@ -25,6 +40,8 @@ function SignupApp() {
               <input
                 type='email'
                 name='Email'
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className='signup-form-content'>
@@ -33,6 +50,8 @@ function SignupApp() {
                 type='password'
                 name='Password'
                 placeholder='At least 6 characters'
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
               />
             </div>
             <div className='signup-form-content'>
@@ -41,10 +60,12 @@ function SignupApp() {
                 type='password'
                 name='RePassword'
                 placeholder='password'
+                value={rePassword}
+                onChange={(e) => setRePassword(e.target.value)}
               />
             </div>
             <div className='signup-button'>
-              <button>
+              <button onClick={() => createSignup()}>
                 <p>Create Your Amazon account</p>
               </button>
             </div>
@@ -56,7 +77,9 @@ function SignupApp() {
             </div>
             <div className='switch-to-register'>
               <small>Already have an account ? </small>
-              <small>Sign-In</small>
+              <Link to={"/login"}>
+                <small>Sign-In</small>
+              </Link>
             </div>
           </div>
         </div>

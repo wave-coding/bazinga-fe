@@ -134,6 +134,10 @@
     margin: 0 0.5rem;
 }
 
+.mobile-header .info-menu a {
+    color: #fff;
+}
+
 @media screen and (max-width:1439px) {
     .mobile-header {
         display: flex;

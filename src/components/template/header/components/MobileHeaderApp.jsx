@@ -1,12 +1,19 @@
 import AmazonLogo from "@/assets/media/logo/Amazon-logo.png";
+
 import { MdSearch, MdOutlinePlace } from "react-icons/md";
+
 import { useGlobalContext } from "@/context/useContext";
+
 import { HiBars3CenterLeft } from "react-icons/hi2";
+
 import { RiMapPinUserFill } from "react-icons/ri";
+
 import { BsCart2 } from "react-icons/bs";
 
+import { Link } from "react-router-dom";
+
 function MobileHeaderApp() {
-  const { open_nav } = useGlobalContext();
+  const { open_nav, cart } = useGlobalContext();
   return (
     <>
       <nav className='mobile-header'>
@@ -18,12 +25,14 @@ function MobileHeaderApp() {
               </span>
             </li>
             <li>
-              <div>
-                <img
-                  src={AmazonLogo}
-                  alt='amazon-logo'
-                />
-              </div>
+              <Link to={"/"}>
+                <div>
+                  <img
+                    src={AmazonLogo}
+                    alt='amazon-logo'
+                  />
+                </div>
+              </Link>
             </li>
           </ul>
         </div>
@@ -32,11 +41,13 @@ function MobileHeaderApp() {
             <h4>Hosein ,</h4>
             <RiMapPinUserFill size={20} />
           </div>
-          <div className='header-basket'>
-            <BsCart2 size={30}></BsCart2>
-            <span className='product-count'>99</span>
-            <h5>Cart</h5>
-          </div>
+          <Link to={"/checkout"} className="">
+            <div className='header-basket'>
+              <BsCart2 size={30}></BsCart2>
+              <span className='product-count'>{cart.length}</span>
+              <h5>Cart</h5>
+            </div>
+          </Link>
         </div>
       </nav>
       {/* search-bar */}

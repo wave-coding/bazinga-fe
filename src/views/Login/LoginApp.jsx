@@ -1,6 +1,15 @@
 import AuthLogo from "@/assets/media/logo/auth-logo.png";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function LoginApp() {
+  const [name, setName] = useState("");
+  const [password, setPassword] = useState("");
+  function createLogin() {
+    console.log(name, password);
+    setName("");
+    setPassword("");
+  }
   return (
     <>
       <section className='login-container'>
@@ -18,6 +27,8 @@ function LoginApp() {
               <input
                 type='email'
                 name='Email'
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
             </div>
             <div className='login-form-content'>
@@ -25,10 +36,12 @@ function LoginApp() {
               <input
                 type='password'
                 name='Password'
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
               />
             </div>
             <div className='login-button'>
-              <button>
+              <button onClick={() => createLogin()}>
                 <p>Sign In</p>
               </button>
             </div>
@@ -42,9 +55,11 @@ function LoginApp() {
               <small>New to Amazon ? </small>
             </div>
             <div className='switch-to-login-button'>
-              <button>
-                <p>Create your Amazon Account</p>
-              </button>
+              <Link to={"/signup"}>
+                <button>
+                  <p>Create your Amazon Account</p>
+                </button>
+              </Link>
             </div>
           </div>
         </div>

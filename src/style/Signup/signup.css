@@ -55,6 +55,6 @@
     margin: 1rem 0;
 }
 
-.signup-form .switch-to-register small:nth-child(2) {
+.signup-form .switch-to-register a {
     font-weight: bold;
 }

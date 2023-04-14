@@ -1,10 +1,10 @@
-import { useGlobalContext } from "@/context/useContext";
-
 import { BsCart2, BsFillCaretDownFill } from "react-icons/bs";
 
 import AmazonLogo from "@/assets/media/logo/Amazon-logo.png";
 
 import { MdOutlinePlace, MdSearch } from "react-icons/md";
+
+import { useGlobalContext } from "@/context/useContext";
 
 import ReactCountryFlag from "react-country-flag";
 
@@ -119,10 +119,12 @@ function HeaderApp() {
             {/* Signin Hover */}
             <div className='header-signin-card'>
               <div className='signin-btn'>
-                <button>Sign in</button>
+                <Link to={"/login"}>
+                  <button>Sign in</button>
+                </Link>
               </div>
               <p className='login-start'>
-                New customer? <a href='login'>start here</a>
+                New customer? <Link to={"/login"}>start here</Link>
               </p>
               <div className='login-content'>
                 <div>
