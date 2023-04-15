@@ -1,14 +1,21 @@
 import AuthLogo from "@/assets/media/logo/auth-logo.png";
-import { Link } from "react-router-dom";
+
+import { useGlobalContext } from "@/context/useContext";
+
+import { Link, useNavigate } from "react-router-dom";
+
 import { useState } from "react";
 
 function LoginApp() {
+  const { login_user } = useGlobalContext();
+  const movePage = useNavigate();
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   function createLogin() {
-    console.log(name, password);
+    login_user({ name, password });
     setName("");
     setPassword("");
+    movePage("/");
   }
   return (
     <>

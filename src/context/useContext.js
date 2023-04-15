@@ -46,6 +46,14 @@ const AppProvider = ({ children }) => {
         dispatch({ type: 'decrease', data: id })
         dispatch({ type: 'get_total' })
     }
+    // create user
+    function create_account(user) {
+        dispatch({ type: "create_account", data: user })
+    }
+    //  login user
+    function login_user(user) {
+        dispatch({ type: "login_user", data: user })
+    }
     // function toastify
     function add_toast_success() {
         toast.success('Add to Cart', {
@@ -63,7 +71,7 @@ const AppProvider = ({ children }) => {
     }, [state.cart])
 
     return (
-        <AppContext.Provider value={{ ...state, lang, back_to_top, open_nav, close_nav, add_to_cart, delete_item, increase_product,decrease_product }}>{children}</AppContext.Provider>
+        <AppContext.Provider value={{ ...state, lang, back_to_top, open_nav, close_nav, add_to_cart, delete_item, increase_product, decrease_product, create_account, login_user }}>{children}</AppContext.Provider>
     )
 }
 

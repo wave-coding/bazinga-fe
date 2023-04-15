@@ -1,18 +1,25 @@
 import AuthLogo from "@/assets/media/logo/auth-logo.png";
-import { Link } from "react-router-dom";
+
+import { useGlobalContext } from "@/context/useContext";
+
+import { Link, useNavigate } from "react-router-dom";
+
 import { useState } from "react";
 
 function SignupApp() {
+  const { create_account } = useGlobalContext();
+  const movePage = useNavigate();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rePassword, setRePassword] = useState("");
   function createSignup() {
-    console.log(name, email, password, rePassword);
+    create_account({ name, email, password, rePassword, auth: false });
     setName("");
     setEmail("");
     setPassword("");
     setRePassword("");
+    movePage("/login");
   }
   return (
     <>

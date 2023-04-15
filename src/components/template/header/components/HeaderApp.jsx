@@ -11,7 +11,7 @@ import ReactCountryFlag from "react-country-flag";
 import { Link } from "react-router-dom";
 
 function HeaderApp() {
-  const { cart } = useGlobalContext();
+  const { cart, user } = useGlobalContext();
   return (
     <>
       <header>
@@ -111,7 +111,13 @@ function HeaderApp() {
             </div>
           </div>
           <div className='header-signin'>
-            <p>Hello, sign in</p>
+            <p>
+              {user.auth
+                ? user.name.length <= 6
+                  ? `Hello, ${user.name}`
+                  : `Hello, ${user.name.substring(0, 5) + "..."}`
+                : "Hello, sign in"}
+            </p>
             <div className='header-signin-bottom-article'>
               <h5>Account & Lists</h5>
               <BsFillCaretDownFill size={10}></BsFillCaretDownFill>
