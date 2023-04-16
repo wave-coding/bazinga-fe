@@ -130,7 +130,7 @@ function HeaderApp() {
                 </Link>
               </div>
               <p className='login-start'>
-                New customer? <Link to={"/login"}>start here</Link>
+                New customer? <Link to={"/signup"}>start here</Link>
               </p>
               <div className='login-content'>
                 <div>

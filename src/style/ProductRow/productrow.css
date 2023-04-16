@@ -81,6 +81,12 @@
     cursor: pointer;
 }
 
+#independ-product aside .column-single-product a {
+    font-size: 12px;
+    text-decoration: underline;
+    color: blue;
+}
+
 @media screen and (max-width:1200px) {
     #independ-product {
         margin: 0 auto;

@@ -161,6 +161,12 @@
     cursor: pointer;
 }
 
+#hero-product aside .column-single-product a {
+    font-size: 12px;
+    text-decoration: underline;
+    color: blue;
+}
+
 @media screen and (max-width:1200px) {
     #hero-product aside .column-single-product {
         align-items: center;

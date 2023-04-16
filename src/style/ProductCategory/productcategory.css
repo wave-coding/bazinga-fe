@@ -73,6 +73,12 @@
     cursor: pointer;
 }
 
+#product-category aside .column-single-product a {
+    font-size: 12px;
+    text-decoration: underline;
+    color: blue;
+}
+
 @media screen and (max-width:1200px) {
     #product-category aside {
         grid-template-columns: repeat(1, 100%);

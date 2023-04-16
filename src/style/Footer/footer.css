@@ -21,6 +21,10 @@
     margin: 0.8rem 0;
 }
 
+#footer-signin p a {
+    color: blue;
+}
+
 #footer-signin button {
     font-family: 'AmazonEmber';
     padding: 0.7rem 2rem;

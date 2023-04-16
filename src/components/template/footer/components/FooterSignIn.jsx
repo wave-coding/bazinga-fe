@@ -2,20 +2,24 @@ import { useGlobalContext } from "@/context/useContext";
 
 import AppButton from "../../../ui/Button/AppButton";
 
+import { Link } from "react-router-dom";
+
 function FooterSignIn() {
-  const { lang } = useGlobalContext();
+  const { lang, user } = useGlobalContext();
 
   return (
     <>
-      <section id='footer-signin'>
+      {!user.auth && <section id='footer-signin'>
         <main>
           <p>{lang.footer.footer_signin_title}</p>
-          <AppButton text={lang.label.login_title} />
+          <Link to={"/login"}>
+            <AppButton text={lang.label.login_title} />
+          </Link>
           <p>
-            New customer? <a href='login'>start here</a>
+            New customer? <Link to={"/signup"}>start here</Link>
           </p>
         </main>
-      </section>
+      </section>}
     </>
   );
 }
