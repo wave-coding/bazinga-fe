@@ -2,7 +2,7 @@ import ProductSliderApp from "@/components/product-slider/components/ProductSlid
 
 import MobileHeaderApp from "@/components/template/header/components/MobileHeaderApp";
 
-import { BooksProduct } from "@/data/ProductSlider/Books";
+// import { BooksProduct } from "@/data/ProductSlider/Books";
 
 import "react-image-gallery/styles/css/image-gallery.css";
 
@@ -11,6 +11,8 @@ import Header from "@/components/template/header/Header";
 import Footer from "@/components/template/footer/Footer";
 
 import { useGlobalContext } from "@/context/useContext";
+
+import { allProduct } from "@/data/allProducts";
 
 import { MdAddShoppingCart } from "react-icons/md";
 
@@ -36,7 +38,7 @@ function Books() {
   // global cart
   const { add_to_cart } = useGlobalContext();
   useEffect(() => {
-    BooksProduct.products.forEach((products, idx) => {
+    allProduct.forEach((products, idx) => {
       // eslint-disable-next-line
       if (products.id == id.id) {
         setProduct({ ...products });
