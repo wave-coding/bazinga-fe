@@ -2,8 +2,6 @@ import ProductSliderApp from "@/components/product-slider/components/ProductSlid
 
 import MobileHeaderApp from "@/components/template/header/components/MobileHeaderApp";
 
-import { smartPhoneProducts } from "@/data/ProductSlider/SmartPhone";
-
 import "react-image-gallery/styles/css/image-gallery.css";
 
 import Header from "@/components/template/header/Header";
@@ -13,6 +11,8 @@ import Footer from "@/components/template/footer/Footer";
 import { useGlobalContext } from "@/context/useContext";
 
 import { MdAddShoppingCart } from "react-icons/md";
+
+import { allProduct } from "@/data/allProducts";
 
 import { ToastContainer } from "react-toastify";
 
@@ -24,7 +24,7 @@ import { useEffect, useState } from "react";
 
 import Menu from "@/components/menu/Menu";
 
-function SmartPhone() {
+function AllProducts() {
   // set Products
   const [product, setProduct] = useState({});
   // set Gallery
@@ -36,7 +36,7 @@ function SmartPhone() {
   // global cart
   const { add_to_cart } = useGlobalContext();
   useEffect(() => {
-    smartPhoneProducts.products.forEach((products, idx) => {
+    allProduct.forEach((products, idx) => {
       // eslint-disable-next-line
       if (products.id == id.id) {
         setProduct({ ...products });
@@ -111,4 +111,4 @@ function SmartPhone() {
   );
 }
 
-export default SmartPhone;
+export default AllProducts;
