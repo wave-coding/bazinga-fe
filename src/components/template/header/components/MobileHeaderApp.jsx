@@ -13,7 +13,7 @@ import { BsCart2 } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 function MobileHeaderApp() {
-  const { open_nav, cart } = useGlobalContext();
+  const { open_nav, cart, user } = useGlobalContext();
   return (
     <>
       <nav className='mobile-header'>
@@ -38,10 +38,22 @@ function MobileHeaderApp() {
         </div>
         <div className='info-menu'>
           <div>
-            <h4>Hosein ,</h4>
-            <RiMapPinUserFill size={20} />
+            <h4>
+              {user.auth
+                ? user.name.length <= 6
+                  ? `Hello, ${user.name}`
+                  : `Hello, ${user.name.substring(0, 5) + "..."}`
+                : "Hello, guest "}
+            </h4>
+            <Link
+              to={"/login"}
+              className='info-menu-link'>
+              <RiMapPinUserFill size={20} />
+            </Link>
           </div>
-          <Link to={"/checkout"} className="">
+          <Link
+            to={"/checkout"}
+            className=''>
             <div className='header-basket'>
               <BsCart2 size={30}></BsCart2>
               <span className='product-count'>{cart.length}</span>

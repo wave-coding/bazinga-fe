@@ -1,7 +1,11 @@
 import { FavoritesProduct } from "@/data/ProductRow/FourRowProduct";
+
 import SingleProduct from "../../ui/Card/SingleProduct";
+
 import RecommendedProdcut from "./RecommendedProduct";
+
 import FourProductApp from "./FourProductApp";
+
 import {
   HealthProduct,
   DressProduct,

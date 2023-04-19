@@ -1,16 +1,16 @@
+import { informationProduct } from "@/data/HeroSuggest/informationProduct";
+
 import { asusSuggestLaptop } from "@/data/HeroSuggest/asusLaptop";
 
 import InformationProduct from "../../ui/Card/InformationProduct";
 
-import { informationProduct } from "@/data/HeroSuggest/informationProduct";
+import { easyReturn } from "@/data/HeroSuggest/easyReturn";
 
 import SingleProduct from "../../ui/Card/SingleProduct";
 
 import { ps5Game } from "@/data/HeroSuggest/ps5Game";
 
 import FourProduct from "../../ui/Card/FourProduct";
-
-import { easyReturn } from "@/data/HeroSuggest/easyReturn";
 
 function HeroProduct() {
   return (

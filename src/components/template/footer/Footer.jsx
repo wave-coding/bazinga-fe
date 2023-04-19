@@ -1,8 +1,8 @@
-import FooterSignIn from "./components/FooterSignIn";
+import FooterInformation from "./components/FooterInfomation";
 
 import FooterBackToUp from "./components/FooterBackToUp";
 
-import FooterInformation from "./components/FooterInfomation";
+import FooterSignIn from "./components/FooterSignIn";
 
 import FooterPolicy from "./components/FooterPolicy";
 

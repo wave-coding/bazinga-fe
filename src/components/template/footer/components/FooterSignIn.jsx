@@ -9,17 +9,19 @@ function FooterSignIn() {
 
   return (
     <>
-      {!user.auth && <section id='footer-signin'>
-        <main>
-          <p>{lang.footer.footer_signin_title}</p>
-          <Link to={"/login"}>
-            <AppButton text={lang.label.login_title} />
-          </Link>
-          <p>
-            New customer? <Link to={"/signup"}>start here</Link>
-          </p>
-        </main>
-      </section>}
+      {!user.auth && (
+        <section id='footer-signin'>
+          <main>
+            <p>{lang.footer.footer_signin_title}</p>
+            <Link to={"/login"}>
+              <AppButton text={lang.label.login_title} />
+            </Link>
+            <p>
+              New customer? <Link to={"/signup"}>start here</Link>
+            </p>
+          </main>
+        </section>
+      )}
     </>
   );
 }

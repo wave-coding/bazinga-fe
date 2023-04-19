@@ -67,6 +67,10 @@
     margin: 0 0.4rem;
 }
 
+.sidenav .side-profile-nav .side-profile-nav-link {
+    color: #fff;
+}
+
 .sidenav .side-content-nav {
     border-bottom: 1px solid #ccc;
 }

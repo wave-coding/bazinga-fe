@@ -1,12 +1,18 @@
 import { MdKeyboardArrowRight, MdKeyboardArrowDown } from "react-icons/md";
+
 import { useGlobalContext } from "@/context/useContext";
+
 import { HiBars3CenterLeft } from "react-icons/hi2";
+
 import { RiMapPinUserFill } from "react-icons/ri";
+
 import ReactCountryFlag from "react-country-flag";
+
 import { TfiWorld } from "react-icons/tfi";
+import { Link } from "react-router-dom";
 
 function MenuApp() {
-  const { open_nav, close_nav } = useGlobalContext();
+  const { open_nav, close_nav, user } = useGlobalContext();
   return (
     <>
       <aside id='sub-menu'>
@@ -42,8 +48,16 @@ function MenuApp() {
         id='mySidenav'
         className='sidenav'>
         <div className='side-profile-nav'>
-          <RiMapPinUserFill size={20} />
-          <h4>Hello, Hosein</h4>
+          <Link to={"/login"} className="side-profile-nav-link">
+            <RiMapPinUserFill size={20} />
+          </Link>
+          <h4>
+            {user.auth
+              ? user.name.length <= 6
+                ? `Hello, ${user.name}`
+                : `Hello, ${user.name.substring(0, 5) + "..."}`
+              : "Hello, guest "}
+          </h4>
         </div>
         <div
           className='side-profile-closeNav'

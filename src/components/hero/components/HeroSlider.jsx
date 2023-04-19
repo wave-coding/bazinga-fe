@@ -2,10 +2,8 @@
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
-
 import "swiper/css/navigation";
 
 import { heroSlider } from "@/data/heroSlider";

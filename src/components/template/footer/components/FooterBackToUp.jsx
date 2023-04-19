@@ -5,7 +5,9 @@ function FooterBackToUp() {
 
   return (
     <>
-      <section id='back-to-top' onClick={() => back_to_top()}>
+      <section
+        id='back-to-top'
+        onClick={() => back_to_top()}>
         <main>
           <p>{lang.footer.footer_back_to_top}</p>
         </main>

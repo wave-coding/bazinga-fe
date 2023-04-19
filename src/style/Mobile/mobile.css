@@ -37,6 +37,10 @@
     justify-content: center;
 }
 
+.mobile-header .info-menu-link {
+    color: #fff;
+}
+
 .mobile-header .info-menu div:nth-child(1) {
     display: flex;
 }
