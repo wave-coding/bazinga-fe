@@ -9,6 +9,7 @@ import { RiMapPinUserFill } from "react-icons/ri";
 import ReactCountryFlag from "react-country-flag";
 
 import { TfiWorld } from "react-icons/tfi";
+
 import { Link } from "react-router-dom";
 
 function MenuApp() {
@@ -22,7 +23,9 @@ function MenuApp() {
             <h4>All</h4>
           </li>
           <li>
-            <p>Today's Deals</p>
+            <Link to={"/today-deals"}>
+              <p>Today's Deals</p>
+            </Link>
           </li>
           <li>
             <p>Customer Service</p>
@@ -48,7 +51,9 @@ function MenuApp() {
         id='mySidenav'
         className='sidenav'>
         <div className='side-profile-nav'>
-          <Link to={"/login"} className="side-profile-nav-link">
+          <Link
+            to={"/login"}
+            className='side-profile-nav-link'>
             <RiMapPinUserFill size={20} />
           </Link>
           <h4>

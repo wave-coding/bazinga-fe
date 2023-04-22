@@ -270,6 +270,10 @@ header main .header-r-o {
     padding: 0 0.3rem;
 }
 
+header main .header-r-o a {
+    color: #fff;
+}
+
 header main .header-r-o p {
     font-size: 13px;
 }

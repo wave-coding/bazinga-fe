@@ -34,6 +34,8 @@ a {
 @import url('./Footer/footer.css');
 @import url('./Mobile/mobile.css');
 @import url('./Signup/signup.css');
+@import url('./Orders/orders.css');
 @import url('./Login/login.css');
+@import url('./Error/error.css');
 @import url('./Hero/hero.css');
 @import url('./Menu/menu.css');

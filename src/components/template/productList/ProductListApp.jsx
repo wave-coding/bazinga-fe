@@ -2,7 +2,6 @@ import MobileHeaderApp from "@/components/template/header/components/MobileHeade
 
 import { ImStarEmpty, ImStarFull } from "react-icons/im";
 // ImStarHalf,
-
 import Header from "@/components/template/header/Header";
 
 import Footer from "@/components/template/footer/Footer";

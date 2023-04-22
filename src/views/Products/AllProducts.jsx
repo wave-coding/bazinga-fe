@@ -1,4 +1,4 @@
-import ProductSliderApp from "@/components/product-slider/components/ProductSliderApp";
+// import ProductSliderApp from "@/components/product-slider/components/ProductSliderApp";
 
 import MobileHeaderApp from "@/components/template/header/components/MobileHeaderApp";
 
@@ -103,7 +103,7 @@ function AllProducts() {
         </div>
       </section>
       {/* product Details */}
-      <ProductSliderApp />
+      {/* <ProductSliderApp /> */}
       <Footer />
       {/* Toast Contaienr */}
       <ToastContainer></ToastContainer>

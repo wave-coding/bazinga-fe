@@ -38,13 +38,14 @@
 }
 
 .checkout .checkout-shopping-box-content img {
-    width: 100px;
+    width: 120px;
     height: 120px;
 }
 
 .checkout .checkout-shopping-box-content div p {
     margin: 0 1rem;
-    width: 50%;
+    /* width: 50%; */
+    /* color: #1890fb !important; */
 }
 
 .checkout .checkout-shopping-box-content:last-child {
@@ -123,5 +124,12 @@
 
     .checkout .checkout-price {
         grid-column: 1;
+    }
+}
+
+@media screen and (max-width:678px) {
+    .checkout .checkout-shopping-box-content img{
+        width: 100px;
+        height: 70px;
     }
 }

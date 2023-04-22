@@ -1,33 +1,43 @@
+// product-category
+// import ProductCategoryApp from "@/components/prodcut-category/components/ProductCategoryApp";
+// mobile header
+import MobileHeaderApp from "@/components/template/header/components/MobileHeaderApp";
+// product-slider
+import ProductSlider from "@/components/template/productSlider/ProductSlider";
+// products from data
+import { boostedBoardProducts } from "@/data/ProductSlider/BoostedBoard";
+
+import { puddleBoardProducts } from "@/data/ProductSlider/PuddleBoard";
+
+import { smartPhoneProducts } from "@/data/ProductSlider/SmartPhone";
+
+import { smartWatchProduct } from "@/data/ProductSlider/SmartWatch";
+
+import { chocolateProducts } from "@/data/ProductSlider/Chocolate";
+
+import PCRowThree from "@/components/prodcut-category/PCRowThree";
+
+import { backpackPorduct } from "@/data/ProductSlider/Backpack";
+// sopnsored
+import SponsoredApp from "@/components/sponsored/SponsoredApp";
+// product category
+import PCRowOne from "@/components/prodcut-category/PCRowOne";
+
+import PCRowTwo from "@/components/prodcut-category/PCRowTwo";
+// product-row
+import ProductRow from "@/components/product-row/ProductRow";
+// products
+import { cameraProduct } from "@/data/ProductSlider/Camera";
+
+import { BooksProduct } from "@/data/ProductSlider/Books";
 // header
 import Header from "@/components/template/header/Header";
+// footer
+import Footer from "@/components/template/footer/Footer";
 // sub-menu
 import Menu from "@/components/menu/Menu";
 // hero
 import Hero from "@/components/hero/Hero";
-// product-row
-import ProductRow from "@/components/product-row/ProductRow";
-// product-slider
-// import ProductSlider from "@/components/product-slider/ProductSlider";
-import ProductSlider from "@/components/template/productSlider/ProductSlider";
-// product-category
-import ProductCategoryApp from "@/components/prodcut-category/components/ProductCategoryApp";
-// footer
-import Footer from "@/components/template/footer/Footer";
-// mobile header
-import MobileHeaderApp from "@/components/template/header/components/MobileHeaderApp";
-// sopnsored
-import SponsoredApp from "@/components/sponsored/SponsoredApp";
-// products
-import { BooksProduct } from "@/data/ProductSlider/Books";
-import { smartWatchProduct } from "@/data/ProductSlider/SmartWatch";
-import { backpackPorduct } from "@/data/ProductSlider/Backpack";
-import { smartPhoneProducts } from "@/data/ProductSlider/SmartPhone";
-import { chocolateProducts } from "@/data/ProductSlider/Chocolate";
-import { cameraProduct } from "@/data/ProductSlider/Camera";
-import { puddleBoardProducts } from "@/data/ProductSlider/PuddleBoard";
-import { boostedBoardProducts } from "@/data/ProductSlider/BoostedBoard";
-import PCRowOne from "@/components/prodcut-category/PCRowOne";
-import PCRowTwo from "@/components/prodcut-category/PCRowTwo";
 
 function Home() {
   return (
@@ -47,7 +57,8 @@ function Home() {
         products={smartWatchProduct}
       />
       <SponsoredApp />
-      <ProductCategoryApp />
+      {/* <ProductCategoryApp /> */}
+      <PCRowThree />
       <ProductSlider
         key={"runningshoes"}
         products={backpackPorduct}

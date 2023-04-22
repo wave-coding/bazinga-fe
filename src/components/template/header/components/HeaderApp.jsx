@@ -124,14 +124,18 @@ function HeaderApp() {
             </div>
             {/* Signin Hover */}
             <div className='header-signin-card'>
-              <div className='signin-btn'>
-                <Link to={"/login"}>
-                  <button>Sign in</button>
-                </Link>
-              </div>
-              <p className='login-start'>
-                New customer? <Link to={"/signup"}>start here</Link>
-              </p>
+              {!user.auth && (
+                <>
+                  <div className='signin-btn'>
+                    <Link to={"/login"}>
+                      <button>Sign in</button>
+                    </Link>
+                  </div>
+                  <p className='login-start'>
+                    New customer? <Link to={"/signup"}>start here</Link>
+                  </p>
+                </>
+              )}
               <div className='login-content'>
                 <div>
                   <h5>Your Lists</h5>
@@ -162,8 +166,10 @@ function HeaderApp() {
             </div>
           </div>
           <div className='header-r-o'>
-            <p>Returns</p>
-            <h5>& Orders</h5>
+            <Link to={"/orders"}>
+              <p>Returns</p>
+              <h5>& Orders</h5>
+            </Link>
           </div>
           <Link
             to={"/checkout"}
