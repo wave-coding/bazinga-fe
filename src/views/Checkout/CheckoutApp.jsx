@@ -2,9 +2,9 @@ import MobileHeaderApp from "@/components/template/header/components/MobileHeade
 
 import Checkout_Sponsored from "@/assets/media/sponsored/Checkout_Img.jpg";
 
-import Header from "@/components/template/header/Header";
-
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
+
+import Header from "@/components/template/header/Header";
 
 import Footer from "@/components/template/footer/Footer";
 
@@ -12,11 +12,33 @@ import { useGlobalContext } from "@/context/useContext";
 
 import { ToastContainer } from "react-toastify";
 
+import { useNavigate } from "react-router-dom";
+
 import Menu from "@/components/menu/Menu";
 
+import { v4 as uuidv4 } from "uuid";
+
+import moment from "moment";
+
 function CheckoutApp() {
-  const { cart, total_price, delete_item, increase_product, decrease_product } =
-    useGlobalContext();
+  const movePage = useNavigate();
+  const {
+    cart,
+    total_price,
+    delete_item,
+    increase_product,
+    decrease_product,
+    add_orders,
+  } = useGlobalContext();
+  function create_add_orders(product) {
+    add_orders({
+      product: [...product],
+      order_id: uuidv4(),
+      date: moment().format("MMMM Do YYYY, h:mm:ss a"),
+      total_price,
+    });
+    movePage("/orders");
+  }
   return (
     <>
       <Header />
@@ -87,7 +109,9 @@ function CheckoutApp() {
             <p>
               Subtotal({cart.length} items): <b>{total_price} $</b>
             </p>
-            <button>Procced to checkout</button>
+            <button onClick={() => create_add_orders(cart)}>
+              Procced to checkout
+            </button>
           </div>
         </div>
       </section>

@@ -1,48 +1,72 @@
 import MobileHeaderApp from "@/components/template/header/components/MobileHeaderApp";
 
+import order_img from "@/assets/media/order/order_Img.jpg";
+
 import Header from "@/components/template/header/Header";
 
 import Footer from "@/components/template/footer/Footer";
 
+import { useGlobalContext } from "@/context/useContext";
+
 import Menu from "@/components/menu/Menu";
 
 function OrderApp() {
+  const { orders } = useGlobalContext();
   return (
     <>
       <Header />
       <Menu />
       <MobileHeaderApp />
       <section id='order-views'>
-        <h3>Your Orders</h3>
-        <div className='order-card'>
-          <h4>Order</h4>
-          <div className='order-card-info'>
-            <p>February 3rd 2021,2:42am</p>
-            <p>Order ID: pi_1IGY2tImEgmfO9dxQu9UJ342</p>
-          </div>
-          <div className='order-card-product'>
-            <div>
+        <h2>Your Orders</h2>
+        {orders.length > 0 ? (
+          <>
+            {orders.map((order, idx) => (
+              <div
+                className='order-card'
+                key={idx}>
+                <h4>Order</h4>
+                <div className='order-card-info'>
+                  <p>{order.date}</p>
+                  <p>Order ID: {order.order_id}</p>
+                </div>
+                {order.product.map((product, idx) => (
+                  <div
+                    className='order-card-product'
+                    key={idx}>
+                    <div>
+                      <div>
+                        <img
+                          src={product.img}
+                          alt={product.name}
+                        />
+                      </div>
+                      <p>{product.name}</p>
+                    </div>
+                    <div>
+                      <p>${product.price}</p>
+                    </div>
+                  </div>
+                ))}
+                <div className='total-for-order'>
+                  <p>${order.total_price}</p>
+                </div>
+              </div>
+            ))}
+          </>
+        ) : (
+          <>
+            <div className='order-empty'>
               <div>
                 <img
-                  src='https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/71sgAr9atBS._AC_SX466_.jpg'
-                  alt=''
+                  src={order_img}
+                  alt='order_img'
                 />
               </div>
-              <p>
-                ASUS ROG Strix Scar 15 Gaming Laptop, 15.6" 300Hz IPS Type FHD
-                Display, NVIDIA GeForce RTX 3080, AMD Ryzen 9 5900HX, 16GB DDR4,
-                1TB SSD, Opti-Mechanical Per-Key RGB Keyboard, Windows 11,
-                G533QS-DS94
-              </p>
+              <h4>Your Order List Is Empty</h4>
             </div>
-            <div>
-              <p>$39.80</p>
-            </div>
-          </div>
-          <div className='total-for-order'>
-            <p>$39.80</p>
-          </div>
-        </div>
+          </>
+        )}
       </section>
       <Footer />
     </>

@@ -31,10 +31,12 @@ function SignupApp() {
       <>
         <section className='signup-container'>
           <div className='signup-logo'>
-            <img
-              src={AuthLogo}
-              alt='Auth_Logo'
-            />
+            <Link to={"/"}>
+              <img
+                src={AuthLogo}
+                alt='Auth_Logo'
+              />
+            </Link>
           </div>
           <div className='signup-content'>
             <h3>Create account</h3>

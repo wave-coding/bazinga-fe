@@ -3,9 +3,13 @@
     margin: 1rem auto;
 }
 
+#order-views h2 {
+    margin: 0 0.5rem;
+}
+
 #order-views .order-card {
     border: 1px solid #3333;
-    margin: 1rem 0;
+    margin: 1rem 0.5rem;
     padding: 1rem;
     border-radius: 5px;
 }
@@ -51,4 +55,28 @@
 
 #order-views .total-for-order p {
     margin: 0.5rem 0 0 0;
+}
+
+/* order empty */
+
+#order-views .order-empty {
+    margin: 1rem 1rem;
+    text-align: center;
+}
+
+#order-views .order-empty img {
+    width: 100%;
+    height: 450px;
+    border-radius: 100px;
+}
+
+#order-views .order-empty h4 {
+    margin: 2rem 0;
+    font-size: 23px;
+}
+
+@media screen and (max-width:678px) {
+    #order-views .order-empty img {
+        border-radius: 50%;
+    }
 }

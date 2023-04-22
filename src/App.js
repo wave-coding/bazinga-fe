@@ -12,6 +12,8 @@ import AllProducts from "./views/Products/AllProducts";
 
 import ErrorPageApp from "./views/Error/ErrorPageApp";
 
+import AccountApp from "./views/Account/AccountApp";
+
 import SignupApp from "./views/Signup/SignupApp";
 
 import LoginApp from "./views/Login/LoginApp";
@@ -34,6 +36,7 @@ function App() {
                     <Route path="/product/:id" element={<ProductDetails />}></Route>
                     <Route path="/today-deals" element={<ProductListApp />}></Route>
                     <Route path="/checkout" element={<CheckoutApp />}></Route>
+                    <Route path="/account" element={<AccountApp />}></Route>
                     <Route path="/signup" element={<SignupApp />}></Route>
                     <Route path="/orders" element={<OrderApp />}></Route>
                     <Route path="/login" element={<LoginApp />}></Route>

@@ -1,7 +1,8 @@
 const initialState = {
     cart: [],
     total_price: 0,
-    user: {}
+    user: {},
+    orders: []
 }
 const reducer = (state, action) => {
     switch (action.type) {
@@ -59,14 +60,20 @@ const reducer = (state, action) => {
                 }
             }
             return { ...state }
+        // create account
         case 'create_account':
             return { ...state, user: action.data }
+        // login user
         case 'login_user':
             if (state.user.name === action.data.name) {
                 return { ...state, user: { ...state.user, auth: true } }
             } else {
                 return { ...state }
             }
+        // add orders
+        case 'add_orders':
+            state.orders.push(action.data)
+            return { ...state, cart: [] }
         default:
             throw new Error('Dispatch Type is Wrong!')
     }

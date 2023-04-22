@@ -26,10 +26,12 @@ function LoginApp() {
       <>
         <section className='login-container'>
           <div className='login-logo'>
-            <img
-              src={AuthLogo}
-              alt='Auth_Logo'
-            />
+            <Link to={"/"}>
+              <img
+                src={AuthLogo}
+                alt='Auth_Logo'
+              />
+            </Link>
           </div>
           <div className='login-content'>
             <h3>Sign-In</h3>
