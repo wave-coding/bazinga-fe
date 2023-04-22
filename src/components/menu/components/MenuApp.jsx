@@ -13,7 +13,7 @@ import { TfiWorld } from "react-icons/tfi";
 import { Link } from "react-router-dom";
 
 function MenuApp() {
-  const { open_nav, close_nav, user } = useGlobalContext();
+  const { open_nav, close_nav, user, sign_out_user } = useGlobalContext();
   return (
     <>
       <aside id='sub-menu'>
@@ -164,7 +164,7 @@ function MenuApp() {
               />
               <p className='mx-2'>United States</p>
             </li>
-            <li>Sign Out</li>
+            <li onClick={() => sign_out_user()}>Sign Out</li>
           </div>
         </div>
       </nav>

@@ -74,6 +74,10 @@ const reducer = (state, action) => {
         case 'add_orders':
             state.orders.push(action.data)
             return { ...state, cart: [] }
+        // signout user
+        case 'sign_out_user':
+            window.location.reload()
+            return { ...state, user: {} }
         default:
             throw new Error('Dispatch Type is Wrong!')
     }
