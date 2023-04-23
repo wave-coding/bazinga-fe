@@ -20,7 +20,7 @@ function LoginApp() {
     movePage("/");
   }
   if (user.auth) {
-    return <AuthApp></AuthApp>;
+    return <AuthApp path={"/"}></AuthApp>;
   } else {
     return (
       <>

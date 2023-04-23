@@ -1,6 +1,6 @@
 import MobileHeaderApp from "@/components/template/header/components/MobileHeaderApp";
 
-import order_img from "@/assets/media/order/order_Img.jpg";
+import order_img from "@/assets/media/order/order_Img.png";
 
 import Header from "@/components/template/header/Header";
 

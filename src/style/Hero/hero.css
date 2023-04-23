@@ -15,7 +15,7 @@
 
 
 .swiper-button-next {
-    color: #fff;
+    color: #333;
     transition: all 0.4s ease;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .swiper-button-prev {
-    color: #fff;
+    color: #333;
     transition: all 0.4s ease;
 }
 

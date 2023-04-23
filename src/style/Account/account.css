@@ -1,0 +1,89 @@
+#my-account {
+    max-width: 1100px;
+    margin: 1rem auto;
+}
+
+#my-account h2 {
+    padding: 0.5rem;
+}
+
+#my-account .account-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1rem 0;
+    grid-gap: 1rem;
+    border-bottom: 1px solid #888;
+    padding: 0.5rem;
+}
+
+#my-account .account-card .account-card-data {
+    display: flex;
+    align-items: center;
+    border: 1px solid #D5D9D9;
+    padding: 0.7rem;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#my-account .account-card .account-card-data:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+#my-account .account-card .account-card-data .account-card-data-img img {
+    width: 60px;
+}
+
+#my-account .account-card .account-card-data .account-card-data-text {
+    margin: 0 0.5rem;
+}
+
+#my-account .account-card .account-card-data .account-card-data-text p {
+    font-size: 12px;
+    margin: 0.3rem 0;
+}
+
+#my-account .account-card .account-card-data .account-card-data-text h4 {
+    font-size: 13px;
+}
+
+#my-account .account-data-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1rem 0;
+    grid-gap: 1rem;
+    padding: 0.5rem;
+}
+
+#my-account .account-data-table .account-data-table-list {
+    border: 1px solid #D5D9D9;
+    padding: 0.7rem;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#my-account .account-data-table .account-data-table-list p {
+    color: #007185;
+    font-size: 13px;
+    margin: 0.5rem 0;
+}
+
+#my-account .account-data-table .account-data-table-list p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#my-account .account-data-table .account-data-table-list h4 {
+    font-size: 14px;
+}
+
+
+@media screen and (max-width:768px) {
+    #my-account .account-card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #my-account .account-data-table {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
