@@ -145,8 +145,20 @@ function HeaderApp() {
                 </div>
                 <div>
                   <h5>Your Accounts</h5>
-                  <p>Account</p>
-                  <p>Orders</p>
+                  <p>
+                    {user.auth ? (
+                      <Link to={"/account"}>Account</Link>
+                    ) : (
+                      <Link to={"/login"}>Account</Link>
+                    )}
+                  </p>
+                  <p>
+                    {user.auth ? (
+                      <Link to={"/orders"}>Orders</Link>
+                    ) : (
+                      <Link to={"/login"}>Orders</Link>
+                    )}
+                  </p>
                   <p>Recommendations</p>
                   <p>Browsing History</p>
                   <p>Watchlist</p>

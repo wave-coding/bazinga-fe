@@ -263,6 +263,11 @@ header main .header-signin .header-signin-card .login-content div p:hover {
     text-decoration: underline;
 }
 
+header main .header-signin .header-signin-card .login-content div p:hover a {
+    color: #febd69 !important;
+    text-decoration: underline;
+}
+
 
 
 header main .header-r-o {

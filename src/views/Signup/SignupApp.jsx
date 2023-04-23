@@ -16,7 +16,7 @@ function SignupApp() {
   const [password, setPassword] = useState("");
   const [rePassword, setRePassword] = useState("");
   function createSignup() {
-    create_account({ name, email, password, rePassword, auth: false });
+    create_account({ name, email, password, rePassword });
     setName("");
     setEmail("");
     setPassword("");
