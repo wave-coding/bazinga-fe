@@ -1,8 +1,14 @@
+import { useValidation } from "react-simple-form-validator";
+
 import AuthLogo from "@/assets/media/logo/auth-logo.png";
 
 import { useGlobalContext } from "@/context/useContext";
 
 import { Link, useNavigate } from "react-router-dom";
+
+import { ToastContainer } from "react-toastify";
+
+import { toast } from "react-toastify";
 
 import AuthApp from "../Auth/AuthApp";
 
@@ -11,13 +17,43 @@ import { useState } from "react";
 function LoginApp() {
   const { login_user, user } = useGlobalContext();
   const movePage = useNavigate();
-  const [name, setName] = useState("");
+  const [email, setEamil] = useState("");
   const [password, setPassword] = useState("");
+  const { isFieldInError, getErrorsInField, isFormValid } = useValidation({
+    fieldsRules: {
+      email: { email: true, required: true },
+      password: { required: true, minlength: 6, equalPassword: password },
+    },
+    state: { email, password },
+  });
   function createLogin() {
-    login_user({ name, password });
-    setName("");
-    setPassword("");
-    movePage("/");
+    if (isFormValid) {
+      if (user.password === password) {
+        login_user({ email, password });
+        setEamil("");
+        setPassword("");
+        movePage("/");
+      } else {
+        toast.error("Your Password is Wrong", {
+          position: toast.POSITION.TOP_CENTER,
+        });
+      }
+    } else {
+      if (isFieldInError("email")) {
+        getErrorsInField("email").forEach((text) => {
+          toast.error(text, {
+            position: toast.POSITION.TOP_CENTER,
+          });
+        });
+      }
+      if (isFieldInError("password")) {
+        getErrorsInField("password").forEach((text) => {
+          toast.error(text, {
+            position: toast.POSITION.TOP_CENTER,
+          });
+        });
+      }
+    }
   }
   if (user.auth) {
     return <AuthApp path={"/"}></AuthApp>;
@@ -41,8 +77,8 @@ function LoginApp() {
                 <input
                   type='email'
                   name='Email'
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
+                  value={email}
+                  onChange={(e) => setEamil(e.target.value)}
                 />
               </div>
               <div className='login-form-content'>
@@ -78,6 +114,8 @@ function LoginApp() {
             </div>
           </div>
         </section>
+        {/* Toast Contaienr */}
+        <ToastContainer></ToastContainer>
       </>
     );
   }

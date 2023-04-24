@@ -75,7 +75,7 @@ const reducer = (state, action) => {
             return { ...state, user: action.data }
         // login user
         case 'login_user':
-            if (state.user.name === action.data.name) {
+            if (state.user.password === action.data.password) {
                 localStorage.setItem('user', JSON.stringify({ ...state.user, auth: true }))
                 return { ...state, user: { ...state.user, auth: true } }
             } else {
@@ -89,10 +89,10 @@ const reducer = (state, action) => {
             return { ...state, cart: [] }
         // signout user
         case 'sign_out_user':
-            localStorage.removeItem('user')
+            localStorage.setItem('user', JSON.stringify({ ...state.user, auth: false }))
             localStorage.setItem('orders', JSON.stringify([]))
             window.location.reload()
-            return { ...state, user: {}, orders: [] }
+            return { ...state, user: { ...state.user, auth: false }, orders: [] }
         default:
             throw new Error('Dispatch Type is Wrong!')
     }

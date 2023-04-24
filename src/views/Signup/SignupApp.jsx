@@ -1,8 +1,14 @@
+import { useValidation } from "react-simple-form-validator";
+
 import AuthLogo from "@/assets/media/logo/auth-logo.png";
 
 import { useGlobalContext } from "@/context/useContext";
 
 import { Link, useNavigate } from "react-router-dom";
+
+import { ToastContainer } from "react-toastify";
+
+import { toast } from "react-toastify";
 
 import AuthApp from "../Auth/AuthApp";
 
@@ -15,13 +21,47 @@ function SignupApp() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rePassword, setRePassword] = useState("");
+  const { isFieldInError, getErrorsInField, isFormValid } = useValidation({
+    fieldsRules: {
+      name: { required: true, minlength: 4 },
+      email: { email: true, required: true },
+      password: { required: true, minlength: 6, equalPassword: rePassword },
+      rePassword: { required: true, minlength: 6, equalPassword: password },
+    },
+    state: { email, name, password, rePassword },
+  });
   function createSignup() {
-    create_account({ name, email, password, rePassword });
-    setName("");
-    setEmail("");
-    setPassword("");
-    setRePassword("");
-    movePage("/login");
+    if (isFormValid) {
+      create_account({ name, email, password, rePassword });
+      setName("");
+      setEmail("");
+      setPassword("");
+      setRePassword("");
+      movePage("/login");
+      toast.success("Account Is Created");
+    } else {
+      if (isFieldInError("name")) {
+        getErrorsInField("name").forEach((text) => {
+          toast.error(text, {
+            position: toast.POSITION.TOP_CENTER,
+          });
+        });
+      }
+      if (isFieldInError("email")) {
+        getErrorsInField("email").forEach((text) => {
+          toast.error(text, {
+            position: toast.POSITION.TOP_CENTER,
+          });
+        });
+      }
+      if (isFieldInError("password")) {
+        getErrorsInField("password").forEach((text) => {
+          toast.error(text, {
+            position: toast.POSITION.TOP_CENTER,
+          });
+        });
+      }
+    }
   }
 
   if (user.auth) {
@@ -99,6 +139,8 @@ function SignupApp() {
             </div>
           </div>
         </section>
+        {/* Toast Contaienr */}
+        <ToastContainer></ToastContainer>
       </>
     );
   }
